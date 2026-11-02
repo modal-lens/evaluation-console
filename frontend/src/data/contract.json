@@ -1,0 +1,992 @@
+{
+  "operations": {
+    "entity-extraction": {
+      "path": "/api/v1/evaluation/entity-extraction",
+      "title": "实体抽取 F1",
+      "schema": {
+        "$ref": "#/components/schemas/EntityEvaluationRequest"
+      },
+      "example": {
+        "samples": [
+          {
+            "sample_id": "doc-1",
+            "predicted": [
+              {
+                "name": "南京大学",
+                "type": "组织"
+              }
+            ],
+            "gold": [
+              {
+                "name": "南京大学",
+                "type": "组织"
+              },
+              {
+                "name": "张三",
+                "type": "人物"
+              }
+            ]
+          }
+        ]
+      },
+      "exampleDescription": "predicted 为算法预测，gold 为人工标注；本例漏抽一个实体，F1 为 2/3。"
+    },
+    "relation-extraction": {
+      "path": "/api/v1/evaluation/relation-extraction",
+      "title": "关系抽取 F1",
+      "schema": {
+        "$ref": "#/components/schemas/RelationEvaluationRequest"
+      },
+      "example": {
+        "samples": [
+          {
+            "sample_id": "doc-1",
+            "predicted": [
+              {
+                "head_entity_id": "person-1",
+                "relationCode": "任职",
+                "tail_entity_id": "org-1"
+              }
+            ],
+            "gold": [
+              {
+                "head_entity_id": "person-1",
+                "relationCode": "任职",
+                "tail_entity_id": "org-1"
+              }
+            ]
+          }
+        ]
+      },
+      "exampleDescription": "预测与标注须使用同一实体 ID；本例三元组完全一致，F1 为 1。"
+    },
+    "cross-document/entity-fusion": {
+      "path": "/api/v1/evaluation/cross-document/entity-fusion",
+      "title": "跨文档实体消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-entity-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-entity-1",
+            "document_id": "doc-2",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-entity-1",
+            "document_id": "doc-3",
+            "language": "zh",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "cross-document/relation-fusion": {
+      "path": "/api/v1/evaluation/cross-document/relation-fusion",
+      "title": "跨文档关系消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-relation-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-relation-1",
+            "document_id": "doc-2",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-relation-1",
+            "document_id": "doc-3",
+            "language": "zh",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "cross-document/attribute-fusion": {
+      "path": "/api/v1/evaluation/cross-document/attribute-fusion",
+      "title": "跨文档属性消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-attribute-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-attribute-1",
+            "document_id": "doc-2",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-attribute-1",
+            "document_id": "doc-3",
+            "language": "zh",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "cross-language/entity-fusion": {
+      "path": "/api/v1/evaluation/cross-language/entity-fusion",
+      "title": "跨语种实体消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-entity-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-entity-1",
+            "document_id": "doc-2",
+            "language": "en",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-entity-1",
+            "document_id": "doc-3",
+            "language": "fr",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "cross-language/relation-fusion": {
+      "path": "/api/v1/evaluation/cross-language/relation-fusion",
+      "title": "跨语种关系消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-relation-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-relation-1",
+            "document_id": "doc-2",
+            "language": "en",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-relation-1",
+            "document_id": "doc-3",
+            "language": "fr",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "cross-language/attribute-fusion": {
+      "path": "/api/v1/evaluation/cross-language/attribute-fusion",
+      "title": "跨语种属性消融 F1",
+      "schema": {
+        "$ref": "#/components/schemas/FusionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "item_id": "doc-1-attribute-1",
+            "document_id": "doc-1",
+            "language": "zh",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-2-attribute-1",
+            "document_id": "doc-2",
+            "language": "en",
+            "gold_cluster": "gold-1",
+            "predicted_cluster": "prediction-A"
+          },
+          {
+            "item_id": "doc-3-attribute-1",
+            "document_id": "doc-3",
+            "language": "fr",
+            "gold_cluster": "gold-2",
+            "predicted_cluster": "prediction-B"
+          }
+        ]
+      },
+      "exampleDescription": "item_id 是对象的一次出现 ID；gold_cluster 表示人工合并分组，predicted_cluster 表示算法分组。本例正确合并前两个对象，第三个不合并，F1 为 1。"
+    },
+    "domain-entity-extraction": {
+      "path": "/api/v1/evaluation/domain-entity-extraction",
+      "title": "引入专业领域实体类型列表后的实体抽取 F1",
+      "schema": {
+        "$ref": "#/components/schemas/DomainEntityEvaluationRequest"
+      },
+      "example": {
+        "domain_entity_types": [
+          "装备"
+        ],
+        "samples": [
+          {
+            "sample_id": "military-doc-1",
+            "predicted": [
+              {
+                "name": "南京大学",
+                "type": "组织"
+              },
+              {
+                "name": "相控阵雷达",
+                "type": "装备"
+              }
+            ],
+            "gold": [
+              {
+                "name": "南京大学",
+                "type": "组织"
+              },
+              {
+                "name": "相控阵雷达",
+                "type": "装备"
+              }
+            ]
+          }
+        ],
+        "baseline_samples": [
+          {
+            "sample_id": "military-doc-1",
+            "predicted": [],
+            "gold": [
+              {
+                "name": "南京大学",
+                "type": "组织"
+              },
+              {
+                "name": "相控阵雷达",
+                "type": "装备"
+              }
+            ]
+          }
+        ],
+        "relation_samples": [
+          {
+            "sample_id": "military-doc-1",
+            "predicted": [
+              {
+                "head_entity_id": "org-1",
+                "relationCode": "研发",
+                "tail_entity_id": "equipment-1"
+              }
+            ],
+            "gold": [
+              {
+                "head_entity_id": "org-1",
+                "relationCode": "研发",
+                "tail_entity_id": "equipment-1"
+              }
+            ]
+          }
+        ],
+        "baseline_relation_samples": [
+          {
+            "sample_id": "military-doc-1",
+            "predicted": [],
+            "gold": [
+              {
+                "head_entity_id": "org-1",
+                "relationCode": "研发",
+                "tail_entity_id": "equipment-1"
+              }
+            ]
+          }
+        ]
+      },
+      "exampleDescription": "两组使用相同实体与关系真实标注，分别计算 F1 差值。本例引入后实体满分，因此严格小于1的验收不通过；不人为降低分数。"
+    },
+    "spatiotemporal-resolution": {
+      "path": "/api/v1/evaluation/spatiotemporal-resolution",
+      "title": "多粒度时空消歧准确率",
+      "schema": {
+        "$ref": "#/components/schemas/ResolutionEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "sample_id": "doc-1",
+            "mention_id": "time-1",
+            "dimension": "time",
+            "granularity": "year",
+            "gold": "2026",
+            "predicted": "2026"
+          },
+          {
+            "sample_id": "doc-1",
+            "mention_id": "time-1",
+            "dimension": "time",
+            "granularity": "day",
+            "gold": "2026-10-21",
+            "predicted": "2026-10-21"
+          },
+          {
+            "sample_id": "doc-1",
+            "mention_id": "place-1",
+            "dimension": "space",
+            "granularity": "city",
+            "gold": "南京"
+          }
+        ]
+      },
+      "exampleDescription": "time 表示时间、space 表示空间；值须提前标准化。null 表示漏预测，本例总体准确率为 2/3。"
+    },
+    "multilabel-classification": {
+      "path": "/api/v1/evaluation/multilabel-classification",
+      "title": "多标签分类 F1",
+      "schema": {
+        "$ref": "#/components/schemas/ClassificationEvaluationRequest"
+      },
+      "example": {
+        "samples": [
+          {
+            "sample_id": "doc-1",
+            "predicted": [
+              "1",
+              "2"
+            ],
+            "gold": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "sample_id": "doc-2",
+            "predicted": [],
+            "gold": [
+              "3"
+            ]
+          }
+        ]
+      },
+      "exampleDescription": "标签使用统一字符串 ID；本例 micro F1 为 0.8，标签整组准确率为 0.5。"
+    },
+    "community-discovery": {
+      "path": "/api/v1/evaluation/community-discovery",
+      "title": "社区网络发现准确率",
+      "schema": {
+        "$ref": "#/components/schemas/CommunityEvaluationRequest"
+      },
+      "example": {
+        "items": [
+          {
+            "node_id": "entity-1",
+            "gold_community": "科技",
+            "predicted_community": "cluster-2"
+          },
+          {
+            "node_id": "entity-2",
+            "gold_community": "科技",
+            "predicted_community": "cluster-2"
+          },
+          {
+            "node_id": "entity-3",
+            "gold_community": "金融",
+            "predicted_community": "cluster-1"
+          },
+          {
+            "node_id": "entity-4",
+            "gold_community": "金融"
+          }
+        ]
+      },
+      "exampleDescription": "预测与标注社区编号可不同；最优一一映射后计分，null 按错误计，本例准确率为 0.75。"
+    }
+  },
+  "schemas": {
+    "ClassificationEvaluationRequest": {
+      "properties": {
+        "samples": {
+          "items": {
+            "$ref": "#/components/schemas/ClassificationSample"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Samples"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "samples"
+      ],
+      "title": "ClassificationEvaluationRequest"
+    },
+    "ClassificationSample": {
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Sample Id"
+        },
+        "predicted": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "title": "Predicted"
+        },
+        "gold": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "title": "Gold"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "sample_id",
+        "predicted",
+        "gold"
+      ],
+      "title": "ClassificationSample"
+    },
+    "CommunityEvaluationRequest": {
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/components/schemas/CommunityItem"
+          },
+          "type": "array",
+          "maxItems": 5000,
+          "minItems": 1,
+          "title": "Items"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "title": "CommunityEvaluationRequest"
+    },
+    "CommunityItem": {
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Node Id"
+        },
+        "gold_community": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Gold Community"
+        },
+        "predicted_community": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Predicted Community"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "node_id",
+        "gold_community"
+      ],
+      "title": "CommunityItem"
+    },
+    "DomainEntityEvaluationRequest": {
+      "properties": {
+        "samples": {
+          "items": {
+            "$ref": "#/components/schemas/EntitySample"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Samples"
+        },
+        "domain_entity_types": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Domain Entity Types",
+          "description": "专业领域实体类型列表"
+        },
+        "baseline_samples": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/components/schemas/EntitySample"
+              },
+              "type": "array",
+              "minItems": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Samples"
+        },
+        "relation_samples": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/components/schemas/RelationSample"
+              },
+              "type": "array",
+              "minItems": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Relation Samples",
+          "description": "引入类型列表后的关系预测及同一批真实标注"
+        },
+        "baseline_relation_samples": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/components/schemas/RelationSample"
+              },
+              "type": "array",
+              "minItems": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Relation Samples",
+          "description": "不引入任何类型列表时的关系预测"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "samples",
+        "domain_entity_types"
+      ],
+      "title": "DomainEntityEvaluationRequest"
+    },
+    "EntityEvaluationRequest": {
+      "properties": {
+        "samples": {
+          "items": {
+            "$ref": "#/components/schemas/EntitySample"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Samples"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "samples"
+      ],
+      "title": "EntityEvaluationRequest"
+    },
+    "EntityFact": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Name"
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Type"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "name",
+        "type"
+      ],
+      "title": "EntityFact"
+    },
+    "EntitySample": {
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Sample Id"
+        },
+        "predicted": {
+          "items": {
+            "$ref": "#/components/schemas/EntityFact"
+          },
+          "type": "array",
+          "title": "Predicted"
+        },
+        "gold": {
+          "items": {
+            "$ref": "#/components/schemas/EntityFact"
+          },
+          "type": "array",
+          "title": "Gold"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "sample_id",
+        "predicted",
+        "gold"
+      ],
+      "title": "EntitySample"
+    },
+    "FusionEvaluationRequest": {
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/components/schemas/FusionItem"
+          },
+          "type": "array",
+          "maxItems": 1000,
+          "minItems": 2,
+          "title": "Items"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "title": "FusionEvaluationRequest"
+    },
+    "FusionItem": {
+      "properties": {
+        "item_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Item Id",
+          "description": "待合并实体、关系或属性的唯一出现 ID"
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Document Id"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Language",
+          "description": "统一语言代码，例如 zh、en"
+        },
+        "gold_cluster": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Gold Cluster"
+        },
+        "predicted_cluster": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Predicted Cluster",
+          "description": "未合并/漏预测可传 null"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "item_id",
+        "document_id",
+        "language",
+        "gold_cluster"
+      ],
+      "title": "FusionItem"
+    },
+    "HTTPValidationError": {
+      "properties": {
+        "detail": {
+          "items": {
+            "$ref": "#/components/schemas/ValidationError"
+          },
+          "type": "array",
+          "title": "Detail"
+        }
+      },
+      "type": "object",
+      "title": "HTTPValidationError"
+    },
+    "RelationEvaluationRequest": {
+      "properties": {
+        "samples": {
+          "items": {
+            "$ref": "#/components/schemas/RelationSample"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Samples"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "samples"
+      ],
+      "title": "RelationEvaluationRequest"
+    },
+    "RelationFact": {
+      "properties": {
+        "head_entity_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Head Entity Id",
+          "description": "预测与标注使用同一实体 ID 空间"
+        },
+        "relationCode": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Relationcode"
+        },
+        "tail_entity_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Tail Entity Id"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "head_entity_id",
+        "relationCode",
+        "tail_entity_id"
+      ],
+      "title": "RelationFact"
+    },
+    "RelationSample": {
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Sample Id"
+        },
+        "predicted": {
+          "items": {
+            "$ref": "#/components/schemas/RelationFact"
+          },
+          "type": "array",
+          "title": "Predicted"
+        },
+        "gold": {
+          "items": {
+            "$ref": "#/components/schemas/RelationFact"
+          },
+          "type": "array",
+          "title": "Gold"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "sample_id",
+        "predicted",
+        "gold"
+      ],
+      "title": "RelationSample"
+    },
+    "ResolutionEvaluationRequest": {
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/components/schemas/ResolutionItem"
+          },
+          "type": "array",
+          "minItems": 1,
+          "title": "Items"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "items"
+      ],
+      "title": "ResolutionEvaluationRequest"
+    },
+    "ResolutionItem": {
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Sample Id"
+        },
+        "mention_id": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Mention Id"
+        },
+        "dimension": {
+          "type": "string",
+          "enum": [
+            "time",
+            "space"
+          ],
+          "title": "Dimension"
+        },
+        "granularity": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Granularity",
+          "description": "如 year、day、country、city；在相同粒度精确比较"
+        },
+        "gold": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Gold",
+          "description": "人工标注的标准化值"
+        },
+        "predicted": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Predicted"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "sample_id",
+        "mention_id",
+        "dimension",
+        "granularity",
+        "gold"
+      ],
+      "title": "ResolutionItem"
+    },
+    "StandardResponse": {
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "title": "Success"
+        },
+        "data": {
+          "title": "Data"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Error"
+        }
+      },
+      "type": "object",
+      "required": [
+        "success"
+      ],
+      "title": "StandardResponse",
+      "description": "FastAPI 统一响应包装。"
+    },
+    "ValidationError": {
+      "properties": {
+        "loc": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "type": "array",
+          "title": "Location"
+        },
+        "msg": {
+          "type": "string",
+          "title": "Message"
+        },
+        "type": {
+          "type": "string",
+          "title": "Error Type"
+        },
+        "input": {
+          "title": "Input"
+        },
+        "ctx": {
+          "type": "object",
+          "title": "Context"
+        }
+      },
+      "type": "object",
+      "required": [
+        "loc",
+        "msg",
+        "type"
+      ],
+      "title": "ValidationError"
+    }
+  }
+}

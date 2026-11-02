@@ -1,0 +1,740 @@
+{
+  "metric": "entity-relation-extraction",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "52189f9985e28cc1",
+            "name": "张明",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "7b20662b1b2ba05e",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a892e82cd80d2d77",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a54fc221a519bffe",
+            "name": "南京",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "52189f9985e28cc1",
+            "relationCode": "任职",
+            "tail_entity_id": "a892e82cd80d2d77",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "7b20662b1b2ba05e",
+            "relationCode": "任职",
+            "tail_entity_id": "a892e82cd80d2d77",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "a892e82cd80d2d77",
+            "relationCode": "位于",
+            "tail_entity_id": "a54fc221a519bffe",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "9894090dc045f344",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ecf7975fcaf80287",
+            "name": "许晨",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a77edbfba14c98af",
+            "name": "锦程研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a07bf167d0a17e54",
+            "name": "成都",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "9894090dc045f344",
+            "relationCode": "任职",
+            "tail_entity_id": "a77edbfba14c98af",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "ecf7975fcaf80287",
+            "relationCode": "任职",
+            "tail_entity_id": "a77edbfba14c98af",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "a77edbfba14c98af",
+            "relationCode": "位于",
+            "tail_entity_id": "a07bf167d0a17e54",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "5c5f94aef39f235a",
+            "name": "卓越研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4f9048f24d6baa7f",
+            "name": "武汉",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bf57013ec8a07fdc",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "52bf532ff3f9abea",
+            "name": "邓宇",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "5c5f94aef39f235a",
+            "relationCode": "位于",
+            "tail_entity_id": "4f9048f24d6baa7f",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "bf57013ec8a07fdc",
+            "relationCode": "任职",
+            "tail_entity_id": "5c5f94aef39f235a",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "52bf532ff3f9abea",
+            "relationCode": "任职",
+            "tail_entity_id": "5c5f94aef39f235a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "68b132ba9145681e",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c689a2c55b21ba12",
+            "name": "韩梅",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b14fe3fd5a1ef91b",
+            "name": "明德研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "686e73e7cb09b175",
+            "name": "西安",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "68b132ba9145681e",
+            "relationCode": "任职",
+            "tail_entity_id": "b14fe3fd5a1ef91b",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "c689a2c55b21ba12",
+            "relationCode": "任职",
+            "tail_entity_id": "b14fe3fd5a1ef91b",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "b14fe3fd5a1ef91b",
+            "relationCode": "位于",
+            "tail_entity_id": "686e73e7cb09b175",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "08102f3e03657a08",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3ef8e4d29941b882",
+            "name": "苏州",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bd508dfaeeddea2e",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4e296d20e5396758",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "08102f3e03657a08",
+            "relationCode": "位于",
+            "tail_entity_id": "3ef8e4d29941b882",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "bd508dfaeeddea2e",
+            "relationCode": "任职",
+            "tail_entity_id": "08102f3e03657a08",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "4e296d20e5396758",
+            "relationCode": "任职",
+            "tail_entity_id": "08102f3e03657a08",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "6d9170844d1f26b8",
+            "name": "李华",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0d6a5dbaaa392fd0",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ba01dae7f51c4c78",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "454c15f11072a76a",
+            "name": "杭州",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "6d9170844d1f26b8",
+            "relationCode": "任职",
+            "tail_entity_id": "ba01dae7f51c4c78",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "0d6a5dbaaa392fd0",
+            "relationCode": "任职",
+            "tail_entity_id": "ba01dae7f51c4c78",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "ba01dae7f51c4c78",
+            "relationCode": "位于",
+            "tail_entity_id": "454c15f11072a76a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "105d381c64b4a155",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "492a64cb0721a3cc",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a2df85ef671d8ee7",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "35e0a9d267ae61e4",
+            "name": "成都",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "105d381c64b4a155",
+            "relationCode": "任职",
+            "tail_entity_id": "a2df85ef671d8ee7",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "492a64cb0721a3cc",
+            "relationCode": "任职",
+            "tail_entity_id": "a2df85ef671d8ee7",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "a2df85ef671d8ee7",
+            "relationCode": "位于",
+            "tail_entity_id": "35e0a9d267ae61e4",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1ab917f703075d58",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a76d4d3f89e55e83",
+            "name": "武汉",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1cf61ee8aa5b3ea0",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3471ccdfbda56c9f",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1ab917f703075d58",
+            "relationCode": "位于",
+            "tail_entity_id": "a76d4d3f89e55e83",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "1cf61ee8aa5b3ea0",
+            "relationCode": "任职",
+            "tail_entity_id": "1ab917f703075d58",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "3471ccdfbda56c9f",
+            "relationCode": "任职",
+            "tail_entity_id": "1ab917f703075d58",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "699c377a4da04f00",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c0ce7901f103a049",
+            "name": "罗毅",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a3dbe074dc89be10",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "175dc61cc65c9a64",
+            "name": "西安",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "699c377a4da04f00",
+            "relationCode": "任职",
+            "tail_entity_id": "a3dbe074dc89be10",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "c0ce7901f103a049",
+            "relationCode": "任职",
+            "tail_entity_id": "a3dbe074dc89be10",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "a3dbe074dc89be10",
+            "relationCode": "位于",
+            "tail_entity_id": "175dc61cc65c9a64",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "8a6fef84fd7ace1f",
+            "name": "孙悦",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fc0a0a6122f96fb1",
+            "name": "梁欣",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c8d848ed65e3d4da",
+            "name": "凌云研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0eadf277a731c2ff",
+            "name": "南京",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "8a6fef84fd7ace1f",
+            "relationCode": "任职",
+            "tail_entity_id": "c8d848ed65e3d4da",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "fc0a0a6122f96fb1",
+            "relationCode": "任职",
+            "tail_entity_id": "c8d848ed65e3d4da",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "c8d848ed65e3d4da",
+            "relationCode": "位于",
+            "tail_entity_id": "0eadf277a731c2ff",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "01f47fa9191d9efd",
+            "name": "清源研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "31ba475a85623cb3",
+            "name": "苏州",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fcd8f24fe1b6bb40",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5e281b2a4db4e5b7",
+            "name": "宋涛",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "01f47fa9191d9efd",
+            "relationCode": "位于",
+            "tail_entity_id": "31ba475a85623cb3",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "fcd8f24fe1b6bb40",
+            "relationCode": "任职",
+            "tail_entity_id": "01f47fa9191d9efd",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "5e281b2a4db4e5b7",
+            "relationCode": "任职",
+            "tail_entity_id": "01f47fa9191d9efd",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1592aed6d5bce874",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "02296a913e072d36",
+            "name": "唐雪",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "84a4216db49ffe77",
+            "name": "天衡研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0313236fade82199",
+            "name": "杭州",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1592aed6d5bce874",
+            "relationCode": "任职",
+            "tail_entity_id": "84a4216db49ffe77",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "02296a913e072d36",
+            "relationCode": "任职",
+            "tail_entity_id": "84a4216db49ffe77",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "84a4216db49ffe77",
+            "relationCode": "位于",
+            "tail_entity_id": "0313236fade82199",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      }
+    ],
+    "baseline_documents": null
+  }
+}

@@ -1,0 +1,838 @@
+{
+  "method": "Literal source facts annotated before new inference; no predictions used.",
+  "relations": [
+    {
+      "document_id": "doc-1",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "余昭在澜衡第1装备研究中心任职"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第1装备研究中心研发装备澜衡1号1型采样装置"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡1号1型采样装置采用技术澜衡1组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第1装备研究中心研发装备澜衡1号2型采样装置"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡1号2型采样装置采用技术澜衡1组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第1装备研究中心研发装备澜衡1号3型采样装置"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡1号3型采样装置采用技术澜衡1组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第1装备研究中心研发装备澜衡1号4型采样装置"
+    },
+    {
+      "document_id": "doc-1",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡1号4型采样装置采用技术澜衡1组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "贺澜在澜衡第2装备研究中心任职"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第2装备研究中心研发装备澜衡2号1型采样装置"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡2号1型采样装置采用技术澜衡2组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第2装备研究中心研发装备澜衡2号2型采样装置"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡2号2型采样装置采用技术澜衡2组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第2装备研究中心研发装备澜衡2号3型采样装置"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡2号3型采样装置采用技术澜衡2组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第2装备研究中心研发装备澜衡2号4型采样装置"
+    },
+    {
+      "document_id": "doc-2",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡2号4型采样装置采用技术澜衡2组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "舒宁在澜衡第3装备研究中心任职"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第3装备研究中心研发装备澜衡3号1型采样装置"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡3号1型采样装置采用技术澜衡3组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第3装备研究中心研发装备澜衡3号2型采样装置"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡3号2型采样装置采用技术澜衡3组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第3装备研究中心研发装备澜衡3号3型采样装置"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡3号3型采样装置采用技术澜衡3组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第3装备研究中心研发装备澜衡3号4型采样装置"
+    },
+    {
+      "document_id": "doc-3",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡3号4型采样装置采用技术澜衡3组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "季秋在澜衡第4装备研究中心任职"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第4装备研究中心研发装备澜衡4号1型采样装置"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡4号1型采样装置采用技术澜衡4组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第4装备研究中心研发装备澜衡4号2型采样装置"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡4号2型采样装置采用技术澜衡4组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第4装备研究中心研发装备澜衡4号3型采样装置"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡4号3型采样装置采用技术澜衡4组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第4装备研究中心研发装备澜衡4号4型采样装置"
+    },
+    {
+      "document_id": "doc-4",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡4号4型采样装置采用技术澜衡4组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "黎舟在澜衡第5装备研究中心任职"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第5装备研究中心研发装备澜衡5号1型采样装置"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡5号1型采样装置采用技术澜衡5组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第5装备研究中心研发装备澜衡5号2型采样装置"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡5号2型采样装置采用技术澜衡5组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第5装备研究中心研发装备澜衡5号3型采样装置"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡5号3型采样装置采用技术澜衡5组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第5装备研究中心研发装备澜衡5号4型采样装置"
+    },
+    {
+      "document_id": "doc-5",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡5号4型采样装置采用技术澜衡5组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "陶然在澜衡第6装备研究中心任职"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第6装备研究中心研发装备澜衡6号1型采样装置"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡6号1型采样装置采用技术澜衡6组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第6装备研究中心研发装备澜衡6号2型采样装置"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡6号2型采样装置采用技术澜衡6组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第6装备研究中心研发装备澜衡6号3型采样装置"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡6号3型采样装置采用技术澜衡6组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第6装备研究中心研发装备澜衡6号4型采样装置"
+    },
+    {
+      "document_id": "doc-6",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡6号4型采样装置采用技术澜衡6组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "霍宁在澜衡第7装备研究中心任职"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第7装备研究中心研发装备澜衡7号1型采样装置"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡7号1型采样装置采用技术澜衡7组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第7装备研究中心研发装备澜衡7号2型采样装置"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡7号2型采样装置采用技术澜衡7组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第7装备研究中心研发装备澜衡7号3型采样装置"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡7号3型采样装置采用技术澜衡7组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第7装备研究中心研发装备澜衡7号4型采样装置"
+    },
+    {
+      "document_id": "doc-7",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡7号4型采样装置采用技术澜衡7组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "邵青在澜衡第8装备研究中心任职"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第8装备研究中心研发装备澜衡8号1型采样装置"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡8号1型采样装置采用技术澜衡8组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第8装备研究中心研发装备澜衡8号2型采样装置"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡8号2型采样装置采用技术澜衡8组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第8装备研究中心研发装备澜衡8号3型采样装置"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡8号3型采样装置采用技术澜衡8组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第8装备研究中心研发装备澜衡8号4型采样装置"
+    },
+    {
+      "document_id": "doc-8",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡8号4型采样装置采用技术澜衡8组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "莫言在澜衡第9装备研究中心任职"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第9装备研究中心研发装备澜衡9号1型采样装置"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡9号1型采样装置采用技术澜衡9组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第9装备研究中心研发装备澜衡9号2型采样装置"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡9号2型采样装置采用技术澜衡9组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第9装备研究中心研发装备澜衡9号3型采样装置"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡9号3型采样装置采用技术澜衡9组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第9装备研究中心研发装备澜衡9号4型采样装置"
+    },
+    {
+      "document_id": "doc-9",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡9号4型采样装置采用技术澜衡9组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "俞川在澜衡第10装备研究中心任职"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "澜衡第10装备研究中心研发装备澜衡10号1型采样装置"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r3",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备澜衡10号1型采样装置采用技术澜衡10组1项信号校准技术"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第10装备研究中心研发装备澜衡10号2型采样装置"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r5",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡10号2型采样装置采用技术澜衡10组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第10装备研究中心研发装备澜衡10号3型采样装置"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r7",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡10号3型采样装置采用技术澜衡10组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r8",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第10装备研究中心研发装备澜衡10号4型采样装置"
+    },
+    {
+      "document_id": "doc-10",
+      "relation_id": "r9",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡10号4型采样装置采用技术澜衡10组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "人员褚宁在机构澜衡第11装备研究中心任职"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第11装备研究中心研发装备澜衡11号2型采样装置"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r3",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡11号2型采样装置采用技术澜衡11组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第11装备研究中心研发装备澜衡11号3型采样装置"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r5",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡11号3型采样装置采用技术澜衡11组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第11装备研究中心研发装备澜衡11号4型采样装置"
+    },
+    {
+      "document_id": "doc-11",
+      "relation_id": "r7",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡11号4型采样装置采用技术澜衡11组4项信号校准技术"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r1",
+      "head_entity_id": "e1",
+      "relationCode": "任职",
+      "tail_entity_id": "e2",
+      "source": "人员贺言在机构澜衡第12装备研究中心任职"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r2",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "澜衡第12装备研究中心研发装备澜衡12号2型采样装置"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r3",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "e6",
+      "source": "装备澜衡12号2型采样装置采用技术澜衡12组2项信号校准技术"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r4",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e7",
+      "source": "澜衡第12装备研究中心研发装备澜衡12号3型采样装置"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r5",
+      "head_entity_id": "e7",
+      "relationCode": "采用",
+      "tail_entity_id": "e8",
+      "source": "装备澜衡12号3型采样装置采用技术澜衡12组3项信号校准技术"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r6",
+      "head_entity_id": "e2",
+      "relationCode": "研发",
+      "tail_entity_id": "e9",
+      "source": "澜衡第12装备研究中心研发装备澜衡12号4型采样装置"
+    },
+    {
+      "document_id": "doc-12",
+      "relation_id": "r7",
+      "head_entity_id": "e9",
+      "relationCode": "采用",
+      "tail_entity_id": "e10",
+      "source": "装备澜衡12号4型采样装置采用技术澜衡12组4项信号校准技术"
+    }
+  ],
+  "normalization": "Remove Chinese quotation marks from source before matching the displayed source fragments; no prediction data used."
+}

@@ -1,0 +1,117 @@
+{
+  "metric": "cross-document/fusion",
+  "verified_at": "2026-10-26T05:51:24.288699+00:00",
+  "source_job_id": "cb5807f3b05e47e2b70218c554e7b42d",
+  "source_input_sha256": "5199eb46441bf2f50ac081f1886d2609153b7fb1f549e5dd16a18807ec599d73",
+  "existing_json_preserved": true,
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "path": "texts/document-1.txt",
+      "sha256": "587f58fdb7acca086d3703443ccd8c5d21c27324f3ee048f4e01db61328336d1",
+      "characters": 1249,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "path": "texts/document-10.txt",
+      "sha256": "f91cfc49ed006ff3096ab29f49351af7f0a1294a6a2b66295dab41cab903b979",
+      "characters": 1248,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "path": "texts/document-11.txt",
+      "sha256": "3dab5b142437d2c438c49c436ddf052051b9e26da616443fa8558feb93761f14",
+      "characters": 1251,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "path": "texts/document-12.txt",
+      "sha256": "c80e51f647f460f708ed686fa76d6d732c5a4974672f1697f531834525055f58",
+      "characters": 1251,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "path": "texts/document-2.txt",
+      "sha256": "9dc482749f7742f6f19a888a61e5e88fb894c03c20f26778d917b35c86a44f6f",
+      "characters": 1248,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "path": "texts/document-3.txt",
+      "sha256": "723a5cf044bac2320a1a005c60e902a5b494265ea438d3d6fb6150b55b9b677a",
+      "characters": 1240,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "path": "texts/document-4.txt",
+      "sha256": "158f332e4e129038cf221abbf34133db11835f5bc99416c55e2b514e612a70c9",
+      "characters": 1246,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "path": "texts/document-5.txt",
+      "sha256": "219348e21d978290028c636301d92d5a5df93a502e8a9708fdbb377a5e04b8c4",
+      "characters": 1253,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "path": "texts/document-6.txt",
+      "sha256": "3213a5588514038b13b617fe53b520cf70fd54dc6b9ea64ac0627a1f423e1dfb",
+      "characters": 1259,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "path": "texts/document-7.txt",
+      "sha256": "912b40aa81969ee41cff40715481845087cfaeb9608666ba4869a8c5ce729290",
+      "characters": 1258,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "path": "texts/document-8.txt",
+      "sha256": "932bf4644b64c8eaa2a1ebeb960d7d5889d97cf6d7a6fa9842d4db3ffcac7012",
+      "characters": 1254,
+      "matches_historical_input": true
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "path": "texts/document-9.txt",
+      "sha256": "b0601e5732bea6c8e1f74b1f79f173eb93771270d8c40c75f2225cb69db6b413",
+      "characters": 1256,
+      "matches_historical_input": true
+    }
+  ]
+}

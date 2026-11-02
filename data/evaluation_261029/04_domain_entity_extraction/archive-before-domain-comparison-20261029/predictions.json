@@ -1,0 +1,3472 @@
+{
+  "metric": "domain-entity-extraction",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "dee10a633841c0e2",
+            "name": "余昭",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c402c1ba4fcb487b",
+            "name": "澜衡第1装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "7618017e69bc6066",
+            "name": "澜衡1号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a5c2a10a78fbf244",
+            "name": "澜衡1组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "70ad9b1664036374",
+            "name": "澜衡1号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d204982db1ddfb31",
+            "name": "澜衡1组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "758a1d549573325c",
+            "name": "澜衡1号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "39e4ad423eaea429",
+            "name": "澜衡1组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6e61674107488b58",
+            "name": "澜衡1号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b30d70d2f787c181",
+            "name": "澜衡1组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "dee10a633841c0e2",
+            "relationCode": "任职于",
+            "tail_entity_id": "c402c1ba4fcb487b",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "c402c1ba4fcb487b",
+            "relationCode": "研发",
+            "tail_entity_id": "7618017e69bc6066",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "7618017e69bc6066",
+            "relationCode": "采用",
+            "tail_entity_id": "a5c2a10a78fbf244",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "c402c1ba4fcb487b",
+            "relationCode": "研发",
+            "tail_entity_id": "70ad9b1664036374",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "70ad9b1664036374",
+            "relationCode": "采用",
+            "tail_entity_id": "d204982db1ddfb31",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "c402c1ba4fcb487b",
+            "relationCode": "研发",
+            "tail_entity_id": "758a1d549573325c",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "758a1d549573325c",
+            "relationCode": "采用",
+            "tail_entity_id": "39e4ad423eaea429",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "c402c1ba4fcb487b",
+            "relationCode": "研发",
+            "tail_entity_id": "6e61674107488b58",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "6e61674107488b58",
+            "relationCode": "采用",
+            "tail_entity_id": "b30d70d2f787c181",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "dcf58d4aeaef103a",
+            "name": "俞川",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4af55acdead9ad42",
+            "name": "澜衡第10装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "391a5aef81af227a",
+            "name": "澜衡10号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "466aeac538115de7",
+            "name": "澜衡10组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "aae008d0040b2ab4",
+            "name": "澜衡10号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c241f9c0c12f8e44",
+            "name": "澜衡10组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "28a419d57fdd3e4a",
+            "name": "澜衡10号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ad6d6219d304badf",
+            "name": "澜衡10组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fb8d4fa4bb5e7016",
+            "name": "澜衡10号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "382e0e9360e57f7d",
+            "name": "澜衡10组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "dcf58d4aeaef103a",
+            "relationCode": "任职于",
+            "tail_entity_id": "4af55acdead9ad42",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "4af55acdead9ad42",
+            "relationCode": "研发",
+            "tail_entity_id": "391a5aef81af227a",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "391a5aef81af227a",
+            "relationCode": "采用",
+            "tail_entity_id": "466aeac538115de7",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "4af55acdead9ad42",
+            "relationCode": "研发",
+            "tail_entity_id": "aae008d0040b2ab4",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "aae008d0040b2ab4",
+            "relationCode": "采用",
+            "tail_entity_id": "c241f9c0c12f8e44",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "4af55acdead9ad42",
+            "relationCode": "研发",
+            "tail_entity_id": "28a419d57fdd3e4a",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "28a419d57fdd3e4a",
+            "relationCode": "采用",
+            "tail_entity_id": "ad6d6219d304badf",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "4af55acdead9ad42",
+            "relationCode": "研发",
+            "tail_entity_id": "fb8d4fa4bb5e7016",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "fb8d4fa4bb5e7016",
+            "relationCode": "采用",
+            "tail_entity_id": "382e0e9360e57f7d",
+            "cluster": null
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "391a5aef81af227a",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "466aeac538115de7",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "2",
+            "entity_id": "aae008d0040b2ab4",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "3",
+            "entity_id": "c241f9c0c12f8e44",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "4",
+            "entity_id": "28a419d57fdd3e4a",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "5",
+            "entity_id": "ad6d6219d304badf",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "6",
+            "entity_id": "fb8d4fa4bb5e7016",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "7",
+            "entity_id": "382e0e9360e57f7d",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "c0475b3cdd0459b5",
+            "name": "褚宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4b34a5ae41ab124d",
+            "name": "澜衡第11装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b0259f8f8c5e0d71",
+            "name": "光谱仪",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0d99338f4c60b292",
+            "name": "澜衡11号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3284745c25af6ee2",
+            "name": "澜衡11号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1be15b57b2712623",
+            "name": "澜衡11号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "64c8a852adfc9c61",
+            "name": "澜衡11组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d06fe8cd516f379a",
+            "name": "澜衡11组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "26225cadd4fb53fc",
+            "name": "澜衡11组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "c0475b3cdd0459b5",
+            "relationCode": "任职于",
+            "tail_entity_id": "4b34a5ae41ab124d",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "4b34a5ae41ab124d",
+            "relationCode": "研发",
+            "tail_entity_id": "0d99338f4c60b292",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "0d99338f4c60b292",
+            "relationCode": "采用",
+            "tail_entity_id": "64c8a852adfc9c61",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "4b34a5ae41ab124d",
+            "relationCode": "研发",
+            "tail_entity_id": "3284745c25af6ee2",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "3284745c25af6ee2",
+            "relationCode": "采用",
+            "tail_entity_id": "d06fe8cd516f379a",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "4b34a5ae41ab124d",
+            "relationCode": "研发",
+            "tail_entity_id": "1be15b57b2712623",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "1be15b57b2712623",
+            "relationCode": "采用",
+            "tail_entity_id": "26225cadd4fb53fc",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1f748baf3daa4524",
+            "name": "贺言",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b2cf01eafba74e2e",
+            "name": "澜衡第12装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "62c81b8f3c7009e5",
+            "name": "点云配准",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "65dc1974276aa60d",
+            "name": "澜衡12号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4056a0ebc57b6bde",
+            "name": "澜衡12组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a0a27c726d55ca6b",
+            "name": "澜衡12号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c609108759d21368",
+            "name": "澜衡12组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b87ebebb2e6d569a",
+            "name": "澜衡12号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8b97d16669e62e53",
+            "name": "澜衡12组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1f748baf3daa4524",
+            "relationCode": "任职于",
+            "tail_entity_id": "b2cf01eafba74e2e",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "b2cf01eafba74e2e",
+            "relationCode": "研发",
+            "tail_entity_id": "65dc1974276aa60d",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "65dc1974276aa60d",
+            "relationCode": "采用",
+            "tail_entity_id": "4056a0ebc57b6bde",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "b2cf01eafba74e2e",
+            "relationCode": "研发",
+            "tail_entity_id": "a0a27c726d55ca6b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "a0a27c726d55ca6b",
+            "relationCode": "采用",
+            "tail_entity_id": "c609108759d21368",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "b2cf01eafba74e2e",
+            "relationCode": "研发",
+            "tail_entity_id": "b87ebebb2e6d569a",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "b87ebebb2e6d569a",
+            "relationCode": "采用",
+            "tail_entity_id": "8b97d16669e62e53",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "62c81b8f3c7009e5",
+            "relationCode": "是同名但不同对象",
+            "tail_entity_id": "62c81b8f3c7009e5",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "44091729bddfa17d",
+            "name": "贺澜",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "21385536724c4ef3",
+            "name": "澜衡第2装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f09d987caaf8b659",
+            "name": "澜衡2号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cb8eaafa1445e080",
+            "name": "澜衡2组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4e8cafe34b7225fd",
+            "name": "澜衡2号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9e595a62a29657eb",
+            "name": "澜衡2组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "aaeccffbba893dd5",
+            "name": "澜衡2号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fb2bedd9f369e958",
+            "name": "澜衡2组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5d71af6d51803834",
+            "name": "澜衡2号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "34b7fe55aaeeda4c",
+            "name": "澜衡2组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "44091729bddfa17d",
+            "relationCode": "任职于",
+            "tail_entity_id": "21385536724c4ef3",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "21385536724c4ef3",
+            "relationCode": "研发",
+            "tail_entity_id": "f09d987caaf8b659",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "f09d987caaf8b659",
+            "relationCode": "采用",
+            "tail_entity_id": "cb8eaafa1445e080",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "21385536724c4ef3",
+            "relationCode": "研发",
+            "tail_entity_id": "4e8cafe34b7225fd",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "4e8cafe34b7225fd",
+            "relationCode": "采用",
+            "tail_entity_id": "9e595a62a29657eb",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "21385536724c4ef3",
+            "relationCode": "研发",
+            "tail_entity_id": "aaeccffbba893dd5",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "aaeccffbba893dd5",
+            "relationCode": "采用",
+            "tail_entity_id": "fb2bedd9f369e958",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "21385536724c4ef3",
+            "relationCode": "研发",
+            "tail_entity_id": "5d71af6d51803834",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "5d71af6d51803834",
+            "relationCode": "采用",
+            "tail_entity_id": "34b7fe55aaeeda4c",
+            "cluster": null
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "f09d987caaf8b659",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "cb8eaafa1445e080",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "2",
+            "entity_id": "4e8cafe34b7225fd",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "3",
+            "entity_id": "9e595a62a29657eb",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "4",
+            "entity_id": "aaeccffbba893dd5",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "5",
+            "entity_id": "fb2bedd9f369e958",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "6",
+            "entity_id": "5d71af6d51803834",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "7",
+            "entity_id": "34b7fe55aaeeda4c",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "387dd95c3eb33a42",
+            "name": "舒宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "54064c51e3b4e556",
+            "name": "澜衡第3装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "aede223082b36046",
+            "name": "澜衡3号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "dbcfef5f768296f4",
+            "name": "澜衡3组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "041616117f20a901",
+            "name": "澜衡3号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "67cbeee54853432b",
+            "name": "澜衡3组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c097a95e4157019b",
+            "name": "澜衡3号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d80136a8cb185c25",
+            "name": "澜衡3组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "50cf751bdfb18b12",
+            "name": "澜衡3号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "626c799ac4576fdb",
+            "name": "澜衡3组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "387dd95c3eb33a42",
+            "relationCode": "任职于",
+            "tail_entity_id": "54064c51e3b4e556",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "54064c51e3b4e556",
+            "relationCode": "研发",
+            "tail_entity_id": "aede223082b36046",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "aede223082b36046",
+            "relationCode": "采用",
+            "tail_entity_id": "dbcfef5f768296f4",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "54064c51e3b4e556",
+            "relationCode": "研发",
+            "tail_entity_id": "041616117f20a901",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "041616117f20a901",
+            "relationCode": "采用",
+            "tail_entity_id": "67cbeee54853432b",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "54064c51e3b4e556",
+            "relationCode": "研发",
+            "tail_entity_id": "c097a95e4157019b",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "c097a95e4157019b",
+            "relationCode": "采用",
+            "tail_entity_id": "d80136a8cb185c25",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "54064c51e3b4e556",
+            "relationCode": "研发",
+            "tail_entity_id": "50cf751bdfb18b12",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "50cf751bdfb18b12",
+            "relationCode": "采用",
+            "tail_entity_id": "626c799ac4576fdb",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "0612d7323f0da418",
+            "name": "季秋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e77f7609430ac6f9",
+            "name": "澜衡第4装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fe2a86bcd912f37b",
+            "name": "澜衡4号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c3dea0f32e54f084",
+            "name": "澜衡4组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1c8086186b5f70f2",
+            "name": "澜衡4号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "18137a3cbc8be199",
+            "name": "澜衡4组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f7b922cb4efda4fb",
+            "name": "澜衡4号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c028390a57daa3f8",
+            "name": "澜衡4组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8093d29a3f4c0366",
+            "name": "澜衡4号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d7fe3aad24530130",
+            "name": "澜衡4组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "0612d7323f0da418",
+            "relationCode": "任职于",
+            "tail_entity_id": "e77f7609430ac6f9",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e77f7609430ac6f9",
+            "relationCode": "研发",
+            "tail_entity_id": "fe2a86bcd912f37b",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "fe2a86bcd912f37b",
+            "relationCode": "采用",
+            "tail_entity_id": "c3dea0f32e54f084",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "e77f7609430ac6f9",
+            "relationCode": "研发",
+            "tail_entity_id": "1c8086186b5f70f2",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "1c8086186b5f70f2",
+            "relationCode": "采用",
+            "tail_entity_id": "18137a3cbc8be199",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "e77f7609430ac6f9",
+            "relationCode": "研发",
+            "tail_entity_id": "f7b922cb4efda4fb",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "f7b922cb4efda4fb",
+            "relationCode": "采用",
+            "tail_entity_id": "c028390a57daa3f8",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "e77f7609430ac6f9",
+            "relationCode": "研发",
+            "tail_entity_id": "8093d29a3f4c0366",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "8093d29a3f4c0366",
+            "relationCode": "采用",
+            "tail_entity_id": "d7fe3aad24530130",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "8ae5d3fbd4396cc6",
+            "name": "黎舟",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "07d66a701ea54795",
+            "name": "澜衡第5装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d1252aae6f272fe8",
+            "name": "澜衡5号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "059f28842cc63e23",
+            "name": "澜衡5组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ad7853ab943d5a6b",
+            "name": "澜衡5号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3867c17ecf4de39c",
+            "name": "澜衡5组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "61065a77951202ba",
+            "name": "澜衡5号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5c12f38e08364b1f",
+            "name": "澜衡5组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9fb1a5fc64ea65b0",
+            "name": "澜衡5号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5c63a227d097d07d",
+            "name": "澜衡5组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "8ae5d3fbd4396cc6",
+            "relationCode": "任职于",
+            "tail_entity_id": "07d66a701ea54795",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "07d66a701ea54795",
+            "relationCode": "研发",
+            "tail_entity_id": "d1252aae6f272fe8",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "d1252aae6f272fe8",
+            "relationCode": "采用",
+            "tail_entity_id": "059f28842cc63e23",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "07d66a701ea54795",
+            "relationCode": "研发",
+            "tail_entity_id": "ad7853ab943d5a6b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "ad7853ab943d5a6b",
+            "relationCode": "采用",
+            "tail_entity_id": "3867c17ecf4de39c",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "07d66a701ea54795",
+            "relationCode": "研发",
+            "tail_entity_id": "61065a77951202ba",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "61065a77951202ba",
+            "relationCode": "采用",
+            "tail_entity_id": "5c12f38e08364b1f",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "07d66a701ea54795",
+            "relationCode": "研发",
+            "tail_entity_id": "9fb1a5fc64ea65b0",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "9fb1a5fc64ea65b0",
+            "relationCode": "采用",
+            "tail_entity_id": "5c63a227d097d07d",
+            "cluster": null
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "d1252aae6f272fe8",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "059f28842cc63e23",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "2",
+            "entity_id": "ad7853ab943d5a6b",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "3",
+            "entity_id": "3867c17ecf4de39c",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "4",
+            "entity_id": "61065a77951202ba",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "5",
+            "entity_id": "5c12f38e08364b1f",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "6",
+            "entity_id": "9fb1a5fc64ea65b0",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "7",
+            "entity_id": "5c63a227d097d07d",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "db6a021c2e4ae9e8",
+            "name": "陶然",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fc24c843083efd11",
+            "name": "澜衡第6装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "49f3e8fc859ec319",
+            "name": "澜衡6号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b78de6e6e547b931",
+            "name": "澜衡6组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "15db2f479a52d94b",
+            "name": "澜衡6号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c537541628adcc08",
+            "name": "澜衡6组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2414a8ec3cae6d7e",
+            "name": "澜衡6号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c2cd8a9737f30d21",
+            "name": "澜衡6组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2fff67318585ca74",
+            "name": "澜衡6号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5782de67f8d677f5",
+            "name": "澜衡6组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "db6a021c2e4ae9e8",
+            "relationCode": "任职于",
+            "tail_entity_id": "fc24c843083efd11",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "fc24c843083efd11",
+            "relationCode": "研发",
+            "tail_entity_id": "49f3e8fc859ec319",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "49f3e8fc859ec319",
+            "relationCode": "采用",
+            "tail_entity_id": "b78de6e6e547b931",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "fc24c843083efd11",
+            "relationCode": "研发",
+            "tail_entity_id": "15db2f479a52d94b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "15db2f479a52d94b",
+            "relationCode": "采用",
+            "tail_entity_id": "c537541628adcc08",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "fc24c843083efd11",
+            "relationCode": "研发",
+            "tail_entity_id": "2414a8ec3cae6d7e",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "2414a8ec3cae6d7e",
+            "relationCode": "采用",
+            "tail_entity_id": "c2cd8a9737f30d21",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "fc24c843083efd11",
+            "relationCode": "研发",
+            "tail_entity_id": "2fff67318585ca74",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "2fff67318585ca74",
+            "relationCode": "采用",
+            "tail_entity_id": "5782de67f8d677f5",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f0b662eb527c4498",
+            "name": "霍宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5d160c4e42652cc5",
+            "name": "澜衡第7装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0d0559aac4a03134",
+            "name": "澜衡7号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "53a531f16c22868c",
+            "name": "澜衡7组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c4ebb20550c42a20",
+            "name": "澜衡7号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "66054d68d4f75a19",
+            "name": "澜衡7组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e3c1fb46339848d9",
+            "name": "澜衡7号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "415d338e549ddecd",
+            "name": "澜衡7组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0a7d41a32e018f11",
+            "name": "澜衡7号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "382921ad929015d6",
+            "name": "澜衡7组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f0b662eb527c4498",
+            "relationCode": "任职于",
+            "tail_entity_id": "5d160c4e42652cc5",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "5d160c4e42652cc5",
+            "relationCode": "研发",
+            "tail_entity_id": "0d0559aac4a03134",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "0d0559aac4a03134",
+            "relationCode": "采用",
+            "tail_entity_id": "53a531f16c22868c",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "5d160c4e42652cc5",
+            "relationCode": "研发",
+            "tail_entity_id": "c4ebb20550c42a20",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "c4ebb20550c42a20",
+            "relationCode": "采用",
+            "tail_entity_id": "66054d68d4f75a19",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "5d160c4e42652cc5",
+            "relationCode": "研发",
+            "tail_entity_id": "e3c1fb46339848d9",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "e3c1fb46339848d9",
+            "relationCode": "采用",
+            "tail_entity_id": "415d338e549ddecd",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "5d160c4e42652cc5",
+            "relationCode": "研发",
+            "tail_entity_id": "0a7d41a32e018f11",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "0a7d41a32e018f11",
+            "relationCode": "采用",
+            "tail_entity_id": "382921ad929015d6",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "c34c32f5b0f175f5",
+            "name": "邵青",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "800c775be0977a83",
+            "name": "澜衡第8装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "16d830ee9cd716f2",
+            "name": "澜衡8号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "77fbf33dbe884a29",
+            "name": "澜衡8组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fd4dc1e9beeb1722",
+            "name": "澜衡8号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5d7aa1d7f72fad3b",
+            "name": "澜衡8组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f3ee6aee196161f6",
+            "name": "澜衡8号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a2727935299da630",
+            "name": "澜衡8组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "74a71a028d88e680",
+            "name": "澜衡8号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ef9b192a0ea251e0",
+            "name": "澜衡8组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "c34c32f5b0f175f5",
+            "relationCode": "任职于",
+            "tail_entity_id": "800c775be0977a83",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "800c775be0977a83",
+            "relationCode": "研发",
+            "tail_entity_id": "16d830ee9cd716f2",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "16d830ee9cd716f2",
+            "relationCode": "采用",
+            "tail_entity_id": "77fbf33dbe884a29",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "800c775be0977a83",
+            "relationCode": "研发",
+            "tail_entity_id": "fd4dc1e9beeb1722",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "fd4dc1e9beeb1722",
+            "relationCode": "采用",
+            "tail_entity_id": "5d7aa1d7f72fad3b",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "800c775be0977a83",
+            "relationCode": "研发",
+            "tail_entity_id": "f3ee6aee196161f6",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "f3ee6aee196161f6",
+            "relationCode": "采用",
+            "tail_entity_id": "a2727935299da630",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "800c775be0977a83",
+            "relationCode": "研发",
+            "tail_entity_id": "74a71a028d88e680",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "74a71a028d88e680",
+            "relationCode": "采用",
+            "tail_entity_id": "ef9b192a0ea251e0",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "e5dc1e1bed14ff04",
+            "name": "莫言",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5e50fbaf1dba5e1d",
+            "name": "澜衡第9装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cda5d78726e51429",
+            "name": "澜衡9号1型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cc290418afd0f51f",
+            "name": "澜衡9组1项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "50e1cded50e98a2b",
+            "name": "澜衡9号2型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ae364c5036f498a4",
+            "name": "澜衡9组2项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e5eb0d0721abfb94",
+            "name": "澜衡9号3型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "aaba065290dcd653",
+            "name": "澜衡9组3项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0a2936a4b507d348",
+            "name": "澜衡9号4型采样装置",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "7c84e8fdbef25d06",
+            "name": "澜衡9组4项信号校准技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "e5dc1e1bed14ff04",
+            "relationCode": "任职于",
+            "tail_entity_id": "5e50fbaf1dba5e1d",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "5e50fbaf1dba5e1d",
+            "relationCode": "研发",
+            "tail_entity_id": "cda5d78726e51429",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "cda5d78726e51429",
+            "relationCode": "采用",
+            "tail_entity_id": "cc290418afd0f51f",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "5e50fbaf1dba5e1d",
+            "relationCode": "研发",
+            "tail_entity_id": "50e1cded50e98a2b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "50e1cded50e98a2b",
+            "relationCode": "采用",
+            "tail_entity_id": "ae364c5036f498a4",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "5e50fbaf1dba5e1d",
+            "relationCode": "研发",
+            "tail_entity_id": "e5eb0d0721abfb94",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "e5eb0d0721abfb94",
+            "relationCode": "采用",
+            "tail_entity_id": "aaba065290dcd653",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "5e50fbaf1dba5e1d",
+            "relationCode": "研发",
+            "tail_entity_id": "0a2936a4b507d348",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "0a2936a4b507d348",
+            "relationCode": "采用",
+            "tail_entity_id": "7c84e8fdbef25d06",
+            "cluster": null
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "cda5d78726e51429",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "cc290418afd0f51f",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "2",
+            "entity_id": "50e1cded50e98a2b",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "3",
+            "entity_id": "ae364c5036f498a4",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "4",
+            "entity_id": "e5eb0d0721abfb94",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "5",
+            "entity_id": "aaba065290dcd653",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          },
+          {
+            "attribute_id": "6",
+            "entity_id": "0a2936a4b507d348",
+            "key": "类型",
+            "value": "物理设备",
+            "cluster": null
+          },
+          {
+            "attribute_id": "7",
+            "entity_id": "7c84e8fdbef25d06",
+            "key": "类型",
+            "value": "实现方法",
+            "cluster": null
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      }
+    ],
+    "baseline_documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "84c13f513f77163d",
+            "name": "余昭",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ceb24eb35be0a8f1",
+            "name": "澜衡第1装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "03acf14ee783a329",
+            "name": "澜衡1号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3594ee43fb21d6fb",
+            "name": "澜衡1组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f93acb282016000c",
+            "name": "澜衡1号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "438616300c84e493",
+            "name": "澜衡1组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0cc2d8e6f8f2d60e",
+            "name": "澜衡1号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "00713b757d318bd7",
+            "name": "澜衡1组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "04ea2cdc5e45c00e",
+            "name": "澜衡1号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c85e81ef67f3b2dd",
+            "name": "澜衡1组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "84c13f513f77163d",
+            "relationCode": "任职于",
+            "tail_entity_id": "ceb24eb35be0a8f1",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "ceb24eb35be0a8f1",
+            "relationCode": "研发",
+            "tail_entity_id": "03acf14ee783a329",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "03acf14ee783a329",
+            "relationCode": "采用",
+            "tail_entity_id": "3594ee43fb21d6fb",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "ceb24eb35be0a8f1",
+            "relationCode": "研发",
+            "tail_entity_id": "f93acb282016000c",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "f93acb282016000c",
+            "relationCode": "采用",
+            "tail_entity_id": "438616300c84e493",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "ceb24eb35be0a8f1",
+            "relationCode": "研发",
+            "tail_entity_id": "0cc2d8e6f8f2d60e",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "0cc2d8e6f8f2d60e",
+            "relationCode": "采用",
+            "tail_entity_id": "00713b757d318bd7",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "ceb24eb35be0a8f1",
+            "relationCode": "研发",
+            "tail_entity_id": "04ea2cdc5e45c00e",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "04ea2cdc5e45c00e",
+            "relationCode": "采用",
+            "tail_entity_id": "c85e81ef67f3b2dd",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "e816852f8f5ebfc2",
+            "name": "俞川",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e762205f8fb4d22b",
+            "name": "澜衡第10装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2b9c2bbce0158fbc",
+            "name": "澜衡10号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6acb0e4077f08bbd",
+            "name": "澜衡10组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "dcc6b43a870f90b3",
+            "name": "澜衡10号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "43f979574c0118e4",
+            "name": "澜衡10组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "db82b4131b990e7c",
+            "name": "澜衡10号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5ba58ba52bf18a30",
+            "name": "澜衡10组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a1c1f79a237ba882",
+            "name": "澜衡10号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "943dd3c5fc5a18ba",
+            "name": "澜衡10组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "e816852f8f5ebfc2",
+            "relationCode": "任职于",
+            "tail_entity_id": "e762205f8fb4d22b",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e762205f8fb4d22b",
+            "relationCode": "研发",
+            "tail_entity_id": "2b9c2bbce0158fbc",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "2b9c2bbce0158fbc",
+            "relationCode": "采用",
+            "tail_entity_id": "6acb0e4077f08bbd",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "e762205f8fb4d22b",
+            "relationCode": "研发",
+            "tail_entity_id": "dcc6b43a870f90b3",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "dcc6b43a870f90b3",
+            "relationCode": "采用",
+            "tail_entity_id": "43f979574c0118e4",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "e762205f8fb4d22b",
+            "relationCode": "研发",
+            "tail_entity_id": "db82b4131b990e7c",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "db82b4131b990e7c",
+            "relationCode": "采用",
+            "tail_entity_id": "5ba58ba52bf18a30",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "e762205f8fb4d22b",
+            "relationCode": "研发",
+            "tail_entity_id": "a1c1f79a237ba882",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "a1c1f79a237ba882",
+            "relationCode": "采用",
+            "tail_entity_id": "943dd3c5fc5a18ba",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7f56688ff52c4508",
+            "name": "褚宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "db5d15c121546d2c",
+            "name": "澜衡第11装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "09b2253889491701",
+            "name": "光谱仪",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7f56688ff52c4508",
+            "relationCode": "任职于",
+            "tail_entity_id": "db5d15c121546d2c",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "6633893827f80399",
+            "name": "贺言",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b97cb6cd6f1bf53f",
+            "name": "澜衡第12装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e04b3138180c472e",
+            "name": "点云配准",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "6633893827f80399",
+            "relationCode": "任职于",
+            "tail_entity_id": "b97cb6cd6f1bf53f",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "db4b43a32d2655e1",
+            "name": "贺澜",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b5ad71129ece59b4",
+            "name": "澜衡第2装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b7823426a35d2973",
+            "name": "澜衡2号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "60c12b3b46781f58",
+            "name": "澜衡2号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8bc66365071d54e3",
+            "name": "澜衡2号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ddb478dfa75f07b8",
+            "name": "澜衡2号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "75d752d442bcd546",
+            "name": "澜衡2组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3e2549d3e7ee1172",
+            "name": "澜衡2组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6d32610bbf81e606",
+            "name": "澜衡2组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ad18a37e49ee66c5",
+            "name": "澜衡2组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "db4b43a32d2655e1",
+            "relationCode": "任职于",
+            "tail_entity_id": "b5ad71129ece59b4",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "b5ad71129ece59b4",
+            "relationCode": "研发",
+            "tail_entity_id": "b7823426a35d2973",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "b7823426a35d2973",
+            "relationCode": "采用",
+            "tail_entity_id": "75d752d442bcd546",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "b5ad71129ece59b4",
+            "relationCode": "研发",
+            "tail_entity_id": "60c12b3b46781f58",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "60c12b3b46781f58",
+            "relationCode": "采用",
+            "tail_entity_id": "3e2549d3e7ee1172",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "b5ad71129ece59b4",
+            "relationCode": "研发",
+            "tail_entity_id": "8bc66365071d54e3",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "8bc66365071d54e3",
+            "relationCode": "采用",
+            "tail_entity_id": "6d32610bbf81e606",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "b5ad71129ece59b4",
+            "relationCode": "研发",
+            "tail_entity_id": "ddb478dfa75f07b8",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "ddb478dfa75f07b8",
+            "relationCode": "采用",
+            "tail_entity_id": "ad18a37e49ee66c5",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "70811a42e928cd61",
+            "name": "舒宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9a0d1070b3c477e1",
+            "name": "澜衡第3装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "00e65b704c9abf7e",
+            "name": "澜衡3号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b3d83b071c84d3b7",
+            "name": "澜衡3组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6b56a7585777820b",
+            "name": "澜衡3号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bd065a8bc0ab15bf",
+            "name": "澜衡3组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cb08e84165ce9a8f",
+            "name": "澜衡3号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "27a39a4b32f71d0c",
+            "name": "澜衡3组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8245328ef901ecd3",
+            "name": "澜衡3号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f92015370be8cc19",
+            "name": "澜衡3组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "70811a42e928cd61",
+            "relationCode": "任职于",
+            "tail_entity_id": "9a0d1070b3c477e1",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "9a0d1070b3c477e1",
+            "relationCode": "研发",
+            "tail_entity_id": "00e65b704c9abf7e",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "00e65b704c9abf7e",
+            "relationCode": "采用",
+            "tail_entity_id": "b3d83b071c84d3b7",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "9a0d1070b3c477e1",
+            "relationCode": "研发",
+            "tail_entity_id": "6b56a7585777820b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "6b56a7585777820b",
+            "relationCode": "采用",
+            "tail_entity_id": "bd065a8bc0ab15bf",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "9a0d1070b3c477e1",
+            "relationCode": "研发",
+            "tail_entity_id": "cb08e84165ce9a8f",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "cb08e84165ce9a8f",
+            "relationCode": "采用",
+            "tail_entity_id": "27a39a4b32f71d0c",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "9a0d1070b3c477e1",
+            "relationCode": "研发",
+            "tail_entity_id": "8245328ef901ecd3",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "8245328ef901ecd3",
+            "relationCode": "采用",
+            "tail_entity_id": "f92015370be8cc19",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2fc13e588abceb65",
+            "name": "季秋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f9392b4edcc3ab1c",
+            "name": "澜衡第4装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0b6196134cadada5",
+            "name": "澜衡4号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1cffa2920e9eef5f",
+            "name": "澜衡4组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8385205598c1a5e0",
+            "name": "澜衡4号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3c6b0234342d5087",
+            "name": "澜衡4组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c17c0175f1212381",
+            "name": "澜衡4号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "944a5fbebc365ba1",
+            "name": "澜衡4组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e49ffcf183b79a00",
+            "name": "澜衡4号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "53da2f57a4a19c57",
+            "name": "澜衡4组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2fc13e588abceb65",
+            "relationCode": "任职于",
+            "tail_entity_id": "f9392b4edcc3ab1c",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "f9392b4edcc3ab1c",
+            "relationCode": "研发",
+            "tail_entity_id": "0b6196134cadada5",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "0b6196134cadada5",
+            "relationCode": "采用",
+            "tail_entity_id": "1cffa2920e9eef5f",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "f9392b4edcc3ab1c",
+            "relationCode": "研发",
+            "tail_entity_id": "8385205598c1a5e0",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "8385205598c1a5e0",
+            "relationCode": "采用",
+            "tail_entity_id": "3c6b0234342d5087",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "f9392b4edcc3ab1c",
+            "relationCode": "研发",
+            "tail_entity_id": "c17c0175f1212381",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "c17c0175f1212381",
+            "relationCode": "采用",
+            "tail_entity_id": "944a5fbebc365ba1",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "f9392b4edcc3ab1c",
+            "relationCode": "研发",
+            "tail_entity_id": "e49ffcf183b79a00",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "e49ffcf183b79a00",
+            "relationCode": "采用",
+            "tail_entity_id": "53da2f57a4a19c57",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "37fb8b71e6ef8111",
+            "name": "黎舟",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "17bc4c8e99190987",
+            "name": "澜衡第5装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "33999d0570c25461",
+            "name": "澜衡5号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9f695844260db856",
+            "name": "澜衡5组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a3aeeafee2d75262",
+            "name": "澜衡5号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4de9395b96228397",
+            "name": "澜衡5组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "69629ce5443a7cec",
+            "name": "澜衡5号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bebf24e07a6e5ebb",
+            "name": "澜衡5组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6afd55a9dd2e587e",
+            "name": "澜衡5号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cd4871bfebf764d7",
+            "name": "澜衡5组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "37fb8b71e6ef8111",
+            "relationCode": "任职于",
+            "tail_entity_id": "17bc4c8e99190987",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "17bc4c8e99190987",
+            "relationCode": "研发",
+            "tail_entity_id": "33999d0570c25461",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "33999d0570c25461",
+            "relationCode": "采用",
+            "tail_entity_id": "9f695844260db856",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "17bc4c8e99190987",
+            "relationCode": "研发",
+            "tail_entity_id": "a3aeeafee2d75262",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "a3aeeafee2d75262",
+            "relationCode": "采用",
+            "tail_entity_id": "4de9395b96228397",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "17bc4c8e99190987",
+            "relationCode": "研发",
+            "tail_entity_id": "69629ce5443a7cec",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "69629ce5443a7cec",
+            "relationCode": "采用",
+            "tail_entity_id": "bebf24e07a6e5ebb",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "17bc4c8e99190987",
+            "relationCode": "研发",
+            "tail_entity_id": "6afd55a9dd2e587e",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "6afd55a9dd2e587e",
+            "relationCode": "采用",
+            "tail_entity_id": "cd4871bfebf764d7",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "4d2365631ddd94fb",
+            "name": "陶然",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e6b14c6db4b5c3aa",
+            "name": "澜衡第6装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6129c51083ac618a",
+            "name": "澜衡6号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "441c45d870004a1f",
+            "name": "澜衡6组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "40ec9e8894823ea0",
+            "name": "澜衡6号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b5451ed74e8446c2",
+            "name": "澜衡6组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1ec0df1142e89efc",
+            "name": "澜衡6号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a7031fe98e655f2c",
+            "name": "澜衡6组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "387aef6eb56d37a3",
+            "name": "澜衡6号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "566e06262675860a",
+            "name": "澜衡6组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "4d2365631ddd94fb",
+            "relationCode": "任职于",
+            "tail_entity_id": "e6b14c6db4b5c3aa",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e6b14c6db4b5c3aa",
+            "relationCode": "研发",
+            "tail_entity_id": "6129c51083ac618a",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "6129c51083ac618a",
+            "relationCode": "采用",
+            "tail_entity_id": "441c45d870004a1f",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "e6b14c6db4b5c3aa",
+            "relationCode": "研发",
+            "tail_entity_id": "40ec9e8894823ea0",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "40ec9e8894823ea0",
+            "relationCode": "采用",
+            "tail_entity_id": "b5451ed74e8446c2",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "e6b14c6db4b5c3aa",
+            "relationCode": "研发",
+            "tail_entity_id": "1ec0df1142e89efc",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "1ec0df1142e89efc",
+            "relationCode": "采用",
+            "tail_entity_id": "a7031fe98e655f2c",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "e6b14c6db4b5c3aa",
+            "relationCode": "研发",
+            "tail_entity_id": "387aef6eb56d37a3",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "387aef6eb56d37a3",
+            "relationCode": "采用",
+            "tail_entity_id": "566e06262675860a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1d856288b2b712af",
+            "name": "霍宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8d70f2a98d298ae4",
+            "name": "澜衡第7装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "41ff90a5325f22a2",
+            "name": "澜衡7号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b95b2ba95c84b80a",
+            "name": "澜衡7组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9c4e76d5274f3138",
+            "name": "澜衡7号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "794d7748a9770cd8",
+            "name": "澜衡7组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1d0b0d7d25b31198",
+            "name": "澜衡7号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "690ce25ca7b4d4da",
+            "name": "澜衡7组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1b3c168075b836b6",
+            "name": "澜衡7号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "64a62815726f8259",
+            "name": "澜衡7组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1d856288b2b712af",
+            "relationCode": "任职于",
+            "tail_entity_id": "8d70f2a98d298ae4",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "8d70f2a98d298ae4",
+            "relationCode": "研发",
+            "tail_entity_id": "41ff90a5325f22a2",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "41ff90a5325f22a2",
+            "relationCode": "采用",
+            "tail_entity_id": "b95b2ba95c84b80a",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "8d70f2a98d298ae4",
+            "relationCode": "研发",
+            "tail_entity_id": "9c4e76d5274f3138",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "9c4e76d5274f3138",
+            "relationCode": "采用",
+            "tail_entity_id": "794d7748a9770cd8",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "8d70f2a98d298ae4",
+            "relationCode": "研发",
+            "tail_entity_id": "1d0b0d7d25b31198",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "1d0b0d7d25b31198",
+            "relationCode": "采用",
+            "tail_entity_id": "690ce25ca7b4d4da",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "8d70f2a98d298ae4",
+            "relationCode": "研发",
+            "tail_entity_id": "1b3c168075b836b6",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "1b3c168075b836b6",
+            "relationCode": "采用",
+            "tail_entity_id": "64a62815726f8259",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "4a1d2a025fcf0df4",
+            "name": "邵青",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6086f5bd6ac1ee79",
+            "name": "澜衡第8装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2645bd6acacd87d1",
+            "name": "澜衡8号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2fc037f99d0d6c92",
+            "name": "澜衡8组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1b8fe47f02e98b68",
+            "name": "澜衡8号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "463894b399a1da4a",
+            "name": "澜衡8组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fbe5f2800076d4c6",
+            "name": "澜衡8号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e4affb53b199d12b",
+            "name": "澜衡8组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "27e3856c1df2ec42",
+            "name": "澜衡8号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5e936b61014f65cc",
+            "name": "澜衡8组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "4a1d2a025fcf0df4",
+            "relationCode": "任职于",
+            "tail_entity_id": "6086f5bd6ac1ee79",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "6086f5bd6ac1ee79",
+            "relationCode": "研发",
+            "tail_entity_id": "2645bd6acacd87d1",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "2645bd6acacd87d1",
+            "relationCode": "采用",
+            "tail_entity_id": "2fc037f99d0d6c92",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "6086f5bd6ac1ee79",
+            "relationCode": "研发",
+            "tail_entity_id": "1b8fe47f02e98b68",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "1b8fe47f02e98b68",
+            "relationCode": "采用",
+            "tail_entity_id": "463894b399a1da4a",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "6086f5bd6ac1ee79",
+            "relationCode": "研发",
+            "tail_entity_id": "fbe5f2800076d4c6",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "fbe5f2800076d4c6",
+            "relationCode": "采用",
+            "tail_entity_id": "e4affb53b199d12b",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "6086f5bd6ac1ee79",
+            "relationCode": "研发",
+            "tail_entity_id": "27e3856c1df2ec42",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "27e3856c1df2ec42",
+            "relationCode": "采用",
+            "tail_entity_id": "5e936b61014f65cc",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "4802d561ef66d3ab",
+            "name": "莫言",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f6f8dece80a42116",
+            "name": "澜衡第9装备研究中心",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5161fa56ad73e8b8",
+            "name": "澜衡9号1型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3ebb2913d447aac4",
+            "name": "澜衡9组1项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8587a6f46d37c0aa",
+            "name": "澜衡9号2型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "21e8262e8e1ec789",
+            "name": "澜衡9组2项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "64496d18568de3bb",
+            "name": "澜衡9号3型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d6406a13436e54a2",
+            "name": "澜衡9组3项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "db53b80332cf5786",
+            "name": "澜衡9号4型采样装置",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c6e997c0b43e3cc1",
+            "name": "澜衡9组4项信号校准技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "4802d561ef66d3ab",
+            "relationCode": "任职于",
+            "tail_entity_id": "f6f8dece80a42116",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "f6f8dece80a42116",
+            "relationCode": "研发",
+            "tail_entity_id": "5161fa56ad73e8b8",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "5161fa56ad73e8b8",
+            "relationCode": "采用",
+            "tail_entity_id": "3ebb2913d447aac4",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "f6f8dece80a42116",
+            "relationCode": "研发",
+            "tail_entity_id": "8587a6f46d37c0aa",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "8587a6f46d37c0aa",
+            "relationCode": "采用",
+            "tail_entity_id": "21e8262e8e1ec789",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "f6f8dece80a42116",
+            "relationCode": "研发",
+            "tail_entity_id": "64496d18568de3bb",
+            "cluster": null
+          },
+          {
+            "relation_id": "6",
+            "head_entity_id": "64496d18568de3bb",
+            "relationCode": "采用",
+            "tail_entity_id": "d6406a13436e54a2",
+            "cluster": null
+          },
+          {
+            "relation_id": "7",
+            "head_entity_id": "f6f8dece80a42116",
+            "relationCode": "研发",
+            "tail_entity_id": "db53b80332cf5786",
+            "cluster": null
+          },
+          {
+            "relation_id": "8",
+            "head_entity_id": "db53b80332cf5786",
+            "relationCode": "采用",
+            "tail_entity_id": "c6e997c0b43e3cc1",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name_mapping_policy": "source",
+  "entity_types": [
+    "人物",
+    "组织"
+  ],
+  "entity_attributes": {},
+  "relation_types": [
+    "任职",
+    "研发",
+    "采用"
+  ],
+  "domain_entity_types": [
+    "装备",
+    "技术"
+  ],
+  "compare_baseline": true,
+  "block_size": 4000,
+  "similarity_threshold": 0.88,
+  "attribute_similarity_threshold": 0.92,
+  "relation_similarity_threshold": 0.9,
+  "use_llm_resolution": false,
+  "time_granularities": [
+    "year",
+    "month",
+    "day"
+  ],
+  "space_granularities": [
+    "country",
+    "province",
+    "city",
+    "district"
+  ],
+  "reference_date": null
+}

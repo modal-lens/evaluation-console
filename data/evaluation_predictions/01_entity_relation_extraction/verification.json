@@ -1,0 +1,62 @@
+{
+  "metric": "entity-relation-extraction",
+  "source_report": "F:\\pywork\\codex_work\\nanjing_zncl\\data\\evaluation_batches_diverse\\reports\\final-run-20261023\\01_entity_relation_extraction-1.json",
+  "source_report_sha256": "d33943acafdcd1a356fb9e4883e1f49c43c88985bd23604ed82955e334c47e98",
+  "source_job_id": "2b00746528154396a2a8d9823fdd25f8",
+  "source_created_at": "2026-10-23T09:40:04.851421+00:00",
+  "verified_at": "2026-10-26T03:24:11.763078+00:00",
+  "same_metrics_as_source": true,
+  "algorithm_calls": 0,
+  "sha256": {
+    "predictions.json": "ef699e4cd75f4b7d93c204c5b799e934f8049f63fec9406f189e9dbbc9172153",
+    "gold.json": "80cebe4bb91f768e46117e09da8846682c6f22175e9dd7fdf74661f18542b280",
+    "options.json": "7e01ed9d5034ae5529b9cda82d62b00d9cdcc97db06dd16c625fc181f0ed4f47",
+    "texts/document-1.txt": "b3ac75079e3e4ca24e22620af772eb4d3a51c3cddebea71d470ad16a0a5fb6a1",
+    "texts/document-10.txt": "b1c7d97cbf48ddf2c80f092b7ef806c61ef22c79860b2abaf3a4da79aa7d4a27",
+    "texts/document-11.txt": "74c40650cb25aaa0b02f50395423b8906822cf4113db221fc0b0c9a1174c90b7",
+    "texts/document-12.txt": "c339a0ee0fb320fc0ccbeec7479fa4e6778bec029e3a20f44fdfffc9691fa48d",
+    "texts/document-2.txt": "014ac4b2c404795a3d7a64f5d0fb670a9a81412c7f43f514946f600d5cbef730",
+    "texts/document-3.txt": "3b24614fda7dbabd60e06a7a467b2d32cd0b4eb9a8d5ed7aafc406e97d1f8969",
+    "texts/document-4.txt": "bceb43b85bec61f0613017a1f93aab966cbdaa024bf34a9cd6b9adcaeb9544b7",
+    "texts/document-5.txt": "f9cc846260794387d7fc018ec75a47fb01cabb3dc94991d190f007cdf5c7ecb5",
+    "texts/document-6.txt": "1381f8f1cd1feb7df3f82e56913a458acd23f8abcdcc1ebd5ca49006eb793cdd",
+    "texts/document-7.txt": "70e3040ec40908bdaf796198ed23d00ac38b8b63d9222152df59a32458956ed0",
+    "texts/document-8.txt": "b5a1f062596f9a9d078f7a72455306f4d919316356c7e7483d1c065cb75adf94",
+    "texts/document-9.txt": "b68d8b51c1badba8005750a814e5a2c1362f805285a8baf74d466211bbc4f727"
+  },
+  "metrics": {
+    "entity-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 48,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "relation-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 36
+    }
+  },
+  "quality_scores": {
+    "entity-extraction/f1": 1.0,
+    "entity-extraction/precision": 1.0,
+    "entity-extraction/recall": 1.0,
+    "relation-extraction/f1": 1.0,
+    "relation-extraction/precision": 1.0,
+    "relation-extraction/recall": 1.0
+  },
+  "texts_match_historical_input": true,
+  "texts_verified_at": "2026-10-26T05:51:24.137427+00:00",
+  "text_documents": 12
+}

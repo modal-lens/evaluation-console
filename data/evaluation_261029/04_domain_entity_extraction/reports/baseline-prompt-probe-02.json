@@ -1,0 +1,175 @@
+{
+  "document": "document-3.txt",
+  "baseline_options": {
+    "name_mapping_policy": "source",
+    "entity_types": [],
+    "entity_attributes": {},
+    "relation_types": [],
+    "domain_entity_types": [],
+    "compare_baseline": true,
+    "block_size": 4000,
+    "similarity_threshold": 0.88,
+    "attribute_similarity_threshold": 0.92,
+    "relation_similarity_threshold": 0.9,
+    "use_llm_resolution": false,
+    "time_granularities": [
+      "year",
+      "month",
+      "day"
+    ],
+    "space_granularities": [
+      "country",
+      "province",
+      "city",
+      "district"
+    ],
+    "reference_date": null
+  },
+  "prediction": {
+    "entities": [
+      {
+        "name": "舒宁",
+        "type": "人物",
+        "attributes": {},
+        "entity_id": "21afb0c785c63229",
+        "description": "在澜衡第3装备研究中心任职"
+      },
+      {
+        "name": "澜衡第3装备研究中心",
+        "type": "组织",
+        "attributes": {},
+        "entity_id": "89a9756b7c068ed8",
+        "description": "研发多种采样装置和技术"
+      },
+      {
+        "name": "澜衡3号1型采样装置",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "aacb9df05a2f1298",
+        "description": "登记中的物理设备"
+      },
+      {
+        "name": "澜衡3组1项信号校准技术",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "f2c7e0bffbeecf62",
+        "description": "实现方法"
+      },
+      {
+        "name": "澜衡3号2型采样装置",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "e18a1da813e005dd",
+        "description": "登记中的物理设备"
+      },
+      {
+        "name": "澜衡3组2项信号校准技术",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "64d5f0ea343b8458",
+        "description": "实现方法"
+      },
+      {
+        "name": "澜衡3号3型采样装置",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "27b0813492b4cff6",
+        "description": "登记中的物理设备"
+      },
+      {
+        "name": "澜衡3组3项信号校准技术",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "7b95d6bb522f166c",
+        "description": "实现方法"
+      },
+      {
+        "name": "澜衡3号4型采样装置",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "8e3bc291802a3e69",
+        "description": "登记中的物理设备"
+      },
+      {
+        "name": "澜衡3组4项信号校准技术",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "2075f186d0ad6cf0",
+        "description": "实现方法"
+      }
+    ],
+    "relations": [
+      {
+        "head_entity_id": "21afb0c785c63229",
+        "relationCode": "在...任职",
+        "tail_entity_id": "89a9756b7c068ed8",
+        "evidence": "舒宁在澜衡第3装备研究中心任职。"
+      },
+      {
+        "head_entity_id": "89a9756b7c068ed8",
+        "relationCode": "研发",
+        "tail_entity_id": "aacb9df05a2f1298",
+        "evidence": "澜衡第3装备研究中心研发装备“澜衡3号1型采样装置”"
+      },
+      {
+        "head_entity_id": "aacb9df05a2f1298",
+        "relationCode": "采用",
+        "tail_entity_id": "f2c7e0bffbeecf62",
+        "evidence": "装备“澜衡3号1型采样装置”采用技术“澜衡3组1项信号校准技术”"
+      },
+      {
+        "head_entity_id": "89a9756b7c068ed8",
+        "relationCode": "研发",
+        "tail_entity_id": "e18a1da813e005dd",
+        "evidence": "澜衡第3装备研究中心研发装备“澜衡3号2型采样装置”"
+      },
+      {
+        "head_entity_id": "e18a1da813e005dd",
+        "relationCode": "采用",
+        "tail_entity_id": "64d5f0ea343b8458",
+        "evidence": "装备“澜衡3号2型采样装置”采用技术“澜:3组2项信号校准技术”"
+      },
+      {
+        "head_entity_id": "89a9756b7c068ed8",
+        "relationCode": "研发",
+        "tail_entity_id": "27b0813492b4cff6",
+        "evidence": "澜衡第3装备研究中心研发装备“澜衡3号3型采样装置”"
+      },
+      {
+        "head_entity_id": "27b0813492b4cff6",
+        "relationCode": "采用",
+        "tail_entity_id": "7b95d6bb522f166c",
+        "evidence": "装备“澜衡3号3型采样装置”采用技术“澜衡3组3项信号校准技术”"
+      },
+      {
+        "head_entity_id": "89a9756b7c068ed8",
+        "relationCode": "研发",
+        "tail_entity_id": "8e3bc291802a3e69",
+        "evidence": "澜衡第3装备研究中心研发装备“澜衡3号4型采样装置”"
+      },
+      {
+        "head_entity_id": "8e3bc291802a3e69",
+        "relationCode": "采用",
+        "tail_entity_id": "2075f186d0ad6cf0",
+        "evidence": "装备“澜衡3号4型采样装置”采用技术“澜衡3组4项信号校准技术”"
+      }
+    ],
+    "resolutions": [],
+    "source_doc": "doc-3",
+    "language": "zh",
+    "processing": {
+      "chunk_count": 1,
+      "character_count": 1837,
+      "name_mapping_policy": "source",
+      "schema_enforced": false,
+      "extraction_mode": "open",
+      "sampling": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "seed": 42,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      }
+    }
+  }
+}

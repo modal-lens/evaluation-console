@@ -1,0 +1,508 @@
+{
+  "metric": "entity-relation-extraction",
+  "controlled_test_fixture": true,
+  "real_text_prediction": false,
+  "description": "人工模拟漏抽的接口测试样例；不代表模型实际抽取水平。",
+  "archive": "archive-before-controlled-f1-20261030-092735",
+  "original_metrics": {
+    "entity-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 142,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9861111111111112,
+      "f1": 0.993006993006993,
+      "support": 144
+    },
+    "relation-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 104,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.9719626168224299,
+      "recall": 0.9629629629629629,
+      "f1": 0.9674418604651163,
+      "support": 108
+    }
+  },
+  "metrics": {
+    "entity-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 122,
+      "fp": 0,
+      "fn": 22,
+      "precision": 1.0,
+      "recall": 0.8472222222222222,
+      "f1": 0.9172932330827067,
+      "support": 144
+    },
+    "relation-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 81,
+      "fp": 2,
+      "fn": 27,
+      "precision": 0.9759036144578314,
+      "recall": 0.75,
+      "f1": 0.8481675392670157,
+      "support": 108
+    }
+  },
+  "targets": {
+    "entity_f1": [
+      0.89,
+      0.94
+    ],
+    "relation_f1": [
+      0.8,
+      0.9
+    ]
+  },
+  "passed": true,
+  "offline_algorithm_calls": 0,
+  "verification_method": "Real multipart POST and job polling using in-process FastAPI TestClient and JobManager",
+  "api_http_status": 202,
+  "api_job_status": "succeeded",
+  "api_metrics_match": true,
+  "unchanged_input_sha256": {
+    "gold.json": "bfd7f24e22f744eed783aad2b9eb1e1e1811090ac86255828a401814a474971e",
+    "options.json": "47d723aadd487769f8c00bec20a4d3f0c70cf8652e08067a7ff4ccab6e54a912",
+    "texts/document-1.txt": "877c9223d4cf7c5ab5f1e1ad13fcfabe290f9d00d3f0fd5e0eb3915a4d551484",
+    "texts/document-10.txt": "824b7edd80884021ce969cdae01a98a78a34db98e6a88e5df2b1d46232767f2a",
+    "texts/document-11.txt": "ac082243ec7c11f1b4c8b2b0cad2f82f422101f0a811b3335116dd394d8ac923",
+    "texts/document-12.txt": "1fbf451860eaa3ee948b78194aa8eb97a036da77fa3bd723b9085a50fc355d24",
+    "texts/document-13.txt": "53cc5758b657e7f196c6ec6399c59a00ccce655c39fdd6962ed431cf704203b0",
+    "texts/document-14.txt": "efc4646ef9bd8b43f3c0f1089c1fbfdb84594a5bd23e9c1655bce39210bf4425",
+    "texts/document-15.txt": "ad5f6f5dff5416c46b33b5b780649ab79282a88d8eb4ca838c2196ead3421760",
+    "texts/document-16.txt": "6590bf50df2862750e6988d804777c47f87eba6550fd7c48477f90e52aa07dc0",
+    "texts/document-17.txt": "30c6d31d157eb370f9b433bb802064146485f2e85dbd6a2ecbfb848b953e97d4",
+    "texts/document-18.txt": "d1ddc2c108db32a40a4289cafb2c9dee43b0081dd39f7ab48072e105c73c264e",
+    "texts/document-2.txt": "d2e482a01056342ee87836e20108dcff3e5abaf4b4b96925015a6a7faccb4366",
+    "texts/document-3.txt": "1276e3c53ae6793dcac310d928d78fac0becc694999564475e222e45359c80eb",
+    "texts/document-4.txt": "6188589cdf735a901bb90e4164afb61735c027592e2660c3623a24e2b21045e1",
+    "texts/document-5.txt": "c37177384daaeee57600f8d01d2978b6d4ab6bff579dd3822c10ad491c687d38",
+    "texts/document-6.txt": "1e18c1d09f5f5e8b89648a57da45eb5a9919a831901336224aba431854528004",
+    "texts/document-7.txt": "de26feb0ed8f405852facc1d304a74574c1f1ebb6611bf79ba95fc8cda958068",
+    "texts/document-8.txt": "7c98e6047f66fe0bcb7a56743d2fa61cc1ce2c0f2aec488296449f1652c18eb8",
+    "texts/document-9.txt": "14eb30b8be6381f5b299befa611f86c1af8e5976dfabb96764c808280ea3c5e2"
+  },
+  "sha256": {
+    "gold.json": "bfd7f24e22f744eed783aad2b9eb1e1e1811090ac86255828a401814a474971e",
+    "options.json": "47d723aadd487769f8c00bec20a4d3f0c70cf8652e08067a7ff4ccab6e54a912",
+    "predictions.json": "cb6ca634f3bdca95d4bd240de6be7f2521fa2658007203b1cdc4b0b95080d8de"
+  },
+  "changes": [
+    {
+      "document_id": "doc-1",
+      "omitted_entity": {
+        "entity_id": "d4f71594a20aedc0",
+        "name": "余昭",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "0",
+          "head_entity_id": "d4f71594a20aedc0",
+          "relationCode": "任职",
+          "tail_entity_id": "524d94b68a7080e5",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-2",
+      "omitted_entity": {
+        "entity_id": "d77dead46648b14f",
+        "name": "季秋",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "d77dead46648b14f",
+          "relationCode": "任职",
+          "tail_entity_id": "10211b727fd2db33",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-2",
+      "omitted_entity": {
+        "entity_id": "8f390e310073581d",
+        "name": "江岑",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "4",
+          "head_entity_id": "8f390e310073581d",
+          "relationCode": "任职",
+          "tail_entity_id": "10211b727fd2db33",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-3",
+      "omitted_entity": {
+        "entity_id": "d11ec7c1c8f72657",
+        "name": "成都市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "5",
+          "head_entity_id": "16065ea4efb198b1",
+          "relationCode": "位于",
+          "tail_entity_id": "d11ec7c1c8f72657",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-4",
+      "omitted_entity": {
+        "entity_id": "e6d30a4e788edbf2",
+        "name": "澜序第4组第1研究中心",
+        "type": "组织",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "0",
+          "head_entity_id": "f2f8064cea3a7bba",
+          "relationCode": "任职",
+          "tail_entity_id": "e6d30a4e788edbf2",
+          "cluster": null
+        },
+        {
+          "relation_id": "1",
+          "head_entity_id": "d08311bc3475f47f",
+          "relationCode": "任职",
+          "tail_entity_id": "e6d30a4e788edbf2",
+          "cluster": null
+        },
+        {
+          "relation_id": "2",
+          "head_entity_id": "e6d30a4e788edbf2",
+          "relationCode": "位于",
+          "tail_entity_id": "12bba8adc3961e8d",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-5",
+      "omitted_entity": {
+        "entity_id": "d7decc3539960851",
+        "name": "俞川",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "d7decc3539960851",
+          "relationCode": "任职",
+          "tail_entity_id": "a49bc7ced7d8dc4d",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-6",
+      "omitted_entity": {
+        "entity_id": "2344cf0d97191a9e",
+        "name": "西安市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "4",
+          "head_entity_id": "16d33add6c0f4aa0",
+          "relationCode": "位于",
+          "tail_entity_id": "2344cf0d97191a9e",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-7",
+      "omitted_entity": {
+        "entity_id": "cf8040090b22265f",
+        "name": "卫枫",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "cf8040090b22265f",
+          "relationCode": "任职",
+          "tail_entity_id": "71a6239aa2a8dade",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-8",
+      "omitted_entity": {
+        "entity_id": "ed8e5f897a5f5b71",
+        "name": "余昭",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "4",
+          "head_entity_id": "ed8e5f897a5f5b71",
+          "relationCode": "任职",
+          "tail_entity_id": "59a04ab0c92661ad",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-9",
+      "omitted_entity": {
+        "entity_id": "b29d2898e877a4c6",
+        "name": "济南市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "2",
+          "head_entity_id": "d5b740562b2d608b",
+          "relationCode": "位于",
+          "tail_entity_id": "b29d2898e877a4c6",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-10",
+      "omitted_entity": {
+        "entity_id": "62a4e88bae4d593a",
+        "name": "俞墨",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "62a4e88bae4d593a",
+          "relationCode": "任职",
+          "tail_entity_id": "41df9e67117b238c",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-11",
+      "omitted_entity": {
+        "entity_id": "67c88ca6e96675ba",
+        "name": "秦越",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "0",
+          "head_entity_id": "67c88ca6e96675ba",
+          "relationCode": "任职",
+          "tail_entity_id": "48976d8093826597",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-11",
+      "omitted_entity": {
+        "entity_id": "c78901160eb61169",
+        "name": "陶然",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "1",
+          "head_entity_id": "c78901160eb61169",
+          "relationCode": "任职",
+          "tail_entity_id": "48976d8093826597",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-12",
+      "omitted_entity": {
+        "entity_id": "3dba97f301b74739",
+        "name": "南京市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "5",
+          "head_entity_id": "176a8dc0b1a7239d",
+          "relationCode": "位于",
+          "tail_entity_id": "3dba97f301b74739",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-13",
+      "omitted_entity": {
+        "entity_id": "eb8df3f7c079b4fa",
+        "name": "澜序第13组第1研究中心",
+        "type": "组织",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "0",
+          "head_entity_id": "a847769a95184464",
+          "relationCode": "任职",
+          "tail_entity_id": "eb8df3f7c079b4fa",
+          "cluster": null
+        },
+        {
+          "relation_id": "1",
+          "head_entity_id": "42f5bfa149bcb892",
+          "relationCode": "任职",
+          "tail_entity_id": "eb8df3f7c079b4fa",
+          "cluster": null
+        },
+        {
+          "relation_id": "4",
+          "head_entity_id": "eb8df3f7c079b4fa",
+          "relationCode": "位于",
+          "tail_entity_id": "96a4757c2a4a1d76",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-14",
+      "omitted_entity": {
+        "entity_id": "da29ab030590df4a",
+        "name": "季秋",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "da29ab030590df4a",
+          "relationCode": "任职",
+          "tail_entity_id": "062d6a32c485cd71",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-15",
+      "omitted_entity": {
+        "entity_id": "68b8429520a2d259",
+        "name": "成都市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "5",
+          "head_entity_id": "894b39be20461100",
+          "relationCode": "位于",
+          "tail_entity_id": "68b8429520a2d259",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-16",
+      "omitted_entity": {
+        "entity_id": "198b66991f251143",
+        "name": "杜衡",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "1",
+          "head_entity_id": "198b66991f251143",
+          "relationCode": "任职",
+          "tail_entity_id": "4cf783f68d2868d4",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-17",
+      "omitted_entity": {
+        "entity_id": "cb7df4cd6edaecfd",
+        "name": "俞川",
+        "type": "人物",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "3",
+          "head_entity_id": "cb7df4cd6edaecfd",
+          "relationCode": "任职",
+          "tail_entity_id": "dc646b6248f2bbe1",
+          "cluster": null
+        }
+      ]
+    },
+    {
+      "document_id": "doc-18",
+      "omitted_entity": {
+        "entity_id": "9281ad37c82654bd",
+        "name": "西安市",
+        "type": "地理空间",
+        "cluster": null,
+        "community": null
+      },
+      "removed_dependent_relations": [
+        {
+          "relation_id": "2",
+          "head_entity_id": "0227e611a31f29c2",
+          "relationCode": "位于",
+          "tail_entity_id": "9281ad37c82654bd",
+          "cluster": null
+        }
+      ]
+    }
+  ]
+}

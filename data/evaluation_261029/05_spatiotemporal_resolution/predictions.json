@@ -1,0 +1,1862 @@
+{
+  "metric": "spatiotemporal-resolution",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2bd276f1e7fd7a92",
+            "name": "中国江苏省南京市江宁区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b35a38d8cd645c84",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5e04bf7ff6f516de",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a0539c0bc044947d",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2bd276f1e7fd7a92",
+            "relationCode": "位于",
+            "tail_entity_id": "5e04bf7ff6f516de",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "b35a38d8cd645c84",
+            "relationCode": "位于",
+            "tail_entity_id": "5e04bf7ff6f516de",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月2日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月2日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月2日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-02"
+          },
+          {
+            "mention": "2027年1月3日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月3日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月3日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-03"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "江宁区"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "中国江苏省南京市江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市江宁区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "c67c88717b7263a5",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2e6ebb6cf5a486e9",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0a19f872a6c372fb",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b722f2ff72e8ac07",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月20日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月20日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月20日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-20"
+          },
+          {
+            "mention": "2027年1月21日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月21日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月21日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-21"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "6b81b6e25ae5529a",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9087d1a6d3037cd4",
+            "name": "中国山东省济南市历下区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a530a0bfb4d30db8",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d7556893f3d4905b",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月22日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月22日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月22日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-22"
+          },
+          {
+            "mention": "2027年1月23日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月23日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月23日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-23"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "山东省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "山东省"
+          },
+          {
+            "mention": "济南市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "济南市"
+          },
+          {
+            "mention": "历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "历下区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "中国山东省济南市历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国山东省济南市历下区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "23e9b67f8fa25274",
+            "name": "新西兰",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a260758d88f61492",
+            "name": "中国江苏省南京市江宁区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "89b1706bedce4778",
+            "name": "中国山东省济南市历下区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "64d978e51b1dbcd1",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3ac5f6a41627168f",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1a85a6de06c340a8",
+            "name": "研制说明",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3c8e836be56eb45e",
+            "name": "试验准备",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1ce7d8220f64d2eb",
+            "name": "记录复核",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "69b27fa85b134eba",
+            "name": "材料整理工作",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "761dce0698e9ab98",
+            "name": "手记续页",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8e387b8bc05f7c0e",
+            "name": "昨天的走访",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "38a3d11f0e02f348",
+            "name": "本国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6549f3dda56673d2",
+            "name": "本省",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a64c9a719952751d",
+            "name": "本市",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "286c95517dd1f662",
+            "name": "本区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "23e9b67f8fa25274",
+            "relationCode": "调查",
+            "tail_entity_id": "a260758d88f61492",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "8e387b8bc05f7c0e",
+            "relationCode": "已完成",
+            "tail_entity_id": "761dce0698e9ab98",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年4月18日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年4月18日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-04"
+          },
+          {
+            "mention": "2027年4月18日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-04-18"
+          },
+          {
+            "mention": "2027年1月24日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月24日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月24日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-24"
+          },
+          {
+            "mention": "2027年1月25日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月25日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月25日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-25"
+          },
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-11"
+          },
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-11-01"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "江宁区"
+          },
+          {
+            "mention": "山东省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "山东省"
+          },
+          {
+            "mention": "济南市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "济南市"
+          },
+          {
+            "mention": "历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "历下区"
+          },
+          {
+            "mention": "本省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "本省"
+          },
+          {
+            "mention": "本市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "本市"
+          },
+          {
+            "mention": "本区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "本区"
+          },
+          {
+            "mention": "新西兰",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "新西兰"
+          },
+          {
+            "mention": "中国江苏省南京市江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市江宁区"
+          },
+          {
+            "mention": "中国山东省济南市历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国山东省济南市历下 districts"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          },
+          {
+            "mention": "昨天的走访已完成",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-11-01"
+          },
+          {
+            "mention": "本国保存访问者材料",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "本国"
+          },
+          {
+            "mention": "本省保留汇总记录",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "本省"
+          },
+          {
+            "mention": "本市核对交接事项",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "本市"
+          },
+          {
+            "mention": "本区接续未完成的反馈",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "本区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "5afc19803ead0de7",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "93dece8a64319e6c",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d339a5529eb78672",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6a984230cde10790",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月4日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月4日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月4日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-04"
+          },
+          {
+            "mention": "2027年1月5日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月5日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月5日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-05"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国四川省成都市武侯区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "bda8e2401ecd67fe",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "3e0bc9bd67b337e6",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cf863a7c0e9b90ee",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1ea297ded45bcdf9",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月6日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月6日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月6日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-06"
+          },
+          {
+            "mention": "2027年1月7日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月7日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月7日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-07"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国四川省成都市武侯区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "bd923cab6e68b9b8",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4bb3dc84cbe6e156",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "538e2e6aaa5cb6c6",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "17353c2441d64fa0",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月8日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月8日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月8日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-08"
+          },
+          {
+            "mention": "2027年1月9日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月9日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月9日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-09"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3b3312c6e5fdee7f",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b2f6a2542eefe2a8",
+            "name": "中国山东省济南市历下区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "254fbbe3e9b82443",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4b4f32f93cf64e41",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月10日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月10日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月10日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-10"
+          },
+          {
+            "mention": "2027年1月11日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月11日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月11日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-11"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "山东省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "山东省"
+          },
+          {
+            "mention": "济南市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "济南市"
+          },
+          {
+            "mention": "历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "历下区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "中国山东省济南市历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国山东省济南市历下区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "df22b8cc6fe655c9",
+            "name": "中国山东省济南市历下区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6559be91c0bae418",
+            "name": "中国江苏省南京市江宁区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "728e859f2b000f26",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "7b81b2dedb4fd9b8",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月12日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月12日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月12日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-12"
+          },
+          {
+            "mention": "2027年1月13日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月13日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月13日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-13"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "山东省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "山东省"
+          },
+          {
+            "mention": "济南市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "济南市"
+          },
+          {
+            "mention": "历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "历下区"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "江宁区"
+          },
+          {
+            "mention": "中国山东省济南市历下区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国山东省济南市历下区"
+          },
+          {
+            "mention": "中国江苏省南京市江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市江宁区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3f1a36b02d51fb23",
+            "name": "中国江苏省南京市江宁区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "63e10aa39ca26939",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "058bae8aca37aeec",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1d5878d6315375ad",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月14日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月14日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月14日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-14"
+          },
+          {
+            "mention": "2027年1月15日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月15日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月15日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-15"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "江宁区"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "中国江苏省南京市江宁区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市江宁区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7e8f9833319e3797",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "98ecb60aa89c42d8",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e522caa425438507",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7e8f9833319e3797",
+            "relationCode": "包含",
+            "tail_entity_id": "98ecb60aa89c42d8",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月16日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月16日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月16日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-16"
+          },
+          {
+            "mention": "2027年1月17日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月17日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月17日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-17"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          },
+          {
+            "mention": "中国浙江省杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国浙江省杭州市"
+          },
+          {
+            "mention": "中国浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国浙江省"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国四川省成都市武侯区"
+          },
+          {
+            "mention": "中国四川省成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国四川省成都市"
+          },
+          {
+            "mention": "中国四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国四川省"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "fe141e17dea91ff6",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5e6146f8e224554f",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cdbe77255cc2ae5f",
+            "name": "中国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f80e5c0952406bd4",
+            "name": "美国",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2027年1月18日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月18日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月18日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-18"
+          },
+          {
+            "mention": "2027年1月19日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2027"
+          },
+          {
+            "mention": "2027年1月19日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2027-01"
+          },
+          {
+            "mention": "2027年1月19日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2027-01-19"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国四川省成都市武侯区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          },
+          {
+            "mention": "美国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "美国"
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "baseline_documents": null
+  }
+}

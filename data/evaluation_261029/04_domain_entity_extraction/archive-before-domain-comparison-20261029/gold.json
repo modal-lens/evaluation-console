@@ -1,0 +1,712 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "余昭",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第1装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡1号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡1组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡1号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡1组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡1号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡1组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡1号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡1组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "贺澜",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第2装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡2号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡2组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡2号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡2组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡2号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡2组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡2号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡2组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "舒宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第3装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡3号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡3组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡3号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡3组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡3号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡3组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡3号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡3组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "季秋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第4装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡4号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡4组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡4号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡4组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡4号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡4组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡4号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡4组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "黎舟",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第5装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡5号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡5组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡5号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡5组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡5号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡5组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡5号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡5组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陶然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第6装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡6号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡6组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡6号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡6组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡6号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡6组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡6号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡6组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "霍宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第7装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡7号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡7组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡7号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡7组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡7号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡7组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡7号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡7组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "邵青",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第8装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡8号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡8组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡8号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡8组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡8号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡8组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡8号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡8组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "莫言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第9装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡9号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡9组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡9号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡9组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡9号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡9组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡9号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡9组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "俞川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第10装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜衡10号1型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "澜衡10组1项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡10号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡10组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡10号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡10组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡10号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡10组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "褚宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第11装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "光谱仪",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "光谱仪",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡11号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡11组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡11号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡11组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡11号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡11组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "贺言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜衡第12装备研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "点云配准",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "点云配准",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e5",
+          "name": "澜衡12号2型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e6",
+          "name": "澜衡12组2项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜衡12号3型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e8",
+          "name": "澜衡12组3项信号校准技术",
+          "type": "技术"
+        },
+        {
+          "entity_id": "e9",
+          "name": "澜衡12号4型采样装置",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e10",
+          "name": "澜衡12组4项信号校准技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "metric": "community-discovery",
+  "source_report": "reports/final-repeated/07_community_discovery-1.json",
+  "source_job_id": "d46829fb18c8451884a0a35f61eba389",
+  "source_report_sha256": "3a1ab537dcf10feed089a81e852715cd2c9e86fca427f5cae2568777f219f6d9",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "accuracy": 0.984375
+  },
+  "metrics": {
+    "matching": "optimal_one_to_one_community_assignment",
+    "accuracy": 0.984375,
+    "correct": 63,
+    "total": 64
+  },
+  "sha256": {
+    "predictions.json": "a275d4cf8f0b8b450b0d34c6213fa4b33569c64ca80e70990e3315e7bba54525",
+    "gold.json": "fc48884028b931d77fe6bc16ecd2b46f969751aa6e7dbedc8ffb83c2c3b2b993",
+    "options.json": "6870dbec467a4af20f6ef15f3a4dd5b556a89a7faeee8888b317f7a98aa14c35"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "metric": "cross-document/fusion",
+  "source_report": "reports/interval-selected/02_cross_document_fusion-1.json",
+  "source_job_id": "5f5240bf28cc480a8519e4860b240d18",
+  "source_report_sha256": "5a36d1ff8eb49d21c7c833f39d98c457a83fc7b4596bc95c57e96beae0551761",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "cross-document/entity-fusion/f1": 0.9971509971509972,
+    "cross-document/entity-fusion/precision": 1.0,
+    "cross-document/entity-fusion/recall": 0.9943181818181818,
+    "cross-document/entity-fusion/object_coverage/f1": 0.993006993006993,
+    "cross-document/entity-fusion/object_coverage/precision": 1.0,
+    "cross-document/entity-fusion/object_coverage/recall": 0.9861111111111112,
+    "cross-document/relation-fusion/f1": 0.968421052631579,
+    "cross-document/relation-fusion/precision": 0.9787234042553191,
+    "cross-document/relation-fusion/recall": 0.9583333333333334,
+    "cross-document/relation-fusion/object_coverage/f1": 0.9583333333333334,
+    "cross-document/relation-fusion/object_coverage/precision": 0.9583333333333334,
+    "cross-document/relation-fusion/object_coverage/recall": 0.9583333333333334,
+    "cross-document/attribute-fusion/f1": 0.9714285714285714,
+    "cross-document/attribute-fusion/precision": 1.0,
+    "cross-document/attribute-fusion/recall": 0.9444444444444444,
+    "cross-document/attribute-fusion/object_coverage/f1": 0.9716312056737588,
+    "cross-document/attribute-fusion/object_coverage/precision": 0.9927536231884058,
+    "cross-document/attribute-fusion/object_coverage/recall": 0.9513888888888888
+  },
+  "metrics": {
+    "cross-document/entity-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-document",
+      "object_type": "entity",
+      "eligible_pairs": 9504,
+      "tp": 175,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9943181818181818,
+      "f1": 0.9971509971509972,
+      "support": 176,
+      "object_coverage": {
+        "tp": 142,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.9861111111111112,
+        "f1": 0.993006993006993,
+        "support": 144
+      }
+    },
+    "cross-document/relation-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-document",
+      "object_type": "relation",
+      "eligible_pairs": 4580,
+      "tp": 46,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9787234042553191,
+      "recall": 0.9583333333333334,
+      "f1": 0.968421052631579,
+      "support": 48,
+      "object_coverage": {
+        "tp": 92,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.9583333333333334,
+        "recall": 0.9583333333333334,
+        "f1": 0.9583333333333334,
+        "support": 96
+      }
+    },
+    "cross-document/attribute-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-document",
+      "object_type": "attribute",
+      "eligible_pairs": 9636,
+      "tp": 68,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1": 0.9714285714285714,
+      "support": 72,
+      "object_coverage": {
+        "tp": 137,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9927536231884058,
+        "recall": 0.9513888888888888,
+        "f1": 0.9716312056737588,
+        "support": 144
+      }
+    }
+  },
+  "sha256": {
+    "predictions.json": "9ccbf36fe9fb69cf2ba7d068278d2f5357eab61a372b908cd266f6fb941eb32e",
+    "gold.json": "809ca4aeb07f405571dcba178f07daaf0a82e5a8c978543a041a59b5b4424e62",
+    "options.json": "5f821c44790429a3fa0475e11a62d2203d9de7e9cfa9c48d0ceba81ff987e41b"
+  }
+}

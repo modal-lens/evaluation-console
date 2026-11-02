@@ -1,0 +1,112 @@
+{
+  "metric": "multilabel-classification",
+  "source_report": "F:\\pywork\\codex_work\\nanjing_zncl\\data\\evaluation_batches_diverse\\reports\\final-run-20261023\\06_multilabel_classification-1.json",
+  "source_report_sha256": "b86e198c446e8587aa25de430f7e5b456cfb5a3116ef55b0f5a7c67a24abf6e1",
+  "source_job_id": "11a87e0a9917486eab82952d3ed90adb",
+  "source_created_at": "2026-10-23T09:45:17.432267+00:00",
+  "verified_at": "2026-10-26T03:24:11.883933+00:00",
+  "same_metrics_as_source": true,
+  "algorithm_calls": 0,
+  "sha256": {
+    "predictions.json": "528802441fc22522fd296f41a337c11b01a28050fc6b70b78eacf7931c884612",
+    "gold.json": "53cdb4e59f1eb416e53365f5e5bf3e6cb58df4ce27be562645241b4812cec63f",
+    "options.json": "7e01ed9d5034ae5529b9cda82d62b00d9cdcc97db06dd16c625fc181f0ed4f47",
+    "texts/document-1.txt": "1ea04335dc37e0792cf818d243bc012d7c429883aa32765a7952b8a0908ef0ce",
+    "texts/document-10.txt": "76fdb4f01d5934910a46c608122d46b6c9fa616ecc798d263e7a306cb817d5d7",
+    "texts/document-11.txt": "f6b7f9eaab737c95a84b75774b3267ba5c4a154848cf1a555386f1b922073318",
+    "texts/document-12.txt": "fbeaadb16a9ca707e077b08d5626adf0c5262fc00caa825ffb7a1ab1d5d63c24",
+    "texts/document-2.txt": "81836155fbd1461d51d4b6474842ae29876f169cae7a283f5cda56567018dfac",
+    "texts/document-3.txt": "ae17aaa4a8507f02832367a6f0e9fc3fe3281ad94593d5f37d1ea1079a6b34e7",
+    "texts/document-4.txt": "079f855dd0857571f7731019dd529715657b5d938810e97c53d2ffb5b4737cea",
+    "texts/document-5.txt": "03dddcebc99acb14d9b05806a85e31f9f702a0325cc1716ee7a39ff0278c87bb",
+    "texts/document-6.txt": "080eb779b62f4c8e7f80f36e4204d0fd19f6c0accc9f3b548104cb5c5d3c13b2",
+    "texts/document-7.txt": "d5e3e7ff1ae201bae044a6ee4c8cd88f60c553391bebf420adac5d06ba6cf3b3",
+    "texts/document-8.txt": "c95302bcbefe91bd1b9532c3713e0df8d7968652188070a381b806b11b65bfe3",
+    "texts/document-9.txt": "b317aca8737d1f5474837c5429b238c026530fbc68345b543b5d6fbb7d47ce58"
+  },
+  "metrics": {
+    "micro": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 24
+    },
+    "macro_f1": 1.0,
+    "subset_accuracy": 1.0,
+    "per_label": {
+      "10": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "11": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "12": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "7": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "9": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      }
+    }
+  },
+  "quality_scores": {
+    "macro_f1": 1.0,
+    "subset_accuracy": 1.0,
+    "micro/f1": 1.0,
+    "micro/precision": 1.0,
+    "micro/recall": 1.0,
+    "label-10/f1": 1.0,
+    "label-10/precision": 1.0,
+    "label-10/recall": 1.0,
+    "label-11/f1": 1.0,
+    "label-11/precision": 1.0,
+    "label-11/recall": 1.0,
+    "label-12/f1": 1.0,
+    "label-12/precision": 1.0,
+    "label-12/recall": 1.0,
+    "label-7/f1": 1.0,
+    "label-7/precision": 1.0,
+    "label-7/recall": 1.0,
+    "label-9/f1": 1.0,
+    "label-9/precision": 1.0,
+    "label-9/recall": 1.0
+  },
+  "texts_match_historical_input": true,
+  "texts_verified_at": "2026-10-26T05:51:24.661300+00:00",
+  "text_documents": 12
+}

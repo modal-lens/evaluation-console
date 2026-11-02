@@ -1,0 +1,37 @@
+{
+  "metric": "community-discovery",
+  "source_report": "F:\\pywork\\codex_work\\nanjing_zncl\\data\\evaluation_batches_diverse\\reports\\final-run-20261023\\07_community_discovery-1.json",
+  "source_report_sha256": "7d893994ad510e979c084c852b2e87325e4dd863fd792a16ec830872163041d9",
+  "source_job_id": "af0c76257d214047bf381295e7f973dd",
+  "source_created_at": "2026-10-23T09:45:27.581184+00:00",
+  "verified_at": "2026-10-26T03:24:11.897097+00:00",
+  "same_metrics_as_source": true,
+  "algorithm_calls": 0,
+  "sha256": {
+    "predictions.json": "ef920304749296403c0cf571f6b2a870f0c0c9cd22971040ad07a008665dc56b",
+    "gold.json": "8239a38098a1664fc312daa56b33af53989980c9f314031487dea1b5693f0cb1",
+    "options.json": "9b9567ae153d305b29cef835f36d4521d7cd86e85e771141213e214e7493ac7c",
+    "texts/document-1.txt": "60e30226c862809c378a109dfb6c9f60ed4a7984c9a000c1c7a8ceefdac40271",
+    "texts/document-10.txt": "6d5bd26f43e50a84ab30b90d797f3ac8168e3191f3d27b6d946f47c2c45756fc",
+    "texts/document-2.txt": "29cba69145050b521e11d6676ecc6a48c0304a5b76e15d18da9629931f2debef",
+    "texts/document-3.txt": "8d05782ff8abc4acc55a3df5a0f13d0da5e51b923b9e268412f12ae1376aa2d8",
+    "texts/document-4.txt": "d815748aac110b7ae43e58328208492fd0254d81f8dc8d918738ec2ce86d0667",
+    "texts/document-5.txt": "06b6eb61ff3b9b1875b03d426ecdbe8741b191431e657ce77a914f7f3e6de398",
+    "texts/document-6.txt": "3a738c2fbf757f0b0feb1f7bc20165b647ff95bded3e5ec54fd750122646b5ac",
+    "texts/document-7.txt": "b1ba14964d2c2eee1fb56fbd574f59e60a98cb507c30510245323a8121304321",
+    "texts/document-8.txt": "90c2c58717b502918a26c08f18f5a67299122bc65f3add7fc7a7b0bcd9a833f6",
+    "texts/document-9.txt": "852fc249d3d6c7f87499509019924174c9011c9797e3423cd40fa5434ffe1b5f"
+  },
+  "metrics": {
+    "matching": "optimal_one_to_one_community_assignment",
+    "accuracy": 0.9836065573770492,
+    "correct": 60,
+    "total": 61
+  },
+  "quality_scores": {
+    "accuracy": 0.9836065573770492
+  },
+  "texts_match_historical_input": true,
+  "texts_verified_at": "2026-10-26T05:51:24.731910+00:00",
+  "text_documents": 10
+}

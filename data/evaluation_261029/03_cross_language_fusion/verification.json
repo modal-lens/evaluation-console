@@ -1,0 +1,103 @@
+{
+  "metric": "cross-language/fusion",
+  "source_report": "reports/interval-selected/03_cross_language_fusion-1.json",
+  "source_job_id": "11de7903a0c5427fb710c85b9793f8f8",
+  "source_report_sha256": "c97060a202cd5e2d4d6c4a017cceb5250974ef81e643acf6eae11ed55f400fb5",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "cross-language/entity-fusion/f1": 0.9965156794425087,
+    "cross-language/entity-fusion/precision": 1.0,
+    "cross-language/entity-fusion/recall": 0.9930555555555556,
+    "cross-language/entity-fusion/object_coverage/f1": 0.993006993006993,
+    "cross-language/entity-fusion/object_coverage/precision": 1.0,
+    "cross-language/entity-fusion/object_coverage/recall": 0.9861111111111112,
+    "cross-language/relation-fusion/f1": 0.968421052631579,
+    "cross-language/relation-fusion/precision": 0.9787234042553191,
+    "cross-language/relation-fusion/recall": 0.9583333333333334,
+    "cross-language/relation-fusion/object_coverage/f1": 0.9583333333333334,
+    "cross-language/relation-fusion/object_coverage/precision": 0.9583333333333334,
+    "cross-language/relation-fusion/object_coverage/recall": 0.9583333333333334,
+    "cross-language/attribute-fusion/f1": 0.9714285714285714,
+    "cross-language/attribute-fusion/precision": 1.0,
+    "cross-language/attribute-fusion/recall": 0.9444444444444444,
+    "cross-language/attribute-fusion/object_coverage/f1": 0.971830985915493,
+    "cross-language/attribute-fusion/object_coverage/precision": 0.9857142857142858,
+    "cross-language/attribute-fusion/object_coverage/recall": 0.9583333333333334
+  },
+  "metrics": {
+    "cross-language/entity-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-language",
+      "object_type": "entity",
+      "eligible_pairs": 5184,
+      "tp": 143,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.9930555555555556,
+      "f1": 0.9965156794425087,
+      "support": 144,
+      "object_coverage": {
+        "tp": 142,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.9861111111111112,
+        "f1": 0.993006993006993,
+        "support": 144
+      }
+    },
+    "cross-language/relation-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-language",
+      "object_type": "relation",
+      "eligible_pairs": 2500,
+      "tp": 46,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.9787234042553191,
+      "recall": 0.9583333333333334,
+      "f1": 0.968421052631579,
+      "support": 48,
+      "object_coverage": {
+        "tp": 92,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.9583333333333334,
+        "recall": 0.9583333333333334,
+        "f1": 0.9583333333333334,
+        "support": 96
+      }
+    },
+    "cross-language/attribute-fusion": {
+      "matching": "pairwise_cluster",
+      "scope": "cross-language",
+      "object_type": "attribute",
+      "eligible_pairs": 5328,
+      "tp": 68,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1": 0.9714285714285714,
+      "support": 72,
+      "object_coverage": {
+        "tp": 138,
+        "fp": 2,
+        "fn": 6,
+        "precision": 0.9857142857142858,
+        "recall": 0.9583333333333334,
+        "f1": 0.971830985915493,
+        "support": 144
+      }
+    }
+  },
+  "sha256": {
+    "predictions.json": "3e1495f796d7b45d8718f6ba68ffb97694f7715e47c61b25b079bbfa979ae505",
+    "gold.json": "e7ca7f8a47743532246611bf520cde5103d053c33c717a9aad5d0a6706923ed8",
+    "options.json": "5f821c44790429a3fa0475e11a62d2203d9de7e9cfa9c48d0ceba81ff987e41b"
+  }
+}

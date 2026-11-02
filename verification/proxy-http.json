@@ -1,0 +1,402 @@
+{
+  "base_url": "http://127.0.0.1:50312",
+  "passed": true,
+  "modules": [
+    {
+      "metric": "entity-relation-extraction",
+      "passed": true,
+      "metrics": {
+        "entity-extraction": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 122,
+          "fp": 0,
+          "fn": 22,
+          "precision": 1.0,
+          "recall": 0.8472222222222222,
+          "f1": 0.9172932330827067,
+          "support": 144
+        },
+        "relation-extraction": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 81,
+          "fp": 2,
+          "fn": 27,
+          "precision": 0.9759036144578314,
+          "recall": 0.75,
+          "f1": 0.8481675392670157,
+          "support": 108
+        }
+      }
+    },
+    {
+      "metric": "cross-document/fusion",
+      "passed": true,
+      "metrics": {
+        "cross-document/entity-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-document",
+          "object_type": "entity",
+          "eligible_pairs": 9504,
+          "tp": 175,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9943181818181818,
+          "f1": 0.9971509971509972,
+          "support": 176,
+          "object_coverage": {
+            "tp": 142,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.9861111111111112,
+            "f1": 0.993006993006993,
+            "support": 144
+          }
+        },
+        "cross-document/relation-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-document",
+          "object_type": "relation",
+          "eligible_pairs": 4580,
+          "tp": 46,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9787234042553191,
+          "recall": 0.9583333333333334,
+          "f1": 0.968421052631579,
+          "support": 48,
+          "object_coverage": {
+            "tp": 92,
+            "fp": 4,
+            "fn": 4,
+            "precision": 0.9583333333333334,
+            "recall": 0.9583333333333334,
+            "f1": 0.9583333333333334,
+            "support": 96
+          }
+        },
+        "cross-document/attribute-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-document",
+          "object_type": "attribute",
+          "eligible_pairs": 9636,
+          "tp": 68,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1": 0.9714285714285714,
+          "support": 72,
+          "object_coverage": {
+            "tp": 137,
+            "fp": 1,
+            "fn": 7,
+            "precision": 0.9927536231884058,
+            "recall": 0.9513888888888888,
+            "f1": 0.9716312056737588,
+            "support": 144
+          }
+        }
+      }
+    },
+    {
+      "metric": "cross-language/fusion",
+      "passed": true,
+      "metrics": {
+        "cross-language/entity-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-language",
+          "object_type": "entity",
+          "eligible_pairs": 5184,
+          "tp": 143,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9930555555555556,
+          "f1": 0.9965156794425087,
+          "support": 144,
+          "object_coverage": {
+            "tp": 142,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.9861111111111112,
+            "f1": 0.993006993006993,
+            "support": 144
+          }
+        },
+        "cross-language/relation-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-language",
+          "object_type": "relation",
+          "eligible_pairs": 2500,
+          "tp": 46,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9787234042553191,
+          "recall": 0.9583333333333334,
+          "f1": 0.968421052631579,
+          "support": 48,
+          "object_coverage": {
+            "tp": 92,
+            "fp": 4,
+            "fn": 4,
+            "precision": 0.9583333333333334,
+            "recall": 0.9583333333333334,
+            "f1": 0.9583333333333334,
+            "support": 96
+          }
+        },
+        "cross-language/attribute-fusion": {
+          "matching": "pairwise_cluster",
+          "scope": "cross-language",
+          "object_type": "attribute",
+          "eligible_pairs": 5328,
+          "tp": 68,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1": 0.9714285714285714,
+          "support": 72,
+          "object_coverage": {
+            "tp": 138,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.9857142857142858,
+            "recall": 0.9583333333333334,
+            "f1": 0.971830985915493,
+            "support": 144
+          }
+        }
+      }
+    },
+    {
+      "metric": "domain-entity-extraction",
+      "passed": true,
+      "metrics": {
+        "overall": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 118,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.9833333333333333,
+          "f1": 0.9915966386554622,
+          "support": 120
+        },
+        "domain_only": {
+          "tp": 94,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.9791666666666666,
+          "f1": 0.9894736842105263,
+          "support": 96
+        },
+        "domain_entity_types": [
+          "技术",
+          "装备"
+        ],
+        "baseline": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 111,
+          "fp": 7,
+          "fn": 9,
+          "precision": 0.940677966101695,
+          "recall": 0.925,
+          "f1": 0.9327731092436975,
+          "support": 120
+        },
+        "f1_delta": 0.05882352941176472,
+        "relations": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 104,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 104
+        },
+        "baseline_relations": {
+          "averaging": "micro",
+          "matching": "exact_set",
+          "tp": 81,
+          "fp": 23,
+          "fn": 23,
+          "precision": 0.7788461538461539,
+          "recall": 0.7788461538461539,
+          "f1": 0.7788461538461539,
+          "support": 104
+        },
+        "relation_f1_delta": 0.22115384615384615,
+        "acceptance": {
+          "passed": true,
+          "checks": {
+            "baseline_entity": {
+              "f1": 0.9327731092436975,
+              "lower_exclusive": 0.88,
+              "upper_exclusive": null,
+              "status": "passed"
+            },
+            "baseline_relation": {
+              "f1": 0.7788461538461539,
+              "lower_exclusive": 0.75,
+              "upper_exclusive": null,
+              "status": "passed"
+            },
+            "configured_entity": {
+              "f1": 0.9915966386554622,
+              "lower_exclusive": 0.95,
+              "upper_exclusive": 1.0,
+              "status": "passed"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metric": "spatiotemporal-resolution",
+      "passed": true,
+      "metrics": {
+        "accuracy": 0.9608938547486033,
+        "correct": 172,
+        "total": 179,
+        "by_granularity": [
+          {
+            "dimension": "space",
+            "granularity": "city",
+            "accuracy": 0.96,
+            "correct": 24,
+            "total": 25
+          },
+          {
+            "dimension": "space",
+            "granularity": "country",
+            "accuracy": 0.9615384615384616,
+            "correct": 25,
+            "total": 26
+          },
+          {
+            "dimension": "space",
+            "granularity": "district",
+            "accuracy": 0.96,
+            "correct": 24,
+            "total": 25
+          },
+          {
+            "dimension": "space",
+            "granularity": "province",
+            "accuracy": 0.96,
+            "correct": 24,
+            "total": 25
+          },
+          {
+            "dimension": "time",
+            "granularity": "day",
+            "accuracy": 0.9615384615384616,
+            "correct": 25,
+            "total": 26
+          },
+          {
+            "dimension": "time",
+            "granularity": "month",
+            "accuracy": 0.9615384615384616,
+            "correct": 25,
+            "total": 26
+          },
+          {
+            "dimension": "time",
+            "granularity": "year",
+            "accuracy": 0.9615384615384616,
+            "correct": 25,
+            "total": 26
+          }
+        ]
+      }
+    },
+    {
+      "metric": "multilabel-classification",
+      "passed": true,
+      "metrics": {
+        "micro": {
+          "tp": 48,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.96,
+          "recall": 1.0,
+          "f1": 0.9795918367346939,
+          "support": 48
+        },
+        "macro_f1": 0.9802352941176471,
+        "subset_accuracy": 0.95,
+        "per_label": {
+          "10": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353,
+            "support": 8
+          },
+          "11": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "12": {
+            "tp": 12,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9230769230769231,
+            "recall": 1.0,
+            "f1": 0.96,
+            "support": 12
+          },
+          "7": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8
+          },
+          "9": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 8
+          }
+        }
+      }
+    },
+    {
+      "metric": "community-discovery",
+      "passed": true,
+      "metrics": {
+        "matching": "optimal_one_to_one_community_assignment",
+        "accuracy": 0.984375,
+        "correct": 63,
+        "total": 64
+      }
+    }
+  ],
+  "model_calls": 0,
+  "mode": "uploaded predictions, real HTTP frontend proxy and backend"
+}

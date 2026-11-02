@@ -1,0 +1,152 @@
+{
+  "config": {
+    "argv": [
+      "D:\\software\\clade_code\\node.exe",
+      "F:\\pywork\\codex_work\\nanjing_zncl\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.domain-live.config.mjs",
+      "--reporter=line,json"
+    ],
+    "configFile": "F:\\pywork\\codex_work\\nanjing_zncl\\frontend\\playwright.domain-live.config.mjs",
+    "rootDir": "F:/pywork/codex_work/nanjing_zncl/frontend/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "F:/pywork/codex_work/nanjing_zncl/frontend/artifacts/domain-live-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "F:/pywork/codex_work/nanjing_zncl/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "domain-comparison.spec.mjs"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "F:\\pywork\\codex_work\\nanjing_zncl\\frontend\\artifacts\\domain-live-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "F:\\pywork\\codex_work\\nanjing_zncl\\frontend\\e2e",
+        "snapshotDir": "F:\\pywork\\codex_work\\nanjing_zncl\\frontend\\e2e",
+        "testIgnore": [],
+        "testMatch": "domain-comparison.spec.mjs",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://192.168.31.88:50012",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "reducedMotion": "reduce",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "domain-comparison.spec.mjs",
+      "file": "domain-comparison.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "领域双流程：显示前后实体关系、差值、详细过程和严格验收",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-29T07:57:49.293Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f433e1404366df132a21-a081c45d9b90bf5984df",
+          "file": "domain-comparison.spec.mjs",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-29T07:57:48.897Z",
+    "duration": 6825.671,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

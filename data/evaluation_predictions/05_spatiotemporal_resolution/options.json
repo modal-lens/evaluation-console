@@ -1,0 +1,34 @@
+{
+  "name_mapping_policy": "source",
+  "entity_types": [
+    "人物",
+    "组织",
+    "地理空间"
+  ],
+  "entity_attributes": {},
+  "relation_types": [
+    "任职",
+    "位于"
+  ],
+  "domain_entity_types": [
+    "装备"
+  ],
+  "compare_baseline": true,
+  "block_size": 4000,
+  "similarity_threshold": 0.88,
+  "attribute_similarity_threshold": 0.92,
+  "relation_similarity_threshold": 0.9,
+  "use_llm_resolution": false,
+  "time_granularities": [
+    "year",
+    "month",
+    "day"
+  ],
+  "space_granularities": [
+    "country",
+    "province",
+    "city",
+    "district"
+  ],
+  "reference_date": "2026-10-22"
+}

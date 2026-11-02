@@ -1,0 +1,462 @@
+{
+  "document_id": "doc-14",
+  "mode": "baseline",
+  "options": {
+    "name_mapping_policy": "source",
+    "entity_types": [],
+    "entity_attributes": {},
+    "relation_types": [],
+    "domain_entity_types": [],
+    "compare_baseline": true,
+    "block_size": 4000,
+    "similarity_threshold": 0.88,
+    "attribute_similarity_threshold": 0.92,
+    "relation_similarity_threshold": 0.9,
+    "use_llm_resolution": false,
+    "time_granularities": [
+      "year",
+      "month",
+      "day"
+    ],
+    "space_granularities": [
+      "country",
+      "province",
+      "city",
+      "district"
+    ],
+    "reference_date": null
+  },
+  "text_sha256": "53b3122c072abcbff76e60ea30840e61b08d25c65faa194abd7d731787c93a27",
+  "graph": {
+    "entities": [
+      {
+        "name": "江岑",
+        "type": "人物",
+        "attributes": {},
+        "entity_id": "307d5508c946c6de",
+        "description": "在组织“澄湾研究所”任职"
+      },
+      {
+        "name": "澄湾研究所",
+        "type": "组织",
+        "attributes": {},
+        "entity_id": "8703d360d78ba40b",
+        "description": "研发装备和采用技术"
+      },
+      {
+        "name": "溪桥",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "be863707405ee326",
+        "description": "采用技术“频域去噪”和“轨迹拟合”，并被其他装备采用"
+      },
+      {
+        "name": "望舒",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "32b7579b1a82f8c6",
+        "description": "采用技术“频域去噪”和“轨迹拟合”，并被其他装备采用"
+      },
+      {
+        "name": "砚池",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "307d48a3751dba60",
+        "description": "采用技术“频域去噪”和“轨迹拟合”，并被其他装备采用"
+      },
+      {
+        "name": "霜禾",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "d1ebdec94ba2c8f3",
+        "description": "采用技术“频域去噪”和“轨迹拟合”，并被其他装备采用"
+      },
+      {
+        "name": "星涟检测仪",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "8906386c13ed0caf",
+        "description": "采用技术“频域去噪”和“轨迹拟合”，并被其他装备采用"
+      },
+      {
+        "name": "晓峰传感器",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "4bd2a83817a2638a",
+        "description": "采用技术“频域去噪”和“轨迹拟合”"
+      },
+      {
+        "name": "频域去噪",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "490170790e24f159",
+        "description": "被多个装备和组织采用"
+      },
+      {
+        "name": "轨迹拟合",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "37dca4c6e2ed6830",
+        "description": "被多个装备和组织采用"
+      }
+    ],
+    "relations": [
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "任职",
+        "tail_entity_id": "8703d360d78ba40b",
+        "evidence": "人物“江岑”在组织“澄湾研究所”任职。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "组织“澄湾研究所”研发装备“溪桥”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "人物“江岑”研发装备“溪桥”。"
+      },
+      {
+        "head_entity_id": "be863707405ee326",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“溪桥”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "be863707405ee326",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“溪桥”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "组织“澄湾研究所”研发装备“望舒”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "人物“江岑”研发装备“望舒”。"
+      },
+      {
+        "head_entity_id": "32b7579b1a82f8c6",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“望舒”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "32b7579b1a82f8c6",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“望舒”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "组织“澄湾研究所”研发装备“砚池”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "人物“江岑”研发装备“砚池”。"
+      },
+      {
+        "head_entity_id": "307d48a3751dba60",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“砚池”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "307d48a3751dba60",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“砚池”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "d1ebdec94ba2c8f3",
+        "evidence": "组织“澄湾研究所”研发装备“霜禾”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "d1ebdec94ba2c8f3",
+        "evidence": "人物“江岑”研发装备“霜禾”。"
+      },
+      {
+        "head_entity_id": "d1ebdec94ba2c8f3",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“霜禾”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "d1ebdec94ba2c8f3",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“霜禾”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "组织“澄湾研究所”研发装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "人物“江岑”研发装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "8906386c13ed0caf",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“星涟检测仪”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "8906386c13ed0caf",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“星涟检测仪”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "4bd2a83817a2638a",
+        "evidence": "组织“澄湾研究所”研发装备“晓峰传感器”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "4bd2a83817a2638a",
+        "evidence": "人物“江岑”研发装备“晓峰传感器”。"
+      },
+      {
+        "head_entity_id": "4bd2a83817a2638a",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "装备“晓峰传感器”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "4bd2a83817a2638a",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "装备“晓峰传感器”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "be863707405ee326",
+        "relationCode": "采用",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "装备“溪桥”采用技术“望舒”。"
+      },
+      {
+        "head_entity_id": "32b7579b1a82f8c6",
+        "relationCode": "采用",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "装备“望舒”采用技术“砚池”。"
+      },
+      {
+        "head_entity_id": "307d48a3751dba60",
+        "relationCode": "采用",
+        "tail_entity_id": "d1ebdec94ba2c8f3",
+        "evidence": "装备“砚池”采用技术“霜禾”。"
+      },
+      {
+        "head_entity_id": "d1ebdec94ba2c8f3",
+        "relationCode": "采用",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "装备“霜禾”采用技术“溪桥”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "组织“澄湾研究所”采用技术“溪桥”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "组织“澄湾研究所”采用技术“望舒”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "组织“澄湾研究所”采用技术“砚池”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "d1ebdec94ba2c8f3",
+        "evidence": "组织“澄湾研究所”采用技术“霜禾”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "组织“澄湾研究所”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "组织“澄湾研究所”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "采用",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "人物“江岑”采用技术“溪桥”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "采用",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "人物“江岑”采用技术“望舒”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "采用",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "人物“江岑”采用技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "采用",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "人物“江岑”采用技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "组织“澄湾研究所”采用装备“溪桥”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "组织“澄湾研究所”采用装备“望舒”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "组织“澄湾研究所”采用装备“砚池”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "d1ebdec94ba2c8f3",
+        "evidence": "组织“澄湾研究所”采用装备“霜禾”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "组织“澄湾研究所”采用装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "采用",
+        "tail_entity_id": "4bd2a83817a2638a",
+        "evidence": "组织“澄湾研究所”采用装备“晓峰传感器”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "组织“澄湾研究所”研发技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "8703d360d78ba40b",
+        "relationCode": "研发",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "组织“澄湾研究所”研发技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "490170790e24f159",
+        "evidence": "人物“江岑”研发技术“频域去噪”。"
+      },
+      {
+        "head_entity_id": "307d5508c946c6de",
+        "relationCode": "研发",
+        "tail_entity_id": "37dca4c6e2ed6830",
+        "evidence": "人物“江岑”研发技术“轨迹拟合”。"
+      },
+      {
+        "head_entity_id": "be863707405ee326",
+        "relationCode": "采用",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "装备“溪桥”采用装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "32b7579b1a82f8c6",
+        "relationCode": "采用",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "装备“望舒”采用装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "307d48a3751dba60",
+        "relationCode": "采用",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "装备“砚池”采用装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "d1ebdec94ba2c8f3",
+        "relationCode": "采用",
+        "tail_entity_id": "8906386c13ed0caf",
+        "evidence": "装备“霜禾”采用装备“星涟检测仪”。"
+      },
+      {
+        "head_entity_id": "8906386c13ed0caf",
+        "relationCode": "采用",
+        "tail_entity_id": "be863707405ee326",
+        "evidence": "装备“星涟检测仪”采用技术“溪桥”。"
+      },
+      {
+        "head_entity_id": "8906386c13ed0caf",
+        "relationCode": "采用",
+        "tail_entity_id": "32b7579b1a82f8c6",
+        "evidence": "装备“星涟检测仪”采用技术“望舒”。"
+      },
+      {
+        "head_entity_id": "8906386c13ed0caf",
+        "relationCode": "采用",
+        "tail_entity_id": "307d48a3751dba60",
+        "evidence": "装备“星涟检测仪”采用技术“砚池”。"
+      }
+    ],
+    "resolutions": [],
+    "processing": {
+      "open_relation_normalization": [],
+      "chunk_count": 1,
+      "character_count": 2617,
+      "name_mapping_policy": "source",
+      "schema_enforced": false,
+      "extraction_mode": "open",
+      "prompt_sha256": "fc98ad6b8f449d4d42cada49ae7f8fece2a317d2424c1a2149f986b8d5e65df3",
+      "open_relation_retries": [],
+      "sampling": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "seed": 42,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      }
+    },
+    "source_doc": "doc-14",
+    "language": "zh"
+  }
+}

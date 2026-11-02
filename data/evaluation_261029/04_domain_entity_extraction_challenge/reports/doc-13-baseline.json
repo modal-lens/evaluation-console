@@ -1,0 +1,438 @@
+{
+  "document_id": "doc-13",
+  "mode": "baseline",
+  "options": {
+    "name_mapping_policy": "source",
+    "entity_types": [],
+    "entity_attributes": {},
+    "relation_types": [],
+    "domain_entity_types": [],
+    "compare_baseline": true,
+    "block_size": 4000,
+    "similarity_threshold": 0.88,
+    "attribute_similarity_threshold": 0.92,
+    "relation_similarity_threshold": 0.9,
+    "use_llm_resolution": false,
+    "time_granularities": [
+      "year",
+      "month",
+      "day"
+    ],
+    "space_granularities": [
+      "country",
+      "province",
+      "city",
+      "district"
+    ],
+    "reference_date": null
+  },
+  "text_sha256": "839c245e05d98abb1803915f95e0233e86654ea6d2fd3ad8092dd047d14b02d9",
+  "graph": {
+    "entities": [
+      {
+        "name": "陆澄",
+        "type": "人物",
+        "attributes": {},
+        "entity_id": "e615d1a5b09c54fc",
+        "description": "在组织“霁衡实验室”任职"
+      },
+      {
+        "name": "霁衡实验室",
+        "type": "组织",
+        "attributes": {},
+        "entity_id": "b9817b26e6abc63f",
+        "description": "研发装备和技术"
+      },
+      {
+        "name": "青岚",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "e0695d9ab9e09cfc",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "远汀",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "108d892b86747921",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "棠序",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "3c3dfd84857b1a1a",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "栖原",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "c138d03cab9a62eb",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "微光采样器",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "bad9c608c0588a32",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "流云探针",
+        "type": "装备",
+        "attributes": {},
+        "entity_id": "3e2d5383d304b5a3",
+        "description": "采用技术“谱线标定”和“波束追踪”"
+      },
+      {
+        "name": "谱线标定",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "58cbba23e95d8c1a",
+        "description": "被多个装备采用"
+      },
+      {
+        "name": "波束追踪",
+        "type": "技术",
+        "attributes": {},
+        "entity_id": "f7d8fae03d05d555",
+        "description": "被多个装备采用"
+      }
+    ],
+    "relations": [
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "任职",
+        "tail_entity_id": "b9817b26e6abc63f",
+        "evidence": "人物“陆澄”在组织“霁衡实验室”任职。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "组织“霁衡实验室”研发装备“青岚”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "人物“陆澄”研发装备“青岚”。"
+      },
+      {
+        "head_entity_id": "e0695d9ab9e09cfc",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“青岚”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "e0695d9ab9e09cfc",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“青岚”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "组织“霁衡实验室”研发装备“远汀”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "人物“陆澄”研发装备“远汀”。"
+      },
+      {
+        "head_entity_id": "108d892b86747921",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“远汀”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "108d892b86747921",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“远汀”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "3c3dfd84857b1a1a",
+        "evidence": "组织“霁衡实验室”研发装备“棠序”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "3c3dfd84857b1a1a",
+        "evidence": "人物“陆澄”研发装备“棠序”。"
+      },
+      {
+        "head_entity_id": "3c3dfd84857b1a1a",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“棠序”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "3c3dfd84857b1a1a",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“棠序”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "c138d03cab9a62eb",
+        "evidence": "组织“霁衡实验室”研发装备“栖原”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "c138d03cab9a62eb",
+        "evidence": "人物“陆澄”研发装备“栖原”。"
+      },
+      {
+        "head_entity_id": "c138d03cab9a62eb",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“栖原”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "c138d03cab9a62eb",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“栖原”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "组织“霁衡实验室”研发装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "人物“陆澄”研发装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "bad9c608c0588a32",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“微光采样器”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "bad9c608c0588a32",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“微光采样器”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "3e2d5383d304b5a3",
+        "evidence": "组织“霁衡实验室”研发装备“流云探针”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "3e2d5383d304b5a3",
+        "evidence": "人物“陆澄”研发装备“流云探针”。"
+      },
+      {
+        "head_entity_id": "3e2d5383d304b5a3",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "装备“流云探针”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "3e2d5383d304b5a3",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "装备“流云探针”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "e0695d9ab9e09cfc",
+        "relationCode": "采用",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "装备“青岚”采用技术“远汀”。"
+      },
+      {
+        "head_entity_id": "108d892b86747921",
+        "relationCode": "采用",
+        "tail_entity_id": "3c3dfd84857b1a1a",
+        "evidence": "装备“远汀”采用技术“棠序”。"
+      },
+      {
+        "head_entity_id": "3c3dfd84857b1a1a",
+        "relationCode": "采用",
+        "tail_entity_id": "c138d03cab9a62eb",
+        "evidence": "装备“棠序”采用技术“栖原”。"
+      },
+      {
+        "head_entity_id": "c138d03cab9a62eb",
+        "relationCode": "采用",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "装备“栖原”采用技术“青岚”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "组织“霁衡实验室”采用技术“青岚”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "组织“霁衡实验室”采用技术“远汀”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "3c3dfd84857b1a1a",
+        "evidence": "组织“霁衡实验室”采用技术“棠序”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "c138d03cab9a62eb",
+        "evidence": "组织“霁衡实验室”采用技术“栖原”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "组织“霁衡实验室”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "组织“霁衡实验室”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "采用",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "人物“陆澄”采用技术“青岚”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "采用",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "人物“陆澄”采用技术“远汀”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "采用",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "人物“陆澄”采用技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "采用",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "人物“陆澄”采用技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "组织“霁衡实验室”采用装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "采用",
+        "tail_entity_id": "3e2d5383d304b5a3",
+        "evidence": "组织“霁衡实验室”采用装备“流云探针”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "组织“霁衡实验室”研发技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "b9817b26e6abc63f",
+        "relationCode": "研发",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "组织“霁衡实验室”研发技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "58cbba23e95d8c1a",
+        "evidence": "人物“陆澄”研发技术“谱线标定”。"
+      },
+      {
+        "head_entity_id": "e615d1a5b09c54fc",
+        "relationCode": "研发",
+        "tail_entity_id": "f7d8fae03d05d555",
+        "evidence": "人物“陆澄”研发技术“波束追踪”。"
+      },
+      {
+        "head_entity_id": "e0695d9ab9e09cfc",
+        "relationCode": "采用",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "装备“青岚”采用装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "108d892b86747921",
+        "relationCode": "采用",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "装备“远汀”采用装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "3c3dfd84857b1a1a",
+        "relationCode": "采用",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "装备“棠序”采用装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "c138d03cab9a62eb",
+        "relationCode": "采用",
+        "tail_entity_id": "bad9c608c0588a32",
+        "evidence": "装备“栖原”采用装备“微光采样器”。"
+      },
+      {
+        "head_entity_id": "bad9c608c0588a32",
+        "relationCode": "采用",
+        "tail_entity_id": "e0695d9ab9e09cfc",
+        "evidence": "装备“微光采样器”采用技术“青岚”。"
+      },
+      {
+        "head_entity_id": "bad9c608c0588a32",
+        "relationCode": "采用",
+        "tail_entity_id": "108d892b86747921",
+        "evidence": "装备“微光采样器”采用技术“远汀”。"
+      },
+      {
+        "head_entity_id": "bad9c608c0588a32",
+        "relationCode": "采用",
+        "tail_entity_id": "3c3dfd84857b1a1a",
+        "evidence": "装备“微光采样器”采用技术“棠序”。"
+      }
+    ],
+    "resolutions": [],
+    "processing": {
+      "open_relation_normalization": [],
+      "chunk_count": 1,
+      "character_count": 2627,
+      "name_mapping_policy": "source",
+      "schema_enforced": false,
+      "extraction_mode": "open",
+      "prompt_sha256": "fc98ad6b8f449d4d42cada49ae7f8fece2a317d2424c1a2149f986b8d5e65df3",
+      "open_relation_retries": [],
+      "sampling": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "seed": 42,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      }
+    },
+    "source_doc": "doc-13",
+    "language": "zh"
+  }
+}

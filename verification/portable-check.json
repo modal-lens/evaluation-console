@@ -1,0 +1,28 @@
+{
+  "scope": "metrics only",
+  "passed": true,
+  "unpacked_outside_original_project": true,
+  "seven_module_apis_passed": true,
+  "real_frontend_proxy_passed": true,
+  "commands": [
+    {
+      "command": [
+        "scripts/verify_standalone.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "start.py",
+        "--host",
+        "127.0.0.1",
+        "--backend-port",
+        "50311",
+        "--frontend-port",
+        "50312",
+        "--smoke-test"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

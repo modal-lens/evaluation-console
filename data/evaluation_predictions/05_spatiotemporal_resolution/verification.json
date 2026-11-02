@@ -1,0 +1,96 @@
+{
+  "metric": "spatiotemporal-resolution",
+  "source_report": "F:\\pywork\\codex_work\\nanjing_zncl\\data\\evaluation_batches_diverse\\reports\\final-run-20261023\\05_spatiotemporal_resolution-1.json",
+  "source_report_sha256": "73c6d156f36794dfe6ba5e01cd2ad36954fd9174cfa0a82ed5bd0569c2566de6",
+  "source_job_id": "ca5f94e8e5f14edba8ec6f9ad457a72b",
+  "source_created_at": "2026-10-23T09:43:14.037342+00:00",
+  "verified_at": "2026-10-26T03:24:11.860130+00:00",
+  "same_metrics_as_source": true,
+  "algorithm_calls": 0,
+  "sha256": {
+    "predictions.json": "257ebe2e7a3b85118aac0fc24b44e75982dc6b5ee3cbe60ef17de7145eb8d1e7",
+    "gold.json": "e12d961314176a6835f9f6da009eb37998fd6728788fd301324989993a0756fe",
+    "options.json": "d082eedfad3562791e4dfd281ffe7514d8baf3675dfaef5c02d2c33a31aa9f6c",
+    "texts/document-1.txt": "8b23ca396d8a2ef442d96dc5f23e92539b4add5069e68a8a0ebf4b79f8e9cf69",
+    "texts/document-10.txt": "0e98e27550537d2046594b1896fb9159969a6b8774d5dac9ebd2b898cad50cc2",
+    "texts/document-11.txt": "7231733e4490365d631fe91cfed588b6b556239abb3ebfedb22a93564dae80e9",
+    "texts/document-12.txt": "53f8f855bcd1e3a0300ce8e3bcf7129fa82a8388e5db720519185420c1bf07d0",
+    "texts/document-2.txt": "e170130032217e0336d762fe97f2cb70741189dd0052058dbefa1861a79dbe75",
+    "texts/document-3.txt": "c009e2f1a23711a9ccc1039e852a23e03c92736e2f92c77a111c0d3eaa7e4666",
+    "texts/document-4.txt": "984016780ea71be28388dc0734a48a8ace56523372f1c87087e3cf57e61e0cbc",
+    "texts/document-5.txt": "f42ce32966c37911b5a34749bc5823605c7da5dc1da3a091ec09b6ca75320d1a",
+    "texts/document-6.txt": "fcb6e549f0d4f5ecde0565c9c839ff4921db6a26e2cc82c074c30e2170b0227e",
+    "texts/document-7.txt": "370305ebff967b64b44ee3ada9c5e218fe81e2e2833a106835587d185342b93e",
+    "texts/document-8.txt": "67478a5f1db0df9a88cc75ff06996adc886e32745741c5c0aa449d51a8cf14be",
+    "texts/document-9.txt": "190ec8477ec16d5e81e569b2bcad872dd66d752109df2af5aa734388225c080f"
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "correct": 84,
+    "total": 84,
+    "by_granularity": [
+      {
+        "dimension": "space",
+        "granularity": "city",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "space",
+        "granularity": "country",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "space",
+        "granularity": "district",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "space",
+        "granularity": "province",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "time",
+        "granularity": "day",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "time",
+        "granularity": "month",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      {
+        "dimension": "time",
+        "granularity": "year",
+        "accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      }
+    ]
+  },
+  "quality_scores": {
+    "accuracy": 1.0,
+    "space/city/accuracy": 1.0,
+    "space/country/accuracy": 1.0,
+    "space/district/accuracy": 1.0,
+    "space/province/accuracy": 1.0,
+    "time/day/accuracy": 1.0,
+    "time/month/accuracy": 1.0,
+    "time/year/accuracy": 1.0
+  },
+  "texts_match_historical_input": true,
+  "texts_verified_at": "2026-10-26T05:51:24.585165+00:00",
+  "text_documents": 12
+}

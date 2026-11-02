@@ -1,0 +1,11 @@
+# Runtime versions from the validation environment; no original requirements are changed.
+fastapi==0.139.0
+uvicorn==0.34.0
+pydantic==2.13.4
+PyYAML==6.0.2
+httpx==0.28.1
+psycopg2-binary==2.9.10
+openai==2.44.0
+python-multipart==0.0.32
+igraph==1.0.0
+leidenalg==0.12.0

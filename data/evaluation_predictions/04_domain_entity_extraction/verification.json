@@ -1,0 +1,76 @@
+{
+  "metric": "domain-entity-extraction",
+  "source_report": "F:\\pywork\\codex_work\\nanjing_zncl\\data\\evaluation_batches_diverse\\reports\\final-run-20261023\\04_domain_entity_extraction-1.json",
+  "source_report_sha256": "2fb19d272dfa1aa932797d11d88c078c7ce2a1dbdb44665fb16a83542d9a05e7",
+  "source_job_id": "4fab93967e664c68b0dd863d83dc6365",
+  "source_created_at": "2026-10-23T09:41:54.560762+00:00",
+  "verified_at": "2026-10-26T03:24:11.841623+00:00",
+  "same_metrics_as_source": true,
+  "algorithm_calls": 0,
+  "sha256": {
+    "predictions.json": "2c5fd8f38726be810e185adc3864968d1f5819846717bdd9b15adecefadf0bdb",
+    "gold.json": "0a29bf610fada7dc90b75c9b894cf57f17dc50b35d06955f0c977ce36dd22b40",
+    "options.json": "f5f9ced010fd1d0a43af02398808152f03cbf5047e72a4576fa5f94447ac291c",
+    "texts/document-1.txt": "d1d5eb4590323442e90c9d7a41f29248a3d939805fefd9352a0b8064d15e46a4",
+    "texts/document-10.txt": "5ee039d381b6992b8e8554596a7cc877a745131c480991218e31ae0d866f29e3",
+    "texts/document-11.txt": "cc0ca729239ca106feff9ad99b574ccef67b00694824428c84cd35133adfe9e1",
+    "texts/document-12.txt": "e30a2a51bed41cfa631f5c678f570bcc271822110e3d8c7ac6a891853bb83773",
+    "texts/document-2.txt": "92217a14239d9c37981de7eb05a9b09beab96c966a73f8560464866e0f3d47c2",
+    "texts/document-3.txt": "63b7fd469fe9fa6742b5548e7fee1658c7e6acde498356d165b94b52264c6696",
+    "texts/document-4.txt": "b00305edfc843178aab05f173597dd55eb9be3f69f6901006da474b255171162",
+    "texts/document-5.txt": "d7b3194306f8ecd921d80c82b27cb90aae36f0c6073798646227847fb4110c2f",
+    "texts/document-6.txt": "4c0ae77608c18f3a33c714bbfc59da471c531d197aa010a264c4250490a7bfed",
+    "texts/document-7.txt": "89f026b07de8c3e5ad1be4b61dbf32abfcf2beb34df4f869c94db6f6da21a2d0",
+    "texts/document-8.txt": "92523fa14405512f4d05e5309e64512f3e33cfc7f358082d2de1e90dbc87a5d5",
+    "texts/document-9.txt": "aade5c2d18ebeec1e96145f70dbe29323296f2f94914f3e2adc4e65014a8a453"
+  },
+  "metrics": {
+    "overall": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 48,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 48
+    },
+    "domain_only": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 24
+    },
+    "domain_entity_types": [
+      "技术",
+      "装备"
+    ],
+    "baseline": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 24,
+      "fp": 24,
+      "fn": 24,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "support": 48
+    },
+    "f1_delta": 0.5
+  },
+  "quality_scores": {
+    "overall/f1": 1.0,
+    "overall/precision": 1.0,
+    "overall/recall": 1.0,
+    "domain_only/f1": 1.0,
+    "domain_only/precision": 1.0,
+    "domain_only/recall": 1.0
+  },
+  "texts_match_historical_input": true,
+  "texts_verified_at": "2026-10-26T05:51:24.471873+00:00",
+  "text_documents": 12
+}

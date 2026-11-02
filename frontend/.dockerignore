@@ -1,0 +1,7 @@
+node_modules
+dist
+artifacts
+tests
+e2e
+.env
+README.md

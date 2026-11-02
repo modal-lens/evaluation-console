@@ -1,0 +1,1052 @@
+{
+  "metric": "spatiotemporal-resolution",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "77f2c9a25a8cec8b",
+            "name": "张明",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "55c39044a49f24b6",
+            "name": "中国江苏省南京市鼓楼区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "77f2c9a25a8cec8b",
+            "relationCode": "位于",
+            "tail_entity_id": "55c39044a49f24b6",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月16日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月16日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月16日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-16"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "鼓楼区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "鼓楼区"
+          },
+          {
+            "mention": "2026年10月",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "中国江苏省南京市鼓楼区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市鼓楼区"
+          },
+          {
+            "mention": "中国江苏省南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国江苏省南京市"
+          },
+          {
+            "mention": "中国江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国江苏省"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "621fb70fbfe54408",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9f1325ef8ce2f883",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "621fb70fbfe54408",
+            "relationCode": "位于",
+            "tail_entity_id": "9f1325ef8ce2f883",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月25日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月25日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月25日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-25"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2488d249d28cc8e6",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "7b23b6c1fe582d70",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2488d249d28cc8e6",
+            "relationCode": "位于",
+            "tail_entity_id": "7b23b6c1fe582d70",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月26日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月26日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月26日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-26"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "中国陕西省西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国陕西省西安市"
+          },
+          {
+            "mention": "中国陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国陕西省"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "640f477cf6a2a703",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a7edf86c150862ec",
+            "name": "中国辽宁省朝阳市双塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "640f477cf6a2a703",
+            "relationCode": "位于",
+            "tail_entity_id": "a7edf86c150862ec",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月27日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月27日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月27日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-27"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "辽宁省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "辽宁省"
+          },
+          {
+            "mention": "朝阳市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "朝阳市"
+          },
+          {
+            "mention": "双塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "双塔区"
+          },
+          {
+            "mention": "中国辽宁省朝阳市双塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国辽宁省朝阳市双塔区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "5d51a0203eec6897",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ae54f4a10e721680",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "5d51a0203eec6897",
+            "relationCode": "位于",
+            "tail_entity_id": "ae54f4a10e721680",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月17日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月17日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月17日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-17"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "成都市武侯区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "dc9d502fed5f2614",
+            "name": "李华",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e5362734f60fad86",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "dc9d502fed5f2614",
+            "relationCode": "位于",
+            "tail_entity_id": "e5362734f60fad86",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月18日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月18日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月18日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-18"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "d673a4ea3ea37be9",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4a4dc1695ca8795f",
+            "name": "中国浙江省杭州市西湖区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "d673a4ea3ea37be9",
+            "relationCode": "位于",
+            "tail_entity_id": "4a4dc1695ca8795f",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月19日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月19日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月19日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-19"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "浙江省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "浙江省"
+          },
+          {
+            "mention": "杭州市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "杭州市"
+          },
+          {
+            "mention": "西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "西湖区"
+          },
+          {
+            "mention": "中国浙江省杭州市西湖区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国浙江省杭州市西湖区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "0922fdda71604396",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6e36fb5766e94b51",
+            "name": "中国陕西省西安市雁塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "0922fdda71604396",
+            "relationCode": "位于",
+            "tail_entity_id": "6e36fb5766e94b51",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月20日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月20日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月20日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-20"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "陕西省"
+          },
+          {
+            "mention": "西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "西安市"
+          },
+          {
+            "mention": "雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "雁塔区"
+          },
+          {
+            "mention": "中国陕西省西安市雁塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国陕西省西安市雁塔区"
+          },
+          {
+            "mention": "中国陕西省西安市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国陕西省西安市"
+          },
+          {
+            "mention": "中国陕西省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国陕西省"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "54da740aa297758a",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "63e9dcd573a7ac12",
+            "name": "中国辽宁省朝阳市双塔区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "54da740aa297758a",
+            "relationCode": "位于",
+            "tail_entity_id": "63e9dcd573a7ac12",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "昨天",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-21"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "辽宁省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "辽宁省"
+          },
+          {
+            "mention": "朝阳市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "朝阳市"
+          },
+          {
+            "mention": "双塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "双塔区"
+          },
+          {
+            "mention": "中国辽宁省朝阳市双塔区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国辽宁省朝阳市双塔区"
+          },
+          {
+            "mention": "中国辽宁省朝阳市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "中国辽宁省朝阳市"
+          },
+          {
+            "mention": "中国辽宁省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "中国辽宁省"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "ff9548843abf74fb",
+            "name": "孙悦",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "672a67224303b5ed",
+            "name": "中国江苏省南京市鼓楼区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "ff9548843abf74fb",
+            "relationCode": "位于",
+            "tail_entity_id": "672a67224303b5ed",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "今天",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "今天",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "今天",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-22"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "江苏省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "江苏省"
+          },
+          {
+            "mention": "南京市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "南京市"
+          },
+          {
+            "mention": "鼓楼区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "鼓楼区"
+          },
+          {
+            "mention": "中国江苏省南京市鼓楼区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国江苏省南京市鼓楼区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "ef2c6324b579c8bc",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2c5a3a69991c7da2",
+            "name": "中国四川省成都市武侯区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "ef2c6324b579c8bc",
+            "relationCode": "位于",
+            "tail_entity_id": "2c5a3a69991c7da2",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "明天",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "明天",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "明天",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-23"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "四川省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "四川省"
+          },
+          {
+            "mention": "成都市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "成都市"
+          },
+          {
+            "mention": "武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武侯区"
+          },
+          {
+            "mention": "中国四川省成都市武侯区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国四川省成都市武侯区"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3e339d8136494a36",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ce2b95f158e2ada3",
+            "name": "中国湖北省武汉市武昌区",
+            "type": "地理空间",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "3e339d8136494a36",
+            "relationCode": "位于",
+            "tail_entity_id": "ce2b95f158e2ada3",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [
+          {
+            "mention": "2026年10月24日",
+            "dimension": "time",
+            "granularity": "year",
+            "value": "2026"
+          },
+          {
+            "mention": "2026年10月24日",
+            "dimension": "time",
+            "granularity": "month",
+            "value": "2026-10"
+          },
+          {
+            "mention": "2026年10月24日",
+            "dimension": "time",
+            "granularity": "day",
+            "value": "2026-10-24"
+          },
+          {
+            "mention": "中国",
+            "dimension": "space",
+            "granularity": "country",
+            "value": "中国"
+          },
+          {
+            "mention": "湖北省",
+            "dimension": "space",
+            "granularity": "province",
+            "value": "湖北省"
+          },
+          {
+            "mention": "武汉市",
+            "dimension": "space",
+            "granularity": "city",
+            "value": "武汉市"
+          },
+          {
+            "mention": "武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "武昌区"
+          },
+          {
+            "mention": "中国湖北省武汉市武昌区",
+            "dimension": "space",
+            "granularity": "district",
+            "value": "中国湖北省武汉市武昌区"
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "baseline_documents": null
+  }
+}

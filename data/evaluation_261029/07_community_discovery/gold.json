@@ -1,0 +1,884 @@
+{
+  "documents": [
+    {
+      "document_id": "stable-01",
+      "filename": "sample-01.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "沈清",
+          "type": "人物",
+          "community": "community-0"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜岳研究院",
+          "type": "组织",
+          "community": "community-0"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜岳平台",
+          "type": "平台",
+          "community": "community-0"
+        },
+        {
+          "entity_id": "e4",
+          "name": "顾辰",
+          "type": "人物",
+          "community": "community-1"
+        },
+        {
+          "entity_id": "e5",
+          "name": "泽衡研究院",
+          "type": "组织",
+          "community": "community-1"
+        },
+        {
+          "entity_id": "e6",
+          "name": "泽衡平台",
+          "type": "平台",
+          "community": "community-1"
+        },
+        {
+          "entity_id": "e7",
+          "name": "季衡",
+          "type": "人物",
+          "community": "isolated-observer"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-02",
+      "filename": "sample-02.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陆宁",
+          "type": "人物",
+          "community": "community-2"
+        },
+        {
+          "entity_id": "e2",
+          "name": "沃林研究院",
+          "type": "组织",
+          "community": "community-2"
+        },
+        {
+          "entity_id": "e3",
+          "name": "沃林平台",
+          "type": "平台",
+          "community": "community-2"
+        },
+        {
+          "entity_id": "e4",
+          "name": "周岚",
+          "type": "人物",
+          "community": "community-3"
+        },
+        {
+          "entity_id": "e5",
+          "name": "浩岑研究院",
+          "type": "组织",
+          "community": "community-3"
+        },
+        {
+          "entity_id": "e6",
+          "name": "浩岑平台",
+          "type": "平台",
+          "community": "community-3"
+        },
+        {
+          "entity_id": "sample",
+          "name": "泽衡样机",
+          "type": "平台",
+          "community": "community-2"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "sample-use",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "sample"
+        },
+        {
+          "relation_id": "sample-build",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "sample"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-03",
+      "filename": "sample-03.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "韩乔",
+          "type": "人物",
+          "community": "community-4"
+        },
+        {
+          "entity_id": "e2",
+          "name": "文序研究院",
+          "type": "组织",
+          "community": "community-4"
+        },
+        {
+          "entity_id": "e3",
+          "name": "文序平台",
+          "type": "平台",
+          "community": "community-4"
+        },
+        {
+          "entity_id": "e4",
+          "name": "许川",
+          "type": "人物",
+          "community": "community-5"
+        },
+        {
+          "entity_id": "e5",
+          "name": "衡驰研究院",
+          "type": "组织",
+          "community": "community-5"
+        },
+        {
+          "entity_id": "e6",
+          "name": "衡驰平台",
+          "type": "平台",
+          "community": "community-5"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-04",
+      "filename": "sample-04.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "程墨",
+          "type": "人物",
+          "community": "community-6"
+        },
+        {
+          "entity_id": "e2",
+          "name": "晴川研究院",
+          "type": "组织",
+          "community": "community-6"
+        },
+        {
+          "entity_id": "e3",
+          "name": "晴川平台",
+          "type": "平台",
+          "community": "community-6"
+        },
+        {
+          "entity_id": "e4",
+          "name": "江澄",
+          "type": "人物",
+          "community": "community-7"
+        },
+        {
+          "entity_id": "e5",
+          "name": "岩序研究院",
+          "type": "组织",
+          "community": "community-7"
+        },
+        {
+          "entity_id": "e6",
+          "name": "岩序平台",
+          "type": "平台",
+          "community": "community-7"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-05",
+      "filename": "sample-05.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "叶宁",
+          "type": "人物",
+          "community": "community-8"
+        },
+        {
+          "entity_id": "e2",
+          "name": "森原研究院",
+          "type": "组织",
+          "community": "community-8"
+        },
+        {
+          "entity_id": "e3",
+          "name": "森原平台",
+          "type": "平台",
+          "community": "community-8"
+        },
+        {
+          "entity_id": "e4",
+          "name": "宋遥",
+          "type": "人物",
+          "community": "community-9"
+        },
+        {
+          "entity_id": "e5",
+          "name": "沧屿研究院",
+          "type": "组织",
+          "community": "community-9"
+        },
+        {
+          "entity_id": "e6",
+          "name": "沧屿平台",
+          "type": "平台",
+          "community": "community-9"
+        },
+        {
+          "entity_id": "sample",
+          "name": "文序样机",
+          "type": "平台",
+          "community": "community-8"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "sample-use",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "sample"
+        },
+        {
+          "relation_id": "sample-build",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "sample"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-06",
+      "filename": "sample-06.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "何晏",
+          "type": "人物",
+          "community": "community-10"
+        },
+        {
+          "entity_id": "e2",
+          "name": "炎衡研究院",
+          "type": "组织",
+          "community": "community-10"
+        },
+        {
+          "entity_id": "e3",
+          "name": "炎衡平台",
+          "type": "平台",
+          "community": "community-10"
+        },
+        {
+          "entity_id": "e4",
+          "name": "赵澜",
+          "type": "人物",
+          "community": "community-11"
+        },
+        {
+          "entity_id": "e5",
+          "name": "行川研究院",
+          "type": "组织",
+          "community": "community-11"
+        },
+        {
+          "entity_id": "e6",
+          "name": "行川平台",
+          "type": "平台",
+          "community": "community-11"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-07",
+      "filename": "sample-07.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "温枫",
+          "type": "人物",
+          "community": "community-12"
+        },
+        {
+          "entity_id": "e2",
+          "name": "风栈研究院",
+          "type": "组织",
+          "community": "community-12"
+        },
+        {
+          "entity_id": "e3",
+          "name": "风栈平台",
+          "type": "平台",
+          "community": "community-12"
+        },
+        {
+          "entity_id": "e4",
+          "name": "方洛",
+          "type": "人物",
+          "community": "community-13"
+        },
+        {
+          "entity_id": "e5",
+          "name": "潮衡研究院",
+          "type": "组织",
+          "community": "community-13"
+        },
+        {
+          "entity_id": "e6",
+          "name": "潮衡平台",
+          "type": "平台",
+          "community": "community-13"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-08",
+      "filename": "sample-08.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "白庭",
+          "type": "人物",
+          "community": "community-14"
+        },
+        {
+          "entity_id": "e2",
+          "name": "微岑研究院",
+          "type": "组织",
+          "community": "community-14"
+        },
+        {
+          "entity_id": "e3",
+          "name": "微岑平台",
+          "type": "平台",
+          "community": "community-14"
+        },
+        {
+          "entity_id": "e4",
+          "name": "梁舟",
+          "type": "人物",
+          "community": "community-15"
+        },
+        {
+          "entity_id": "e5",
+          "name": "星序研究院",
+          "type": "组织",
+          "community": "community-15"
+        },
+        {
+          "entity_id": "e6",
+          "name": "星序平台",
+          "type": "平台",
+          "community": "community-15"
+        },
+        {
+          "entity_id": "sample",
+          "name": "岩序样机",
+          "type": "平台",
+          "community": "community-14"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "sample-use",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "sample"
+        },
+        {
+          "relation_id": "sample-build",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "sample"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-09",
+      "filename": "sample-09.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "苏芮",
+          "type": "人物",
+          "community": "community-16"
+        },
+        {
+          "entity_id": "e2",
+          "name": "澜亭研究院",
+          "type": "组织",
+          "community": "community-16"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜亭平台",
+          "type": "平台",
+          "community": "community-16"
+        },
+        {
+          "entity_id": "e4",
+          "name": "陈沐",
+          "type": "人物",
+          "community": "community-17"
+        },
+        {
+          "entity_id": "e5",
+          "name": "山序研究院",
+          "type": "组织",
+          "community": "community-17"
+        },
+        {
+          "entity_id": "e6",
+          "name": "山序平台",
+          "type": "平台",
+          "community": "community-17"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "stable-10",
+      "filename": "sample-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "唐溪",
+          "type": "人物",
+          "community": "community-18"
+        },
+        {
+          "entity_id": "e2",
+          "name": "松屿研究院",
+          "type": "组织",
+          "community": "community-18"
+        },
+        {
+          "entity_id": "e3",
+          "name": "松屿平台",
+          "type": "平台",
+          "community": "community-18"
+        },
+        {
+          "entity_id": "e4",
+          "name": "孟知",
+          "type": "人物",
+          "community": "community-19"
+        },
+        {
+          "entity_id": "e5",
+          "name": "秋衡研究院",
+          "type": "组织",
+          "community": "community-19"
+        },
+        {
+          "entity_id": "e6",
+          "name": "秋衡平台",
+          "type": "平台",
+          "community": "community-19"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "研发",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e1",
+          "relationCode": "使用",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e4",
+          "relationCode": "任职",
+          "tail_entity_id": "e5"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e5",
+          "relationCode": "研发",
+          "tail_entity_id": "e6"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e4",
+          "relationCode": "使用",
+          "tail_entity_id": "e6"
+        }
+      ],
+      "attributes": []
+    }
+  ]
+}

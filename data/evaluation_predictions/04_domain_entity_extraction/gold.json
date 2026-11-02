@@ -1,0 +1,352 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "张明",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "星河研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "相控阵雷达",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "数字波束形成技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "王芳",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "晨光研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "红外传感器",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "光电探测技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "李华",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "远航研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "合成孔径雷达",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "脉冲压缩技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "赵敏",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "青峰研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "激光测距仪",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "激光测距技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陈杰",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "海川研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "惯性导航设备",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "惯性导航技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "刘洋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "博远研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "声呐设备",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "水声探测技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "孙悦",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "凌云研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "光谱分析仪",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "光谱分析技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "吴昊",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "清源研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "卫星通信终端",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "卫星通信技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "郑凯",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "天衡研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "毫米波雷达",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "毫米波探测技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "冯静",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "锦程研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "热成像仪",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "热成像技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "何峰",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "卓越研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "磁力仪",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "磁场测量技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "高琳",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "明德研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e3",
+          "name": "电子显微镜",
+          "type": "装备"
+        },
+        {
+          "entity_id": "e4",
+          "name": "电子成像技术",
+          "type": "技术"
+        }
+      ],
+      "relations": [],
+      "attributes": []
+    }
+  ]
+}

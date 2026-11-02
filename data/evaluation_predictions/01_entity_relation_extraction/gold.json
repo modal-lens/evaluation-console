@@ -1,0 +1,580 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "张明",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "吴昊",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "星河研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "南京",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "王芳",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "郑凯",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "晨光研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "苏州",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "李华",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "冯静",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "远航研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "杭州",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "赵敏",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "何峰",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "青峰研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "成都",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陈杰",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "高琳",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "海川研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "武汉",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "刘洋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "罗毅",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "博远研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "西安",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "孙悦",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "梁欣",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "凌云研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "南京",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "吴昊",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "宋涛",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "清源研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "苏州",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "郑凯",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "唐雪",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "天衡研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "杭州",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "冯静",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "许晨",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "锦程研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "成都",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "何峰",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "邓宇",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "卓越研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "武汉",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "高琳",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "韩梅",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "明德研究院",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "西安",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        }
+      ],
+      "attributes": []
+    }
+  ]
+}

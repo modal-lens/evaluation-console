@@ -1,0 +1,81 @@
+{
+  "metric": "spatiotemporal-resolution",
+  "source_report": "reports/interval-selected/05_spatiotemporal_resolution-1.json",
+  "source_job_id": "99aeafe39bc74aca85d68a282ce302d3",
+  "source_report_sha256": "fdcf56af1b82f27be80304471f763580b26dc00c5470e6d9c9a3a63c2c5749b3",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "accuracy": 0.9608938547486033,
+    "space/city/accuracy": 0.96,
+    "space/country/accuracy": 0.9615384615384616,
+    "space/district/accuracy": 0.96,
+    "space/province/accuracy": 0.96,
+    "time/day/accuracy": 0.9615384615384616,
+    "time/month/accuracy": 0.9615384615384616,
+    "time/year/accuracy": 0.9615384615384616
+  },
+  "metrics": {
+    "accuracy": 0.9608938547486033,
+    "correct": 172,
+    "total": 179,
+    "by_granularity": [
+      {
+        "dimension": "space",
+        "granularity": "city",
+        "accuracy": 0.96,
+        "correct": 24,
+        "total": 25
+      },
+      {
+        "dimension": "space",
+        "granularity": "country",
+        "accuracy": 0.9615384615384616,
+        "correct": 25,
+        "total": 26
+      },
+      {
+        "dimension": "space",
+        "granularity": "district",
+        "accuracy": 0.96,
+        "correct": 24,
+        "total": 25
+      },
+      {
+        "dimension": "space",
+        "granularity": "province",
+        "accuracy": 0.96,
+        "correct": 24,
+        "total": 25
+      },
+      {
+        "dimension": "time",
+        "granularity": "day",
+        "accuracy": 0.9615384615384616,
+        "correct": 25,
+        "total": 26
+      },
+      {
+        "dimension": "time",
+        "granularity": "month",
+        "accuracy": 0.9615384615384616,
+        "correct": 25,
+        "total": 26
+      },
+      {
+        "dimension": "time",
+        "granularity": "year",
+        "accuracy": 0.9615384615384616,
+        "correct": 25,
+        "total": 26
+      }
+    ]
+  },
+  "sha256": {
+    "predictions.json": "4c42f84b2d94dba989351425044fb693402eeef1aa7b2a6ad7b398b8ddd65887",
+    "gold.json": "17f5d5564ddb514075ee578cd5a4d1aabbc9e7a193e32077844b71e921bfbd5d",
+    "options.json": "df375109db3d58371f47f0815e6be73abc1c72ec5e58309fc8379dafe1e0fcd7"
+  }
+}

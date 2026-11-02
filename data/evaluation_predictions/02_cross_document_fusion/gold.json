@@ -1,0 +1,688 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "张明",
+          "type": "人物",
+          "cluster": "p-0"
+        },
+        {
+          "entity_id": "e2",
+          "name": "星河研究院",
+          "type": "组织",
+          "cluster": "o-0"
+        },
+        {
+          "entity_id": "e3",
+          "name": "南京",
+          "type": "地理空间",
+          "cluster": "c-0"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-0"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-0"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "南京",
+          "cluster": "city-0"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2010",
+          "cluster": "year-0"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "张明",
+          "type": "人物",
+          "cluster": "p-0"
+        },
+        {
+          "entity_id": "e2",
+          "name": "星河研究院",
+          "type": "组织",
+          "cluster": "o-0"
+        },
+        {
+          "entity_id": "e3",
+          "name": "南京",
+          "type": "地理空间",
+          "cluster": "c-0"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-0"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-0"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "南京",
+          "cluster": "city-0"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2010",
+          "cluster": "year-0"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "王芳",
+          "type": "人物",
+          "cluster": "p-1"
+        },
+        {
+          "entity_id": "e2",
+          "name": "晨光研究院",
+          "type": "组织",
+          "cluster": "o-1"
+        },
+        {
+          "entity_id": "e3",
+          "name": "苏州",
+          "type": "地理空间",
+          "cluster": "c-1"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-1"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-1"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "苏州",
+          "cluster": "city-1"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2011",
+          "cluster": "year-1"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "王芳",
+          "type": "人物",
+          "cluster": "p-1"
+        },
+        {
+          "entity_id": "e2",
+          "name": "晨光研究院",
+          "type": "组织",
+          "cluster": "o-1"
+        },
+        {
+          "entity_id": "e3",
+          "name": "苏州",
+          "type": "地理空间",
+          "cluster": "c-1"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-1"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-1"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "苏州",
+          "cluster": "city-1"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2011",
+          "cluster": "year-1"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "李华",
+          "type": "人物",
+          "cluster": "p-2"
+        },
+        {
+          "entity_id": "e2",
+          "name": "远航研究院",
+          "type": "组织",
+          "cluster": "o-2"
+        },
+        {
+          "entity_id": "e3",
+          "name": "杭州",
+          "type": "地理空间",
+          "cluster": "c-2"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-2"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "杭州",
+          "cluster": "city-2"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2012",
+          "cluster": "year-2"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "李华",
+          "type": "人物",
+          "cluster": "p-2"
+        },
+        {
+          "entity_id": "e2",
+          "name": "远航研究院",
+          "type": "组织",
+          "cluster": "o-2"
+        },
+        {
+          "entity_id": "e3",
+          "name": "杭州",
+          "type": "地理空间",
+          "cluster": "c-2"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-2"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-2"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "杭州",
+          "cluster": "city-2"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2012",
+          "cluster": "year-2"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "赵敏",
+          "type": "人物",
+          "cluster": "p-3"
+        },
+        {
+          "entity_id": "e2",
+          "name": "青峰研究院",
+          "type": "组织",
+          "cluster": "o-3"
+        },
+        {
+          "entity_id": "e3",
+          "name": "成都",
+          "type": "地理空间",
+          "cluster": "c-3"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-3"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "成都",
+          "cluster": "city-3"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2013",
+          "cluster": "year-3"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "赵敏",
+          "type": "人物",
+          "cluster": "p-3"
+        },
+        {
+          "entity_id": "e2",
+          "name": "青峰研究院",
+          "type": "组织",
+          "cluster": "o-3"
+        },
+        {
+          "entity_id": "e3",
+          "name": "成都",
+          "type": "地理空间",
+          "cluster": "c-3"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-3"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "成都",
+          "cluster": "city-3"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2013",
+          "cluster": "year-3"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陈杰",
+          "type": "人物",
+          "cluster": "p-4"
+        },
+        {
+          "entity_id": "e2",
+          "name": "海川研究院",
+          "type": "组织",
+          "cluster": "o-4"
+        },
+        {
+          "entity_id": "e3",
+          "name": "武汉",
+          "type": "地理空间",
+          "cluster": "c-4"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-4"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-4"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "武汉",
+          "cluster": "city-4"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2014",
+          "cluster": "year-4"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "陈杰",
+          "type": "人物",
+          "cluster": "p-4"
+        },
+        {
+          "entity_id": "e2",
+          "name": "海川研究院",
+          "type": "组织",
+          "cluster": "o-4"
+        },
+        {
+          "entity_id": "e3",
+          "name": "武汉",
+          "type": "地理空间",
+          "cluster": "c-4"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-4"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-4"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "武汉",
+          "cluster": "city-4"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2014",
+          "cluster": "year-4"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "刘洋",
+          "type": "人物",
+          "cluster": "p-5"
+        },
+        {
+          "entity_id": "e2",
+          "name": "博远研究院",
+          "type": "组织",
+          "cluster": "o-5"
+        },
+        {
+          "entity_id": "e3",
+          "name": "西安",
+          "type": "地理空间",
+          "cluster": "c-5"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-5"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-5"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "西安",
+          "cluster": "city-5"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2015",
+          "cluster": "year-5"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "刘洋",
+          "type": "人物",
+          "cluster": "p-5"
+        },
+        {
+          "entity_id": "e2",
+          "name": "博远研究院",
+          "type": "组织",
+          "cluster": "o-5"
+        },
+        {
+          "entity_id": "e3",
+          "name": "西安",
+          "type": "地理空间",
+          "cluster": "c-5"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "employment-5"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "location-5"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "西安",
+          "cluster": "city-5"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2015",
+          "cluster": "year-5"
+        }
+      ]
+    }
+  ]
+}

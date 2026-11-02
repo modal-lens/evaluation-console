@@ -1,0 +1,32 @@
+debug: false
+log_level: INFO
+server:
+  host: 0.0.0.0
+  port: 50111
+  reload: false
+PostgreSQL:
+  url: postgres
+  port: 5432
+  username: app
+  password: change-me
+  db_name: nanjing-zncl
+  min_connections: 1
+  max_connections: 5
+  biz_tag: biz_tag
+  biz_extract_tmp_tag_relation: biz_extract_tmp_tag_relation
+  biz_extract_template: biz_extract_template
+  biz_entity_type_config: biz_entity_type_config
+  biz_entity_type_attribute_config: biz_entity_type_attribute_config
+  biz_extract_tmp_entity_attr_relation: biz_extract_tmp_entity_attr_relation
+llm_config:
+  key: EMPTY
+  text_llm_name: Qwen3-32B
+  text_llm_url: http://llm:8000/v1/
+  timeout_seconds: 120
+  max_retries: 2
+  retry_interval_seconds: 1
+  max_concurrency: 4
+  enable_thinking: false
+  temperature: 0.1
+  top_p: 0.8
+  max_tokens: 4096

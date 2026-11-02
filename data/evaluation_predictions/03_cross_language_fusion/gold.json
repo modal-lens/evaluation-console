@@ -1,0 +1,688 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Zhang Ming",
+          "type": "人物",
+          "cluster": "pair-1-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Star River Research Institute",
+          "type": "组织",
+          "cluster": "pair-1-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Nanjing",
+          "type": "地理空间",
+          "cluster": "pair-1-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-1-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-1-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Nanjing",
+          "cluster": "pair-1-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2010",
+          "cluster": "pair-1-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Zhang Ming",
+          "type": "人物",
+          "cluster": "pair-1-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Star River Research Institute",
+          "type": "组织",
+          "cluster": "pair-1-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Nanjing",
+          "type": "地理空间",
+          "cluster": "pair-1-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-1-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-1-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Nanjing",
+          "cluster": "pair-1-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2010",
+          "cluster": "pair-1-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Wang Fang",
+          "type": "人物",
+          "cluster": "pair-2-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Morning Light Technology Center",
+          "type": "组织",
+          "cluster": "pair-2-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Suzhou",
+          "type": "地理空间",
+          "cluster": "pair-2-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-2-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-2-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Suzhou",
+          "cluster": "pair-2-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2012",
+          "cluster": "pair-2-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Wang Fang",
+          "type": "人物",
+          "cluster": "pair-2-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Morning Light Technology Center",
+          "type": "组织",
+          "cluster": "pair-2-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Suzhou",
+          "type": "地理空间",
+          "cluster": "pair-2-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-2-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-2-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Suzhou",
+          "cluster": "pair-2-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2012",
+          "cluster": "pair-2-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Li Hua",
+          "type": "人物",
+          "cluster": "pair-3-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Voyage Marine Laboratory",
+          "type": "组织",
+          "cluster": "pair-3-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Qingdao",
+          "type": "地理空间",
+          "cluster": "pair-3-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-3-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-3-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Qingdao",
+          "cluster": "pair-3-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2014",
+          "cluster": "pair-3-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Li Hua",
+          "type": "人物",
+          "cluster": "pair-3-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Voyage Marine Laboratory",
+          "type": "组织",
+          "cluster": "pair-3-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Qingdao",
+          "type": "地理空间",
+          "cluster": "pair-3-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-3-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-3-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Qingdao",
+          "cluster": "pair-3-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2014",
+          "cluster": "pair-3-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Zhao Min",
+          "type": "人物",
+          "cluster": "pair-4-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Green Peak Ecology Institute",
+          "type": "组织",
+          "cluster": "pair-4-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Chengdu",
+          "type": "地理空间",
+          "cluster": "pair-4-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-4-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-4-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Chengdu",
+          "cluster": "pair-4-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2016",
+          "cluster": "pair-4-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Zhao Min",
+          "type": "人物",
+          "cluster": "pair-4-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Green Peak Ecology Institute",
+          "type": "组织",
+          "cluster": "pair-4-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Chengdu",
+          "type": "地理空间",
+          "cluster": "pair-4-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-4-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-4-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Chengdu",
+          "cluster": "pair-4-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2016",
+          "cluster": "pair-4-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Liu Yang",
+          "type": "人物",
+          "cluster": "pair-5-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Sea River Archives",
+          "type": "组织",
+          "cluster": "pair-5-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Xiamen",
+          "type": "地理空间",
+          "cluster": "pair-5-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-5-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-5-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Xiamen",
+          "cluster": "pair-5-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2018",
+          "cluster": "pair-5-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Liu Yang",
+          "type": "人物",
+          "cluster": "pair-5-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Sea River Archives",
+          "type": "组织",
+          "cluster": "pair-5-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Xiamen",
+          "type": "地理空间",
+          "cluster": "pair-5-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-5-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-5-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Xiamen",
+          "cluster": "pair-5-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2018",
+          "cluster": "pair-5-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Sun Yue",
+          "type": "人物",
+          "cluster": "pair-6-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Broad Vision Medical Center",
+          "type": "组织",
+          "cluster": "pair-6-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Wuhan",
+          "type": "地理空间",
+          "cluster": "pair-6-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-6-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-6-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Wuhan",
+          "cluster": "pair-6-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2019",
+          "cluster": "pair-6-foundation-year"
+        }
+      ]
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "en",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "Sun Yue",
+          "type": "人物",
+          "cluster": "pair-6-person"
+        },
+        {
+          "entity_id": "e2",
+          "name": "Broad Vision Medical Center",
+          "type": "组织",
+          "cluster": "pair-6-organization"
+        },
+        {
+          "entity_id": "e3",
+          "name": "Wuhan",
+          "type": "地理空间",
+          "cluster": "pair-6-city"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e2",
+          "cluster": "pair-6-employment"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "位于",
+          "tail_entity_id": "e3",
+          "cluster": "pair-6-location"
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_id": "a1",
+          "entity_id": "e2",
+          "key": "所在地",
+          "value": "Wuhan",
+          "cluster": "pair-6-location-value"
+        },
+        {
+          "attribute_id": "a2",
+          "entity_id": "e2",
+          "key": "成立年份",
+          "value": "2019",
+          "cluster": "pair-6-foundation-year"
+        }
+      ]
+    }
+  ]
+}

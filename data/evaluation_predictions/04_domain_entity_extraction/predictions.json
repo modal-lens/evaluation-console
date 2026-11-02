@@ -1,0 +1,1473 @@
+{
+  "metric": "domain-entity-extraction",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "4d5d5707f150465e",
+            "name": "张明",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bf0b2ca9b69ac479",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cff950ca950fed86",
+            "name": "相控阵雷达",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0eb5fd06d0606df7",
+            "name": "数字波束形成技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "4d5d5707f150465e",
+            "relationCode": "任职于",
+            "tail_entity_id": "bf0b2ca9b69ac479",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "bf0b2ca9b69ac479",
+            "relationCode": "研发",
+            "tail_entity_id": "cff950ca950fed86",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "cff950ca950fed86",
+            "relationCode": "采用",
+            "tail_entity_id": "0eb5fd06d0606df7",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "283efc911a1cf281",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "f401843468757b92",
+            "name": "锦程研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b5d1d44f0eec5832",
+            "name": "热成像仪",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "38a36a8d9add1491",
+            "name": "热成像技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "283efc911a1cf281",
+            "relationCode": "任职于",
+            "tail_entity_id": "f401843468757b92",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "f401843468757b92",
+            "relationCode": "研发",
+            "tail_entity_id": "b5d1d44f0eec5832",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "b5d1d44f0eec5832",
+            "relationCode": "采用",
+            "tail_entity_id": "38a36a8d9add1491",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "b0da1b2b820e1638",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e3a07929f677389d",
+            "name": "卓越研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "548325ecd61f3252",
+            "name": "磁力仪",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2171045f0c8b1d1e",
+            "name": "磁场测量技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "b0da1b2b820e1638",
+            "relationCode": "任职于",
+            "tail_entity_id": "e3a07929f677389d",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e3a07929f677389d",
+            "relationCode": "研发",
+            "tail_entity_id": "548325ecd61f3252",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "548325ecd61f3252",
+            "relationCode": "采用",
+            "tail_entity_id": "2171045f0c8b1d1e",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2ab74428cd49e701",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b43b21df54c75e31",
+            "name": "明德研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e596b43027829df0",
+            "name": "电子显微镜",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "854e58aa835290e5",
+            "name": "电子成像技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2ab74428cd49e701",
+            "relationCode": "任职于",
+            "tail_entity_id": "b43b21df54c75e31",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "b43b21df54c75e31",
+            "relationCode": "研发",
+            "tail_entity_id": "e596b43027829df0",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "e596b43027829df0",
+            "relationCode": "采用",
+            "tail_entity_id": "854e58aa835290e5",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3e6c43c42b2faeb3",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "652148b4fb4d7855",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "be2f0a2ac0d6b028",
+            "name": "红外传感器",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5aaff4e17eb8f009",
+            "name": "光电探测技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "3e6c43c42b2faeb3",
+            "relationCode": "任职于",
+            "tail_entity_id": "652148b4fb4d7855",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "652148b4fb4d7855",
+            "relationCode": "研发",
+            "tail_entity_id": "be2f0a2ac0d6b028",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "be2f0a2ac0d6b028",
+            "relationCode": "采用",
+            "tail_entity_id": "5aaff4e17eb8f009",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f6bd3e72552c5b34",
+            "name": "李华",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "07a9116806cc89ae",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8435e149845e6982",
+            "name": "合成孔径雷达",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "affc832ae81c590f",
+            "name": "脉冲压缩技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f6bd3e72552c5b34",
+            "relationCode": "任职于",
+            "tail_entity_id": "07a9116806cc89ae",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "07a9116806cc89ae",
+            "relationCode": "研发",
+            "tail_entity_id": "8435e149845e6982",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "8435e149845e6982",
+            "relationCode": "采用",
+            "tail_entity_id": "affc832ae81c590f",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "5066aa47c79b94bd",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "725f428aae9e09fb",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "67e66175d6e2d110",
+            "name": "激光测距仪",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c66b79563da5c462",
+            "name": "激光测距技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "5066aa47c79b94bd",
+            "relationCode": "任职于",
+            "tail_entity_id": "725f428aae9e09fb",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "725f428aae9e09fb",
+            "relationCode": "研发",
+            "tail_entity_id": "67e66175d6e2d110",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "67e66175d6e2d110",
+            "relationCode": "采用",
+            "tail_entity_id": "c66b79563da5c462",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3b6580a932a71dd7",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a2c266a4d10f8c30",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "eac7da9873eadfb7",
+            "name": "惯性导航设备",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "25b5dc95b9ab73b6",
+            "name": "惯性导航技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "3b6580a932a71dd7",
+            "relationCode": "任职于",
+            "tail_entity_id": "a2c266a4d10f8c30",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "a2c266a4d10f8c30",
+            "relationCode": "研发",
+            "tail_entity_id": "eac7da9873eadfb7",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "eac7da9873eadfb7",
+            "relationCode": "采用",
+            "tail_entity_id": "25b5dc95b9ab73b6",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7b8078128c227bd1",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e6497c1a082d4fda",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1170733c88d79220",
+            "name": "声呐设备",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "1d67abed3362853d",
+            "name": "水声探测技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7b8078128c227bd1",
+            "relationCode": "任职于",
+            "tail_entity_id": "e6497c1a082d4fda",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e6497c1a082d4fda",
+            "relationCode": "研发",
+            "tail_entity_id": "1170733c88d79220",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "1170733c88d79220",
+            "relationCode": "采用",
+            "tail_entity_id": "1d67abed3362853d",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "91def28cd588320a",
+            "name": "孙悦",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "506c5ed2fb349a13",
+            "name": "凌云研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "ca02b6cf4de94519",
+            "name": "光谱分析仪",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "869aa4429d5f7d7c",
+            "name": "光谱分析技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "91def28cd588320a",
+            "relationCode": "任职于",
+            "tail_entity_id": "506c5ed2fb349a13",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "506c5ed2fb349a13",
+            "relationCode": "研发",
+            "tail_entity_id": "ca02b6cf4de94519",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "ca02b6cf4de94519",
+            "relationCode": "采用",
+            "tail_entity_id": "869aa4429d5f7d7c",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "d0b66bf4dea6460b",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e2db8ac7fd81132e",
+            "name": "清源研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "54958975e401e44d",
+            "name": "卫星通信终端",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e87334238fff8a4f",
+            "name": "卫星通信技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "d0b66bf4dea6460b",
+            "relationCode": "任职于",
+            "tail_entity_id": "e2db8ac7fd81132e",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e2db8ac7fd81132e",
+            "relationCode": "研发",
+            "tail_entity_id": "54958975e401e44d",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "54958975e401e44d",
+            "relationCode": "采用",
+            "tail_entity_id": "e87334238fff8a4f",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "b525517ecdbb5977",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "305fccba0c1395fe",
+            "name": "天衡研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "261a661b2b6c3d88",
+            "name": "毫米波雷达",
+            "type": "装备",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8730932f7593d6c3",
+            "name": "毫米波探测技术",
+            "type": "技术",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "b525517ecdbb5977",
+            "relationCode": "任职于",
+            "tail_entity_id": "305fccba0c1395fe",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "305fccba0c1395fe",
+            "relationCode": "研发",
+            "tail_entity_id": "261a661b2b6c3d88",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "261a661b2b6c3d88",
+            "relationCode": "采用",
+            "tail_entity_id": "8730932f7593d6c3",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      }
+    ],
+    "baseline_documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "266f2132aaca54a3",
+            "name": "张明",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "a3b4b177130cbe2e",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "23db30f651d57938",
+            "name": "相控阵雷达",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "b176c52f5d3692da",
+            "name": "数字波束形成技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "266f2132aaca54a3",
+            "relationCode": "任职于",
+            "tail_entity_id": "a3b4b177130cbe2e",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "a3b4b177130cbe2e",
+            "relationCode": "研发",
+            "tail_entity_id": "23db30f651d57938",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "23db30f651d57938",
+            "relationCode": "采用",
+            "tail_entity_id": "b176c52f5d3692da",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1a96977bbd3d2f35",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "6a9d6b060c2c2a49",
+            "name": "锦程研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "17a7b4a9f50199b5",
+            "name": "热成像仪",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "322aa41eb3c6a90a",
+            "name": "热成像技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1a96977bbd3d2f35",
+            "relationCode": "任职于",
+            "tail_entity_id": "6a9d6b060c2c2a49",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "6a9d6b060c2c2a49",
+            "relationCode": "研发",
+            "tail_entity_id": "17a7b4a9f50199b5",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "17a7b4a9f50199b5",
+            "relationCode": "采用",
+            "tail_entity_id": "322aa41eb3c6a90a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "1108ea435b027868",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "67ab6781f16e69a7",
+            "name": "卓越研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "cf8201adb5f7e943",
+            "name": "磁力仪",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "c9ff540df535555e",
+            "name": "磁场测量技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "1108ea435b027868",
+            "relationCode": "任职于",
+            "tail_entity_id": "67ab6781f16e69a7",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "67ab6781f16e69a7",
+            "relationCode": "研发",
+            "tail_entity_id": "cf8201adb5f7e943",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "cf8201adb5f7e943",
+            "relationCode": "采用",
+            "tail_entity_id": "c9ff540df535555e",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "72cba46956469733",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "d107a94971f4b7c9",
+            "name": "明德研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "162047e6d797d0a0",
+            "name": "电子显微镜",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "420010825c77c929",
+            "name": "电子成像技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "72cba46956469733",
+            "relationCode": "任职于",
+            "tail_entity_id": "d107a94971f4b7c9",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "d107a94971f4b7c9",
+            "relationCode": "研发",
+            "tail_entity_id": "162047e6d797d0a0",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "162047e6d797d0a0",
+            "relationCode": "采用",
+            "tail_entity_id": "420010825c77c929",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "c54bfd6e9f9fbfa0",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "4e06e05ea9a19420",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "9ed68a2541b77cd3",
+            "name": "红外传感器",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "81177f814bde31e5",
+            "name": "光电探测技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "c54bfd6e9f9fbfa0",
+            "relationCode": "任职于",
+            "tail_entity_id": "4e06e05ea9a19420",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "4e06e05ea9a19420",
+            "relationCode": "研发",
+            "tail_entity_id": "9ed68a2541b77cd3",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "9ed68a2541b77cd3",
+            "relationCode": "采用",
+            "tail_entity_id": "81177f814bde31e5",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2ea91cce30868d15",
+            "name": "李华",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "552bdbdec6935906",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "8761be16dee453bd",
+            "name": "合成孔径雷达",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "30369f3341b1a2ef",
+            "name": "脉冲压缩技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2ea91cce30868d15",
+            "relationCode": "任职于",
+            "tail_entity_id": "552bdbdec6935906",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "552bdbdec6935906",
+            "relationCode": "研发",
+            "tail_entity_id": "8761be16dee453bd",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "8761be16dee453bd",
+            "relationCode": "采用",
+            "tail_entity_id": "30369f3341b1a2ef",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "71ac5571530ce153",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0a8950ec68c63348",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2ed70c8a2342dc23",
+            "name": "激光测距仪",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e44a574cd6e87c00",
+            "name": "激光测距技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "71ac5571530ce153",
+            "relationCode": "在...任职",
+            "tail_entity_id": "0a8950ec68c63348",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "0a8950ec68c63348",
+            "relationCode": "研发",
+            "tail_entity_id": "2ed70c8a2342dc23",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "2ed70c8a2342dc23",
+            "relationCode": "采用",
+            "tail_entity_id": "e44a574cd6e87c00",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "450444a26d58a543",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "29906359e1cc59dc",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "bb3ed151bec9f8ef",
+            "name": "惯性导航设备",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "0751c9fbc39a4264",
+            "name": "惯性导航技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "450444a26d58a543",
+            "relationCode": "任职于",
+            "tail_entity_id": "29906359e1cc59dc",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "29906359e1cc59dc",
+            "relationCode": "研发",
+            "tail_entity_id": "bb3ed151bec9f8ef",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "bb3ed151bec9f8ef",
+            "relationCode": "采用",
+            "tail_entity_id": "0751c9fbc39a4264",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "5fcfda49560276f5",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "94b50ed0f02dc8ee",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "5250b8e90be4b329",
+            "name": "声呐设备",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "2eb0f206c932cba3",
+            "name": "水声探测技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "5fcfda49560276f5",
+            "relationCode": "任职于",
+            "tail_entity_id": "94b50ed0f02dc8ee",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "94b50ed0f02dc8ee",
+            "relationCode": "研发",
+            "tail_entity_id": "5250b8e90be4b329",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "5250b8e90be4b329",
+            "relationCode": "采用",
+            "tail_entity_id": "2eb0f206c932cba3",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f3fc0a3974a157cb",
+            "name": "孙悦",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "fe18e38e64dee99d",
+            "name": "凌云研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "28b47423e6310b89",
+            "name": "光谱分析仪",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "89c629ba0a4bbfb3",
+            "name": "光谱分析技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f3fc0a3974a157cb",
+            "relationCode": "任职于",
+            "tail_entity_id": "fe18e38e64dee99d",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "fe18e38e64dee99d",
+            "relationCode": "研发",
+            "tail_entity_id": "28b47423e6310b89",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "28b47423e6310b89",
+            "relationCode": "采用",
+            "tail_entity_id": "89c629ba0a4bbfb3",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "ca89a1cf99318f63",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "defccc753573f140",
+            "name": "清源研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "eee47695403a3b4e",
+            "name": "卫星通信终端",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "526d89765d64f3c6",
+            "name": "卫星通信技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "ca89a1cf99318f63",
+            "relationCode": "任职于",
+            "tail_entity_id": "defccc753573f140",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "defccc753573f140",
+            "relationCode": "研发",
+            "tail_entity_id": "eee47695403a3b4e",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "eee47695403a3b4e",
+            "relationCode": "采用",
+            "tail_entity_id": "526d89765d64f3c6",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f98451eaff7b4428",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "542f1d0cc5722bdb",
+            "name": "天衡研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "e91526737ea04a39",
+            "name": "毫米波雷达",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          },
+          {
+            "entity_id": "dc9dd5e1b08e7c5c",
+            "name": "毫米波探测技术",
+            "type": "组织",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f98451eaff7b4428",
+            "relationCode": "任职于",
+            "tail_entity_id": "542f1d0cc5722bdb",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "542f1d0cc5722bdb",
+            "relationCode": "研发",
+            "tail_entity_id": "e91526737ea04a39",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "e91526737ea04a39",
+            "relationCode": "采用",
+            "tail_entity_id": "dc9dd5e1b08e7c5c",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      }
+    ]
+  }
+}

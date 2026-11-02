@@ -1,0 +1,61 @@
+{
+  "metric": "domain-entity-extraction",
+  "source_report": "reports/interval-selected/04_domain_entity_extraction-1.json",
+  "source_job_id": "4d6edf933fed4b4694f52847ebea0755",
+  "source_report_sha256": "ec8d2fbbfdaa337541752f3d79d11d86ef786e6a1f7b2f4b877ceadbc256f542",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "overall/f1": 0.9915966386554622,
+    "overall/precision": 1.0,
+    "overall/recall": 0.9833333333333333,
+    "domain_only/f1": 0.9894736842105263,
+    "domain_only/precision": 1.0,
+    "domain_only/recall": 0.9791666666666666
+  },
+  "metrics": {
+    "overall": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 118,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9833333333333333,
+      "f1": 0.9915966386554622,
+      "support": 120
+    },
+    "domain_only": {
+      "tp": 94,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9791666666666666,
+      "f1": 0.9894736842105263,
+      "support": 96
+    },
+    "domain_entity_types": [
+      "技术",
+      "装备"
+    ],
+    "baseline": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 24,
+      "fp": 82,
+      "fn": 96,
+      "precision": 0.22641509433962265,
+      "recall": 0.2,
+      "f1": 0.21238938053097345,
+      "support": 120
+    },
+    "f1_delta": 0.7792072581244888
+  },
+  "sha256": {
+    "predictions.json": "9a525d94852a433c4fff3bf63545c2b0801ea1eb55fa8a8e58c149b71ec6feb8",
+    "gold.json": "4b58e8c643808cf08709ce3b1e1db70113cb4d9acc3870a39a335c96ef97339d",
+    "options.json": "e03382e68d7e869c5483822fa20e0060ae7951f34b6f95ec857b876b3874e413"
+  }
+}

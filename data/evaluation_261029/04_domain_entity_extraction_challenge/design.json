@@ -1,0 +1,21 @@
+{
+  "purpose": "Controlled development calibration, not an independent quality benchmark",
+  "new_documents": [
+    "doc-13",
+    "doc-14"
+  ],
+  "gold_frozen_before_new_inference": true,
+  "existing_real_predictions_reused": 12,
+  "new_predictions_created": false,
+  "requested_entity_threshold_exclusive": 0.95,
+  "desired_configured_entity_interval": [
+    0.96,
+    0.98
+  ],
+  "desired_configured_relation_interval": [
+    0.85,
+    0.95
+  ],
+  "boundary": "Same surface name shared by a physical device and a distinct method; existing name-only graph identity loses one type.",
+  "source_verification_sha256": "e07b1aab7b65658c780a9db2c91558f935f8d7d1823605c04626403c5d56b0d6"
+}

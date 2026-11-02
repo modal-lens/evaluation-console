@@ -1,0 +1,975 @@
+{
+  "metric": "community-discovery",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7a9505f78392dbe9",
+            "name": "张明",
+            "type": "人物",
+            "cluster": null,
+            "community": "17"
+          },
+          {
+            "entity_id": "0902281e5f995b3e",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "17"
+          },
+          {
+            "entity_id": "7803e42a76dce11b",
+            "name": "星河平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "17"
+          },
+          {
+            "entity_id": "9df865583dbd3fb5",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": null,
+            "community": "2"
+          },
+          {
+            "entity_id": "1d4c3dac6fa53484",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "2"
+          },
+          {
+            "entity_id": "a33084a2defb947a",
+            "name": "晨光平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "2"
+          },
+          {
+            "entity_id": "7b7c2a6e4d1d01e0",
+            "name": "周宁",
+            "type": "人物",
+            "cluster": null,
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7a9505f78392dbe9",
+            "relationCode": "任职",
+            "tail_entity_id": "0902281e5f995b3e",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "0902281e5f995b3e",
+            "relationCode": "研发",
+            "tail_entity_id": "7803e42a76dce11b",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "7a9505f78392dbe9",
+            "relationCode": "使用",
+            "tail_entity_id": "7803e42a76dce11b",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "9df865583dbd3fb5",
+            "relationCode": "任职",
+            "tail_entity_id": "1d4c3dac6fa53484",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "1d4c3dac6fa53484",
+            "relationCode": "研发",
+            "tail_entity_id": "a33084a2defb947a",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "9df865583dbd3fb5",
+            "relationCode": "使用",
+            "tail_entity_id": "a33084a2defb947a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "b0b814149dfa7dd8",
+            "name": "韩梅",
+            "type": "人物",
+            "cluster": null,
+            "community": "19"
+          },
+          {
+            "entity_id": "5277b45a433f6070",
+            "name": "同辉研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "19"
+          },
+          {
+            "entity_id": "92301960f8d27f1b",
+            "name": "同辉平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "19"
+          },
+          {
+            "entity_id": "c6b5a098ae717496",
+            "name": "曹磊",
+            "type": "人物",
+            "cluster": null,
+            "community": "12"
+          },
+          {
+            "entity_id": "e1103cb2868369c9",
+            "name": "百川研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "12"
+          },
+          {
+            "entity_id": "fada912bceb469dd",
+            "name": "百川平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "12"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "b0b814149dfa7dd8",
+            "relationCode": "任职",
+            "tail_entity_id": "5277b45a433f6070",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "5277b45a433f6070",
+            "relationCode": "研发",
+            "tail_entity_id": "92301960f8d27f1b",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "b0b814149dfa7dd8",
+            "relationCode": "使用",
+            "tail_entity_id": "92301960f8d27f1b",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "c6b5a098ae717496",
+            "relationCode": "任职",
+            "tail_entity_id": "e1103cb2868369c9",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "e1103cb2868369c9",
+            "relationCode": "研发",
+            "tail_entity_id": "fada912bceb469dd",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "c6b5a098ae717496",
+            "relationCode": "使用",
+            "tail_entity_id": "fada912bceb469dd",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f6dc74a881192e36",
+            "name": "李华",
+            "type": "人物",
+            "cluster": null,
+            "community": "9"
+          },
+          {
+            "entity_id": "ba689dd8bd52cac0",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "9"
+          },
+          {
+            "entity_id": "352b9985f6b98948",
+            "name": "远航平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "9"
+          },
+          {
+            "entity_id": "5ca4e870f197faf2",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": null,
+            "community": "16"
+          },
+          {
+            "entity_id": "806afee6f860cad4",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "16"
+          },
+          {
+            "entity_id": "3c55a7b621cfd1e4",
+            "name": "青峰平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "16"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f6dc74a881192e36",
+            "relationCode": "任职",
+            "tail_entity_id": "ba689dd8bd52cac0",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "ba689dd8bd52cac0",
+            "relationCode": "研发",
+            "tail_entity_id": "352b9985f6b98948",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "f6dc74a881192e36",
+            "relationCode": "使用",
+            "tail_entity_id": "352b9985f6b98948",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "5ca4e870f197faf2",
+            "relationCode": "任职",
+            "tail_entity_id": "806afee6f860cad4",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "806afee6f860cad4",
+            "relationCode": "研发",
+            "tail_entity_id": "3c55a7b621cfd1e4",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "5ca4e870f197faf2",
+            "relationCode": "使用",
+            "tail_entity_id": "3c55a7b621cfd1e4",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "75b089db4e9edd3d",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": null,
+            "community": "6"
+          },
+          {
+            "entity_id": "badf392281b95681",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "6"
+          },
+          {
+            "entity_id": "4b6ac8aaf44a8bb4",
+            "name": "海川平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "6"
+          },
+          {
+            "entity_id": "2f4ac3e7500fd1a6",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": null,
+            "community": "7"
+          },
+          {
+            "entity_id": "105ec1f239d5cf02",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "7"
+          },
+          {
+            "entity_id": "51f382cb4a3c9cf1",
+            "name": "博远平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "7"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "75b089db4e9edd3d",
+            "relationCode": "任职",
+            "tail_entity_id": "badf392281b95681",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "badf392281b95681",
+            "relationCode": "研发",
+            "tail_entity_id": "4b6ac8aaf44a8bb4",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "75b089db4e9edd3d",
+            "relationCode": "使用",
+            "tail_entity_id": "4b6ac8aaf44a8bb4",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "2f4ac3e7500fd1a6",
+            "relationCode": "任职",
+            "tail_entity_id": "105ec1f239d5cf02",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "105ec1f239d5cf02",
+            "relationCode": "研发",
+            "tail_entity_id": "51f382cb4a3c9cf1",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "2f4ac3e7500fd1a6",
+            "relationCode": "使用",
+            "tail_entity_id": "51f382cb4a3c9cf1",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "ab37794d01daea8d",
+            "name": "孙悦",
+            "type": "人物",
+            "cluster": null,
+            "community": "0"
+          },
+          {
+            "entity_id": "5ea8ee5d15eaef01",
+            "name": "凌云研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "0"
+          },
+          {
+            "entity_id": "84761bdcce46dc73",
+            "name": "凌云平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "0"
+          },
+          {
+            "entity_id": "377a1f38cf65ed4b",
+            "name": "吴昊",
+            "type": "人物",
+            "cluster": null,
+            "community": "14"
+          },
+          {
+            "entity_id": "476ddc08035c657a",
+            "name": "清源研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "14"
+          },
+          {
+            "entity_id": "83ac26a7fbfde752",
+            "name": "清源平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "14"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "ab37794d01daea8d",
+            "relationCode": "任职",
+            "tail_entity_id": "5ea8ee5d15eaef01",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "5ea8ee5d15eaef01",
+            "relationCode": "研发",
+            "tail_entity_id": "84761bdcce46dc73",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "ab37794d01daea8d",
+            "relationCode": "使用",
+            "tail_entity_id": "84761bdcce46dc73",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "377a1f38cf65ed4b",
+            "relationCode": "任职",
+            "tail_entity_id": "476ddc08035c657a",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "476ddc08035c657a",
+            "relationCode": "研发",
+            "tail_entity_id": "83ac26a7fbfde752",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "377a1f38cf65ed4b",
+            "relationCode": "使用",
+            "tail_entity_id": "83ac26a7fbfde752",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "b94b9524ef5b455a",
+            "name": "郑凯",
+            "type": "人物",
+            "cluster": null,
+            "community": "11"
+          },
+          {
+            "entity_id": "564de7850c9f4bdf",
+            "name": "天衡研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "11"
+          },
+          {
+            "entity_id": "5f6bcf0d70350504",
+            "name": "天衡平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "11"
+          },
+          {
+            "entity_id": "74d2a659ada3d6e9",
+            "name": "冯静",
+            "type": "人物",
+            "cluster": null,
+            "community": "5"
+          },
+          {
+            "entity_id": "d5224a1eb4675bfc",
+            "name": "锦程研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "5"
+          },
+          {
+            "entity_id": "4a719ee9dbca208f",
+            "name": "锦程平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "5"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "b94b9524ef5b455a",
+            "relationCode": "任职",
+            "tail_entity_id": "564de7850c9f4bdf",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "564de7850c9f4bdf",
+            "relationCode": "研发",
+            "tail_entity_id": "5f6bcf0d70350504",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "b94b9524ef5b455a",
+            "relationCode": "使用",
+            "tail_entity_id": "5f6bcf0d70350504",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "74d2a659ada3d6e9",
+            "relationCode": "任职",
+            "tail_entity_id": "d5224a1eb4675bfc",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "d5224a1eb4675bfc",
+            "relationCode": "研发",
+            "tail_entity_id": "4a719ee9dbca208f",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "74d2a659ada3d6e9",
+            "relationCode": "使用",
+            "tail_entity_id": "4a719ee9dbca208f",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "74d1c118f3062e34",
+            "name": "何峰",
+            "type": "人物",
+            "cluster": null,
+            "community": "18"
+          },
+          {
+            "entity_id": "9eff56eb3ec116f6",
+            "name": "卓越研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "18"
+          },
+          {
+            "entity_id": "166c7110ec98565b",
+            "name": "卓越平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "18"
+          },
+          {
+            "entity_id": "6b66c2889a0b460c",
+            "name": "高琳",
+            "type": "人物",
+            "cluster": null,
+            "community": "10"
+          },
+          {
+            "entity_id": "d7465bd949dee09c",
+            "name": "明德研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "10"
+          },
+          {
+            "entity_id": "372c7c7446bec050",
+            "name": "明德平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "10"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "74d1c118f3062e34",
+            "relationCode": "任职",
+            "tail_entity_id": "9eff56eb3ec116f6",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "9eff56eb3ec116f6",
+            "relationCode": "研发",
+            "tail_entity_id": "166c7110ec98565b",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "74d1c118f3062e34",
+            "relationCode": "使用",
+            "tail_entity_id": "166c7110ec98565b",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "6b66c2889a0b460c",
+            "relationCode": "任职",
+            "tail_entity_id": "d7465bd949dee09c",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "d7465bd949dee09c",
+            "relationCode": "研发",
+            "tail_entity_id": "372c7c7446bec050",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "6b66c2889a0b460c",
+            "relationCode": "使用",
+            "tail_entity_id": "372c7c7446bec050",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7fd08741f61b7e95",
+            "name": "罗毅",
+            "type": "人物",
+            "cluster": null,
+            "community": "4"
+          },
+          {
+            "entity_id": "7a158df3f1349539",
+            "name": "和光研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "4"
+          },
+          {
+            "entity_id": "6b2388dadcb7b2de",
+            "name": "和光平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "4"
+          },
+          {
+            "entity_id": "6f124ab40d64338c",
+            "name": "梁欣",
+            "type": "人物",
+            "cluster": null,
+            "community": "1"
+          },
+          {
+            "entity_id": "0ba5f5ebc33bad0b",
+            "name": "云帆研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "1"
+          },
+          {
+            "entity_id": "6e1095d4d5178711",
+            "name": "云帆平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "1"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7fd08741f61b7e95",
+            "relationCode": "任职",
+            "tail_entity_id": "7a158df3f1349539",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "7a158df3f1349539",
+            "relationCode": "研发",
+            "tail_entity_id": "6b2388dadcb7b2de",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "7fd08741f61b7e95",
+            "relationCode": "使用",
+            "tail_entity_id": "6b2388dadcb7b2de",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "6f124ab40d64338c",
+            "relationCode": "任职",
+            "tail_entity_id": "0ba5f5ebc33bad0b",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "0ba5f5ebc33bad0b",
+            "relationCode": "研发",
+            "tail_entity_id": "6e1095d4d5178711",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "6f124ab40d64338c",
+            "relationCode": "使用",
+            "tail_entity_id": "6e1095d4d5178711",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7677b97f46c299b9",
+            "name": "宋涛",
+            "type": "人物",
+            "cluster": null,
+            "community": "3"
+          },
+          {
+            "entity_id": "9605c764c604a304",
+            "name": "启航研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "3"
+          },
+          {
+            "entity_id": "64a6baf72ce186e7",
+            "name": "启航平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "3"
+          },
+          {
+            "entity_id": "145bea2bf6f01b76",
+            "name": "唐雪",
+            "type": "人物",
+            "cluster": null,
+            "community": "8"
+          },
+          {
+            "entity_id": "0735894c11c6e8de",
+            "name": "长风研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "8"
+          },
+          {
+            "entity_id": "50778fdc931d460a",
+            "name": "长风平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "8"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7677b97f46c299b9",
+            "relationCode": "任职",
+            "tail_entity_id": "9605c764c604a304",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "9605c764c604a304",
+            "relationCode": "研发",
+            "tail_entity_id": "64a6baf72ce186e7",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "7677b97f46c299b9",
+            "relationCode": "使用",
+            "tail_entity_id": "64a6baf72ce186e7",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "145bea2bf6f01b76",
+            "relationCode": "任职",
+            "tail_entity_id": "0735894c11c6e8de",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "0735894c11c6e8de",
+            "relationCode": "研发",
+            "tail_entity_id": "50778fdc931d460a",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "145bea2bf6f01b76",
+            "relationCode": "使用",
+            "tail_entity_id": "50778fdc931d460a",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "0f9814ff70042ed3",
+            "name": "许晨",
+            "type": "人物",
+            "cluster": null,
+            "community": "13"
+          },
+          {
+            "entity_id": "778cb5ce02377ff2",
+            "name": "知行研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "13"
+          },
+          {
+            "entity_id": "9dfd928ae04cee44",
+            "name": "知行平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "13"
+          },
+          {
+            "entity_id": "10084b06d2a8187a",
+            "name": "邓宇",
+            "type": "人物",
+            "cluster": null,
+            "community": "15"
+          },
+          {
+            "entity_id": "93e8ae6a550c6694",
+            "name": "锐思研究院",
+            "type": "组织",
+            "cluster": null,
+            "community": "15"
+          },
+          {
+            "entity_id": "06eb034ae4a6ebcd",
+            "name": "锐思平台",
+            "type": "平台",
+            "cluster": null,
+            "community": "15"
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "0f9814ff70042ed3",
+            "relationCode": "任职",
+            "tail_entity_id": "778cb5ce02377ff2",
+            "cluster": null
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "778cb5ce02377ff2",
+            "relationCode": "研发",
+            "tail_entity_id": "9dfd928ae04cee44",
+            "cluster": null
+          },
+          {
+            "relation_id": "2",
+            "head_entity_id": "0f9814ff70042ed3",
+            "relationCode": "使用",
+            "tail_entity_id": "9dfd928ae04cee44",
+            "cluster": null
+          },
+          {
+            "relation_id": "3",
+            "head_entity_id": "10084b06d2a8187a",
+            "relationCode": "任职",
+            "tail_entity_id": "93e8ae6a550c6694",
+            "cluster": null
+          },
+          {
+            "relation_id": "4",
+            "head_entity_id": "93e8ae6a550c6694",
+            "relationCode": "研发",
+            "tail_entity_id": "06eb034ae4a6ebcd",
+            "cluster": null
+          },
+          {
+            "relation_id": "5",
+            "head_entity_id": "10084b06d2a8187a",
+            "relationCode": "使用",
+            "tail_entity_id": "06eb034ae4a6ebcd",
+            "cluster": null
+          }
+        ],
+        "attributes": [],
+        "resolutions": [],
+        "tags": []
+      }
+    ],
+    "baseline_documents": null
+  }
+}

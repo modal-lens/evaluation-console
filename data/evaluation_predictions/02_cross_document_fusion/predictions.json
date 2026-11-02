@@ -1,0 +1,752 @@
+{
+  "metric": "cross-document/fusion",
+  "prediction_input": {
+    "documents": [
+      {
+        "document_id": "doc-1",
+        "filename": "document-1.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "3fb5c2af3d69098a",
+            "name": "张明",
+            "type": "人物",
+            "cluster": "\"ent_f5977039baf7bc23\"",
+            "community": null
+          },
+          {
+            "entity_id": "72ec908081c272f5",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": "\"ent_20c3b5cded537e00\"",
+            "community": null
+          },
+          {
+            "entity_id": "2876078a919121c2",
+            "name": "南京",
+            "type": "地理空间",
+            "cluster": "\"ent_0c99255d725abfbe\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "3fb5c2af3d69098a",
+            "relationCode": "任职",
+            "tail_entity_id": "72ec908081c272f5",
+            "cluster": "\"rel_26fd47cf608a2db8\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "72ec908081c272f5",
+            "relationCode": "位于",
+            "tail_entity_id": "2876078a919121c2",
+            "cluster": "\"rel_9c303bb15ccdc77a\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "72ec908081c272f5",
+            "key": "所在地",
+            "value": "南京",
+            "cluster": "[\"ent_20c3b5cded537e00\", \"所在地\", \"南京\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "72ec908081c272f5",
+            "key": "成立年份",
+            "value": "2010",
+            "cluster": "[\"ent_20c3b5cded537e00\", \"成立年份\", \"2010\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-10",
+        "filename": "document-10.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "d29b2a59621868c4",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": "\"ent_032f3e4d0f42fd74\"",
+            "community": null
+          },
+          {
+            "entity_id": "f5f5b0dc06104109",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": "\"ent_06caa0c0e8587e49\"",
+            "community": null
+          },
+          {
+            "entity_id": "0ce73e679f571edb",
+            "name": "武汉",
+            "type": "地理空间",
+            "cluster": "\"ent_2ff9704722a7c0aa\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f5f5b0dc06104109",
+            "relationCode": "任职",
+            "tail_entity_id": "d29b2a59621868c4",
+            "cluster": "\"rel_816ea869a4b48f65\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "d29b2a59621868c4",
+            "relationCode": "位于",
+            "tail_entity_id": "0ce73e679f571edb",
+            "cluster": "\"rel_07d418adf6fb967b\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "d29b2a59621868c4",
+            "key": "所在地",
+            "value": "武汉",
+            "cluster": "[\"ent_032f3e4d0f42fd74\", \"所在地\", \"武汉\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "d29b2a59621868c4",
+            "key": "成立年份",
+            "value": "2014",
+            "cluster": "[\"ent_032f3e4d0f42fd74\", \"成立年份\", \"2014\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-11",
+        "filename": "document-11.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "fcc879e3bdb3efbd",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": "\"ent_278aef0dcb65e42a\"",
+            "community": null
+          },
+          {
+            "entity_id": "e565a6370793f42f",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": "\"ent_3ab569b411c9ba63\"",
+            "community": null
+          },
+          {
+            "entity_id": "fc154bd2584d7a23",
+            "name": "西安",
+            "type": "地理空间",
+            "cluster": "\"ent_f782fce2e4115762\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "fcc879e3bdb3efbd",
+            "relationCode": "任职",
+            "tail_entity_id": "e565a6370793f42f",
+            "cluster": "\"rel_d6ad27f2a8c1f741\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e565a6370793f42f",
+            "relationCode": "位于",
+            "tail_entity_id": "fc154bd2584d7a23",
+            "cluster": "\"rel_c36c739638732ec3\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "e565a6370793f42f",
+            "key": "所在地",
+            "value": "西安",
+            "cluster": "[\"ent_3ab569b411c9ba63\", \"所在地\", \"西安\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "e565a6370793f42f",
+            "key": "成立年份",
+            "value": "2015",
+            "cluster": "[\"ent_3ab569b411c9ba63\", \"成立年份\", \"2015\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-12",
+        "filename": "document-12.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7c1a11cc26a235a8",
+            "name": "博远研究院",
+            "type": "组织",
+            "cluster": "\"ent_3ab569b411c9ba63\"",
+            "community": null
+          },
+          {
+            "entity_id": "b167e42e55f4bf7a",
+            "name": "刘洋",
+            "type": "人物",
+            "cluster": "\"ent_278aef0dcb65e42a\"",
+            "community": null
+          },
+          {
+            "entity_id": "c7c07c380e89b231",
+            "name": "西安",
+            "type": "地理空间",
+            "cluster": "\"ent_f782fce2e4115762\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "b167e42e55f4bf7a",
+            "relationCode": "任职",
+            "tail_entity_id": "7c1a11cc26a235a8",
+            "cluster": "\"rel_d6ad27f2a8c1f741\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "7c1a11cc26a235a8",
+            "relationCode": "位于",
+            "tail_entity_id": "c7c07c380e89b231",
+            "cluster": "\"rel_c36c739638732ec3\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "7c1a11cc26a235a8",
+            "key": "所在地",
+            "value": "西安",
+            "cluster": "[\"ent_3ab569b411c9ba63\", \"所在地\", \"西安\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "7c1a11cc26a235a8",
+            "key": "成立年份",
+            "value": "2015",
+            "cluster": "[\"ent_3ab569b411c9ba63\", \"成立年份\", \"2015\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-2",
+        "filename": "document-2.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "ac4520ffdec7b595",
+            "name": "星河研究院",
+            "type": "组织",
+            "cluster": "\"ent_20c3b5cded537e00\"",
+            "community": null
+          },
+          {
+            "entity_id": "3df3a686e6675181",
+            "name": "张明",
+            "type": "人物",
+            "cluster": "\"ent_f5977039baf7bc23\"",
+            "community": null
+          },
+          {
+            "entity_id": "93009f6ed1f207e2",
+            "name": "南京",
+            "type": "地理空间",
+            "cluster": "\"ent_0c99255d725abfbe\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "3df3a686e6675181",
+            "relationCode": "任职",
+            "tail_entity_id": "ac4520ffdec7b595",
+            "cluster": "\"rel_26fd47cf608a2db8\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "ac4520ffdec7b595",
+            "relationCode": "位于",
+            "tail_entity_id": "93009f6ed1f207e2",
+            "cluster": "\"rel_9c303bb15ccdc77a\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "ac4520ffdec7b595",
+            "key": "所在地",
+            "value": "南京",
+            "cluster": "[\"ent_20c3b5cded537e00\", \"所在地\", \"南京\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "ac4520ffdec7b595",
+            "key": "成立年份",
+            "value": "2010",
+            "cluster": "[\"ent_20c3b5cded537e00\", \"成立年份\", \"2010\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-3",
+        "filename": "document-3.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "599ec02e0943510b",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": "\"ent_51ae7043ed226260\"",
+            "community": null
+          },
+          {
+            "entity_id": "d128263d4c2938ea",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": "\"ent_4a9cdcae455000f9\"",
+            "community": null
+          },
+          {
+            "entity_id": "713d93b706cdcc54",
+            "name": "苏州",
+            "type": "地理空间",
+            "cluster": "\"ent_855f21547c2192ca\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "599ec02e0943510b",
+            "relationCode": "任职",
+            "tail_entity_id": "d128263d4c2938ea",
+            "cluster": "\"rel_fe3b5555b3e7f231\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "d128263d4c2938ea",
+            "relationCode": "位于",
+            "tail_entity_id": "713d93b706cdcc54",
+            "cluster": "\"rel_cc3d2b070ea01097\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "d128263d4c2938ea",
+            "key": "所在地",
+            "value": "苏州",
+            "cluster": "[\"ent_4a9cdcae455000f9\", \"所在地\", \"苏州\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "d128263d4c2938ea",
+            "key": "成立年份",
+            "value": "2011",
+            "cluster": "[\"ent_4a9cdcae455000f9\", \"成立年份\", \"2011\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-4",
+        "filename": "document-4.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "fd2af97a20df083c",
+            "name": "晨光研究院",
+            "type": "组织",
+            "cluster": "\"ent_4a9cdcae455000f9\"",
+            "community": null
+          },
+          {
+            "entity_id": "a983242b47d8881d",
+            "name": "王芳",
+            "type": "人物",
+            "cluster": "\"ent_51ae7043ed226260\"",
+            "community": null
+          },
+          {
+            "entity_id": "1603c7c92cbfe463",
+            "name": "苏州",
+            "type": "地理空间",
+            "cluster": "\"ent_855f21547c2192ca\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "a983242b47d8881d",
+            "relationCode": "任职",
+            "tail_entity_id": "fd2af97a20df083c",
+            "cluster": "\"rel_fe3b5555b3e7f231\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "fd2af97a20df083c",
+            "relationCode": "位于",
+            "tail_entity_id": "1603c7c92cbfe463",
+            "cluster": "\"rel_cc3d2b070ea01097\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "fd2af97a20df083c",
+            "key": "所在地",
+            "value": "苏州",
+            "cluster": "[\"ent_4a9cdcae455000f9\", \"所在地\", \"苏州\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "fd2af97a20df083c",
+            "key": "成立年份",
+            "value": "2011",
+            "cluster": "[\"ent_4a9cdcae455000f9\", \"成立年份\", \"2011\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-5",
+        "filename": "document-5.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "2ad91eb0c2e92007",
+            "name": "李华",
+            "type": "人物",
+            "cluster": "\"ent_b2f8ee9dd469c2a9\"",
+            "community": null
+          },
+          {
+            "entity_id": "7cbc0f90522c0efa",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": "\"ent_c02c81c9d6103b47\"",
+            "community": null
+          },
+          {
+            "entity_id": "4960fdacc4d22196",
+            "name": "杭州",
+            "type": "地理空间",
+            "cluster": "\"ent_c2d2d67e9afbca8a\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "2ad91eb0c2e92007",
+            "relationCode": "任职",
+            "tail_entity_id": "7cbc0f90522c0efa",
+            "cluster": "\"rel_651729d95df621c0\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "7cbc0f90522c0efa",
+            "relationCode": "位于",
+            "tail_entity_id": "4960fdacc4d22196",
+            "cluster": "\"rel_c11f4985b9d1d8c0\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "7cbc0f90522c0efa",
+            "key": "所在地",
+            "value": "杭州",
+            "cluster": "[\"ent_c02c81c9d6103b47\", \"所在地\", \"杭州\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "7cbc0f90522c0efa",
+            "key": "成立年份",
+            "value": "2012",
+            "cluster": "[\"ent_c02c81c9d6103b47\", \"成立年份\", \"2012\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-6",
+        "filename": "document-6.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "e5a01eb905c62378",
+            "name": "远航研究院",
+            "type": "组织",
+            "cluster": "\"ent_c02c81c9d6103b47\"",
+            "community": null
+          },
+          {
+            "entity_id": "6b7b032686464d42",
+            "name": "李华",
+            "type": "人物",
+            "cluster": "\"ent_b2f8ee9dd469c2a9\"",
+            "community": null
+          },
+          {
+            "entity_id": "0c287529b2efc2c1",
+            "name": "杭州",
+            "type": "地理空间",
+            "cluster": "\"ent_c2d2d67e9afbca8a\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "6b7b032686464d42",
+            "relationCode": "任职",
+            "tail_entity_id": "e5a01eb905c62378",
+            "cluster": "\"rel_651729d95df621c0\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "e5a01eb905c62378",
+            "relationCode": "位于",
+            "tail_entity_id": "0c287529b2efc2c1",
+            "cluster": "\"rel_c11f4985b9d1d8c0\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "e5a01eb905c62378",
+            "key": "所在地",
+            "value": "杭州",
+            "cluster": "[\"ent_c02c81c9d6103b47\", \"所在地\", \"杭州\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "e5a01eb905c62378",
+            "key": "成立年份",
+            "value": "2012",
+            "cluster": "[\"ent_c02c81c9d6103b47\", \"成立年份\", \"2012\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-7",
+        "filename": "document-7.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "f45999c33e21c137",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": "\"ent_01d5fc300505bd1b\"",
+            "community": null
+          },
+          {
+            "entity_id": "940cbddc1473d06e",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": "\"ent_4e2cb4ebdc477393\"",
+            "community": null
+          },
+          {
+            "entity_id": "ff5f627445788308",
+            "name": "成都",
+            "type": "地理空间",
+            "cluster": "\"ent_1cfe67ed6d755b37\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "f45999c33e21c137",
+            "relationCode": "任职",
+            "tail_entity_id": "940cbddc1473d06e",
+            "cluster": "\"rel_cf31d4b1b8b9d50b\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "940cbddc1473d06e",
+            "relationCode": "位于",
+            "tail_entity_id": "ff5f627445788308",
+            "cluster": "\"rel_e3eba4f1065e86b4\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "940cbddc1473d06e",
+            "key": "所在地",
+            "value": "成都",
+            "cluster": "[\"ent_4e2cb4ebdc477393\", \"所在地\", \"成都\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "940cbddc1473d06e",
+            "key": "成立年份",
+            "value": "2013",
+            "cluster": "[\"ent_4e2cb4ebdc477393\", \"成立年份\", \"2013\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-8",
+        "filename": "document-8.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "42281b675020f649",
+            "name": "青峰研究院",
+            "type": "组织",
+            "cluster": "\"ent_4e2cb4ebdc477393\"",
+            "community": null
+          },
+          {
+            "entity_id": "99d6876ef4a65eec",
+            "name": "赵敏",
+            "type": "人物",
+            "cluster": "\"ent_01d5fc300505bd1b\"",
+            "community": null
+          },
+          {
+            "entity_id": "a28aaebe49af8d95",
+            "name": "成都",
+            "type": "地理空间",
+            "cluster": "\"ent_1cfe67ed6d755b37\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "99d6876ef4a65eec",
+            "relationCode": "任职",
+            "tail_entity_id": "42281b675020f649",
+            "cluster": "\"rel_cf31d4b1b8b9d50b\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "42281b675020f649",
+            "relationCode": "位于",
+            "tail_entity_id": "a28aaebe49af8d95",
+            "cluster": "\"rel_e3eba4f1065e86b4\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "42281b675020f649",
+            "key": "所在地",
+            "value": "成都",
+            "cluster": "[\"ent_4e2cb4ebdc477393\", \"所在地\", \"成都\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "42281b675020f649",
+            "key": "成立年份",
+            "value": "2013",
+            "cluster": "[\"ent_4e2cb4ebdc477393\", \"成立年份\", \"2013\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      },
+      {
+        "document_id": "doc-9",
+        "filename": "document-9.txt",
+        "language": "zh",
+        "entities": [
+          {
+            "entity_id": "7879aa4e3ccf0352",
+            "name": "陈杰",
+            "type": "人物",
+            "cluster": "\"ent_06caa0c0e8587e49\"",
+            "community": null
+          },
+          {
+            "entity_id": "319e7e17495b658d",
+            "name": "海川研究院",
+            "type": "组织",
+            "cluster": "\"ent_032f3e4d0f42fd74\"",
+            "community": null
+          },
+          {
+            "entity_id": "86008e1509a1b992",
+            "name": "武汉",
+            "type": "地理空间",
+            "cluster": "\"ent_2ff9704722a7c0aa\"",
+            "community": null
+          }
+        ],
+        "relations": [
+          {
+            "relation_id": "0",
+            "head_entity_id": "7879aa4e3ccf0352",
+            "relationCode": "任职",
+            "tail_entity_id": "319e7e17495b658d",
+            "cluster": "\"rel_816ea869a4b48f65\""
+          },
+          {
+            "relation_id": "1",
+            "head_entity_id": "319e7e17495b658d",
+            "relationCode": "位于",
+            "tail_entity_id": "86008e1509a1b992",
+            "cluster": "\"rel_07d418adf6fb967b\""
+          }
+        ],
+        "attributes": [
+          {
+            "attribute_id": "0",
+            "entity_id": "319e7e17495b658d",
+            "key": "所在地",
+            "value": "武汉",
+            "cluster": "[\"ent_032f3e4d0f42fd74\", \"所在地\", \"武汉\"]"
+          },
+          {
+            "attribute_id": "1",
+            "entity_id": "319e7e17495b658d",
+            "key": "成立年份",
+            "value": "2014",
+            "cluster": "[\"ent_032f3e4d0f42fd74\", \"成立年份\", \"2014\"]"
+          }
+        ],
+        "resolutions": [],
+        "tags": []
+      }
+    ],
+    "baseline_documents": null
+  }
+}

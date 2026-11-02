@@ -1,0 +1,47 @@
+{
+  "metric": "entity-relation-extraction",
+  "source_report": "reports/interval-selected/01_entity_relation_extraction-1.json",
+  "source_job_id": "ae250945b7404261a6a3f6e6799ec2eb",
+  "source_report_sha256": "55ac3521e7e242320ddc5e2f1452f1ab79a9fb9157eb7a4cd125fcfdd9100ffe",
+  "real_text_prediction": true,
+  "fallback_allowed": false,
+  "offline_algorithm_calls": 0,
+  "same_metrics_as_live": true,
+  "quality_scores": {
+    "entity-extraction/f1": 0.993006993006993,
+    "entity-extraction/precision": 1.0,
+    "entity-extraction/recall": 0.9861111111111112,
+    "relation-extraction/f1": 0.9674418604651163,
+    "relation-extraction/precision": 0.9719626168224299,
+    "relation-extraction/recall": 0.9629629629629629
+  },
+  "metrics": {
+    "entity-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 142,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9861111111111112,
+      "f1": 0.993006993006993,
+      "support": 144
+    },
+    "relation-extraction": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 104,
+      "fp": 3,
+      "fn": 4,
+      "precision": 0.9719626168224299,
+      "recall": 0.9629629629629629,
+      "f1": 0.9674418604651163,
+      "support": 108
+    }
+  },
+  "sha256": {
+    "predictions.json": "f088efab8cada8eee8a42d5dcc2c4e1d6515fc3f8df52b2d8368d97c4401b756",
+    "gold.json": "bfd7f24e22f744eed783aad2b9eb1e1e1811090ac86255828a401814a474971e",
+    "options.json": "47d723aadd487769f8c00bec20a4d3f0c70cf8652e08067a7ff4ccab6e54a912"
+  }
+}

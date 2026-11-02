@@ -1,0 +1,10 @@
+{"project": "C:\\Users\\Admin\\AppData\\Local\\Temp\\metrics-portable-oq66yvnh\\evaluation_console", "python": "E:\\software\\anaconda\\envs\\nanjing_zncl\\python.exe", "node": "v24.14.0", "backend_port": 50311, "frontend_port": 50312, "checks": "passed"}
+Frontend: http://127.0.0.1:50312/
+API docs: http://127.0.0.1:50312/docs
+PROXY PASS entity-relation-extraction
+PROXY PASS cross-document/fusion
+PROXY PASS cross-language/fusion
+PROXY PASS domain-entity-extraction
+PROXY PASS spatiotemporal-resolution
+PROXY PASS multilabel-classification
+PROXY PASS community-discovery

@@ -1,0 +1,790 @@
+{
+  "doc-13": [
+    {
+      "relation_id": "r1",
+      "head_entity_id": "p",
+      "relationCode": "任职",
+      "tail_entity_id": "o",
+      "source": "人物“陆澄”在组织“霁衡实验室”任职。"
+    },
+    {
+      "relation_id": "r2",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e0",
+      "source": "组织“霁衡实验室”研发装备“青岚”。"
+    },
+    {
+      "relation_id": "r3",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e0",
+      "source": "人物“陆澄”研发装备“青岚”。"
+    },
+    {
+      "relation_id": "r4",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“青岚”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r5",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“青岚”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r6",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e1",
+      "source": "组织“霁衡实验室”研发装备“远汀”。"
+    },
+    {
+      "relation_id": "r7",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e1",
+      "source": "人物“陆澄”研发装备“远汀”。"
+    },
+    {
+      "relation_id": "r8",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“远汀”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r9",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“远汀”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r10",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e2",
+      "source": "组织“霁衡实验室”研发装备“棠序”。"
+    },
+    {
+      "relation_id": "r11",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e2",
+      "source": "人物“陆澄”研发装备“棠序”。"
+    },
+    {
+      "relation_id": "r12",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“棠序”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r13",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“棠序”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r14",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "组织“霁衡实验室”研发装备“栖原”。"
+    },
+    {
+      "relation_id": "r15",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "人物“陆澄”研发装备“栖原”。"
+    },
+    {
+      "relation_id": "r16",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“栖原”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r17",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“栖原”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r18",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e4",
+      "source": "组织“霁衡实验室”研发装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r19",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e4",
+      "source": "人物“陆澄”研发装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r20",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“微光采样器”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r21",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“微光采样器”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r22",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "组织“霁衡实验室”研发装备“流云探针”。"
+    },
+    {
+      "relation_id": "r23",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "人物“陆澄”研发装备“流云探针”。"
+    },
+    {
+      "relation_id": "r24",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“流云探针”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r25",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“流云探针”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r26",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "装备“青岚”采用技术“远汀”。"
+    },
+    {
+      "relation_id": "r27",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "装备“远汀”采用技术“棠序”。"
+    },
+    {
+      "relation_id": "r28",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t3",
+      "source": "装备“棠序”采用技术“栖原”。"
+    },
+    {
+      "relation_id": "r29",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "装备“栖原”采用技术“青岚”。"
+    },
+    {
+      "relation_id": "r30",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "组织“霁衡实验室”采用技术“青岚”。"
+    },
+    {
+      "relation_id": "r31",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "组织“霁衡实验室”采用技术“远汀”。"
+    },
+    {
+      "relation_id": "r32",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "组织“霁衡实验室”采用技术“棠序”。"
+    },
+    {
+      "relation_id": "r33",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t3",
+      "source": "组织“霁衡实验室”采用技术“栖原”。"
+    },
+    {
+      "relation_id": "r34",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "组织“霁衡实验室”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r35",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "组织“霁衡实验室”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r36",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "人物“陆澄”采用技术“青岚”。"
+    },
+    {
+      "relation_id": "r37",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "人物“陆澄”采用技术“远汀”。"
+    },
+    {
+      "relation_id": "r38",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "人物“陆澄”采用技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r39",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "人物“陆澄”采用技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r40",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e0",
+      "source": "组织“霁衡实验室”采用装备“青岚”。"
+    },
+    {
+      "relation_id": "r41",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e1",
+      "source": "组织“霁衡实验室”采用装备“远汀”。"
+    },
+    {
+      "relation_id": "r42",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e2",
+      "source": "组织“霁衡实验室”采用装备“棠序”。"
+    },
+    {
+      "relation_id": "r43",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e3",
+      "source": "组织“霁衡实验室”采用装备“栖原”。"
+    },
+    {
+      "relation_id": "r44",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "组织“霁衡实验室”采用装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r45",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e5",
+      "source": "组织“霁衡实验室”采用装备“流云探针”。"
+    },
+    {
+      "relation_id": "r46",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "t4",
+      "source": "组织“霁衡实验室”研发技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r47",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "t5",
+      "source": "组织“霁衡实验室”研发技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r48",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "t4",
+      "source": "人物“陆澄”研发技术“谱线标定”。"
+    },
+    {
+      "relation_id": "r49",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "t5",
+      "source": "人物“陆澄”研发技术“波束追踪”。"
+    },
+    {
+      "relation_id": "r50",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“青岚”采用装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r51",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“远汀”采用装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r52",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“棠序”采用装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r53",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“栖原”采用装备“微光采样器”。"
+    },
+    {
+      "relation_id": "r54",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "装备“微光采样器”采用技术“青岚”。"
+    },
+    {
+      "relation_id": "r55",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "装备“微光采样器”采用技术“远汀”。"
+    },
+    {
+      "relation_id": "r56",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "装备“微光采样器”采用技术“棠序”。"
+    }
+  ],
+  "doc-14": [
+    {
+      "relation_id": "r1",
+      "head_entity_id": "p",
+      "relationCode": "任职",
+      "tail_entity_id": "o",
+      "source": "人物“江岑”在组织“澄湾研究所”任职。"
+    },
+    {
+      "relation_id": "r2",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e0",
+      "source": "组织“澄湾研究所”研发装备“溪桥”。"
+    },
+    {
+      "relation_id": "r3",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e0",
+      "source": "人物“江岑”研发装备“溪桥”。"
+    },
+    {
+      "relation_id": "r4",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“溪桥”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r5",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“溪桥”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r6",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e1",
+      "source": "组织“澄湾研究所”研发装备“望舒”。"
+    },
+    {
+      "relation_id": "r7",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e1",
+      "source": "人物“江岑”研发装备“望舒”。"
+    },
+    {
+      "relation_id": "r8",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“望舒”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r9",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“望舒”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r10",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e2",
+      "source": "组织“澄湾研究所”研发装备“砚池”。"
+    },
+    {
+      "relation_id": "r11",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e2",
+      "source": "人物“江岑”研发装备“砚池”。"
+    },
+    {
+      "relation_id": "r12",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“砚池”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r13",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“砚池”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r14",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "组织“澄湾研究所”研发装备“霜禾”。"
+    },
+    {
+      "relation_id": "r15",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e3",
+      "source": "人物“江岑”研发装备“霜禾”。"
+    },
+    {
+      "relation_id": "r16",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“霜禾”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r17",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“霜禾”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r18",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e4",
+      "source": "组织“澄湾研究所”研发装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r19",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e4",
+      "source": "人物“江岑”研发装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r20",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“星涟检测仪”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r21",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“星涟检测仪”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r22",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "组织“澄湾研究所”研发装备“晓峰传感器”。"
+    },
+    {
+      "relation_id": "r23",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "e5",
+      "source": "人物“江岑”研发装备“晓峰传感器”。"
+    },
+    {
+      "relation_id": "r24",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "装备“晓峰传感器”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r25",
+      "head_entity_id": "e5",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "装备“晓峰传感器”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r26",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "装备“溪桥”采用技术“望舒”。"
+    },
+    {
+      "relation_id": "r27",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "装备“望舒”采用技术“砚池”。"
+    },
+    {
+      "relation_id": "r28",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "t3",
+      "source": "装备“砚池”采用技术“霜禾”。"
+    },
+    {
+      "relation_id": "r29",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "装备“霜禾”采用技术“溪桥”。"
+    },
+    {
+      "relation_id": "r30",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "组织“澄湾研究所”采用技术“溪桥”。"
+    },
+    {
+      "relation_id": "r31",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "组织“澄湾研究所”采用技术“望舒”。"
+    },
+    {
+      "relation_id": "r32",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "组织“澄湾研究所”采用技术“砚池”。"
+    },
+    {
+      "relation_id": "r33",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t3",
+      "source": "组织“澄湾研究所”采用技术“霜禾”。"
+    },
+    {
+      "relation_id": "r34",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "组织“澄湾研究所”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r35",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "组织“澄湾研究所”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r36",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "人物“江岑”采用技术“溪桥”。"
+    },
+    {
+      "relation_id": "r37",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "人物“江岑”采用技术“望舒”。"
+    },
+    {
+      "relation_id": "r38",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t4",
+      "source": "人物“江岑”采用技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r39",
+      "head_entity_id": "p",
+      "relationCode": "采用",
+      "tail_entity_id": "t5",
+      "source": "人物“江岑”采用技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r40",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e0",
+      "source": "组织“澄湾研究所”采用装备“溪桥”。"
+    },
+    {
+      "relation_id": "r41",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e1",
+      "source": "组织“澄湾研究所”采用装备“望舒”。"
+    },
+    {
+      "relation_id": "r42",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e2",
+      "source": "组织“澄湾研究所”采用装备“砚池”。"
+    },
+    {
+      "relation_id": "r43",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e3",
+      "source": "组织“澄湾研究所”采用装备“霜禾”。"
+    },
+    {
+      "relation_id": "r44",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "组织“澄湾研究所”采用装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r45",
+      "head_entity_id": "o",
+      "relationCode": "采用",
+      "tail_entity_id": "e5",
+      "source": "组织“澄湾研究所”采用装备“晓峰传感器”。"
+    },
+    {
+      "relation_id": "r46",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "t4",
+      "source": "组织“澄湾研究所”研发技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r47",
+      "head_entity_id": "o",
+      "relationCode": "研发",
+      "tail_entity_id": "t5",
+      "source": "组织“澄湾研究所”研发技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r48",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "t4",
+      "source": "人物“江岑”研发技术“频域去噪”。"
+    },
+    {
+      "relation_id": "r49",
+      "head_entity_id": "p",
+      "relationCode": "研发",
+      "tail_entity_id": "t5",
+      "source": "人物“江岑”研发技术“轨迹拟合”。"
+    },
+    {
+      "relation_id": "r50",
+      "head_entity_id": "e0",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“溪桥”采用装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r51",
+      "head_entity_id": "e1",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“望舒”采用装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r52",
+      "head_entity_id": "e2",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“砚池”采用装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r53",
+      "head_entity_id": "e3",
+      "relationCode": "采用",
+      "tail_entity_id": "e4",
+      "source": "装备“霜禾”采用装备“星涟检测仪”。"
+    },
+    {
+      "relation_id": "r54",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t0",
+      "source": "装备“星涟检测仪”采用技术“溪桥”。"
+    },
+    {
+      "relation_id": "r55",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t1",
+      "source": "装备“星涟检测仪”采用技术“望舒”。"
+    },
+    {
+      "relation_id": "r56",
+      "head_entity_id": "e4",
+      "relationCode": "采用",
+      "tail_entity_id": "t2",
+      "source": "装备“星涟检测仪”采用技术“砚池”。"
+    }
+  ]
+}

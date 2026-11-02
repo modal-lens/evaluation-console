@@ -1,0 +1,1552 @@
+{
+  "documents": [
+    {
+      "document_id": "doc-1",
+      "filename": "document-1.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "余昭",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "俞川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第1组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "南京市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "贺澜",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "褚宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第1组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "苏州市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-2",
+      "filename": "document-2.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "舒宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "贺言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第2组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "苏州市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "季秋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "江岑",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第2组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "杭州市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-3",
+      "filename": "document-3.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "黎舟",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "应晴",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第3组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "杭州市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "陶然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "沈禾",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第3组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "成都市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-4",
+      "filename": "document-4.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "霍宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "杜衡",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第4组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "成都市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "邵青",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "温竹",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第4组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "武汉市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-5",
+      "filename": "document-5.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "莫言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "陶星",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第5组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "武汉市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "俞川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "简宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第5组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "西安市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-6",
+      "filename": "document-6.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "褚宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "俞墨",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第6组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "西安市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "贺言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "秦越",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第6组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "青岛市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-7",
+      "filename": "document-7.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "江岑",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "黎川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第7组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "青岛市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "应晴",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "卫枫",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第7组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "厦门市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-8",
+      "filename": "document-8.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "沈禾",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "景然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第8组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "厦门市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "杜衡",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "余昭",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第8组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "济南市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-9",
+      "filename": "document-9.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "温竹",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "贺澜",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第9组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "济南市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "陶星",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "舒宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第9组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "长沙市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-10",
+      "filename": "document-10.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "简宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "季秋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第10组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "长沙市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "俞墨",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "黎舟",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第10组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "合肥市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-11",
+      "filename": "document-11.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "秦越",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "陶然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第11组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "合肥市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "黎川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "霍宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第11组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "福州市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-12",
+      "filename": "document-12.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "卫枫",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "邵青",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第12组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "福州市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "景然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "莫言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第12组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "南京市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-13",
+      "filename": "document-13.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "余昭",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "俞川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第13组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "南京市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "贺澜",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "褚宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第13组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "苏州市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-14",
+      "filename": "document-14.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "舒宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "贺言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第14组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "苏州市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "季秋",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "江岑",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第14组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "杭州市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-15",
+      "filename": "document-15.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "黎舟",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "应晴",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第15组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "杭州市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "陶然",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "沈禾",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第15组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "成都市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-16",
+      "filename": "document-16.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "霍宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "杜衡",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第16组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "成都市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "邵青",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "温竹",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第16组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "武汉市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-17",
+      "filename": "document-17.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "莫言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "陶星",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "澜序第17组第1研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "武汉市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "俞川",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "简宁",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第17组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "西安市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    },
+    {
+      "document_id": "doc-18",
+      "filename": "document-18.txt",
+      "language": "zh",
+      "entities": [
+        {
+          "entity_id": "e1",
+          "name": "同舟",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e2",
+          "name": "俞墨",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e3",
+          "name": "同舟",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e4",
+          "name": "西安市",
+          "type": "地理空间"
+        },
+        {
+          "entity_id": "e5",
+          "name": "贺言",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e6",
+          "name": "秦越",
+          "type": "人物"
+        },
+        {
+          "entity_id": "e7",
+          "name": "澜序第18组第2研究中心",
+          "type": "组织"
+        },
+        {
+          "entity_id": "e8",
+          "name": "青岛市",
+          "type": "地理空间"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "r1",
+          "head_entity_id": "e1",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r2",
+          "head_entity_id": "e2",
+          "relationCode": "任职",
+          "tail_entity_id": "e3"
+        },
+        {
+          "relation_id": "r3",
+          "head_entity_id": "e3",
+          "relationCode": "位于",
+          "tail_entity_id": "e4"
+        },
+        {
+          "relation_id": "r4",
+          "head_entity_id": "e5",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r5",
+          "head_entity_id": "e6",
+          "relationCode": "任职",
+          "tail_entity_id": "e7"
+        },
+        {
+          "relation_id": "r6",
+          "head_entity_id": "e7",
+          "relationCode": "位于",
+          "tail_entity_id": "e8"
+        }
+      ],
+      "attributes": []
+    }
+  ]
+}

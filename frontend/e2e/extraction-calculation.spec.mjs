@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('实体关系计算过程默认收起，展开后展示公式和真实 TP/FP/FN 对齐', async ({ page }) => {
+  const metric = 'entity-relation-extraction';
+  const { data } = await (await page.request.get(`/api/v1/evaluation-runs/templates/${metric}`)).json();
+  const prediction = structuredClone(data.prediction_example);
+  const doc = prediction.documents[0];
+  const person = doc.entities[0], organization = doc.entities[1];
+  doc.entities = [person, organization, { entity_id: 'extra', name: '额外机构', type: '组织' }];
+  const employment = doc.relations[0];
+  doc.relations = [employment, { ...employment, relation_id: 'reverse', head_entity_id: organization.entity_id, tail_entity_id: person.entity_id }];
+  await page.goto(`/evaluation/${metric}`);
+  await page.locator('[data-mode=precomputed]').click();
+  await page.locator('[data-file=predictions]').setInputFiles({ name: 'predictions.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(prediction)) });
+  await page.locator('[data-file=gold]').setInputFiles({ name: 'gold.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(data.annotations)) });
+  await page.getByRole('button', { name: '使用已有结果计算指标' }).click();
+  const toggle = page.getByRole('button', { name: '查看详细计算过程', exact: true });
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  await expect(page.locator('.calculation-content')).toBeHidden();
+  await toggle.click();
+  await expect(page.getByRole('table', { name: '实体指标计算公式' })).toContainText('4 / (4 + 1 + 1)');
+  await expect(page.getByRole('table', { name: '实体指标计算公式' })).toContainText('66.67%');
+  await expect(page.getByRole('table', { name: '关系指标计算公式' })).toContainText('2 / (2 + 1 + 1)');
+  await expect(page.getByRole('table', { name: '关系指标计算公式' })).toContainText('50.00%');
+  await page.locator('[data-calculation=entity] .calculation-document summary').click();
+  const entities = page.getByRole('table', { name: '实体匹配明细：document-1.txt' });
+  await expect(entities).toContainText('额外机构［组织］');
+  await expect(entities).toContainText('FP · 误报');
+  await expect(entities).toContainText('FN · 漏报');
+  await page.locator('[data-calculation=relation] .calculation-document summary').click();
+  await expect(page.getByRole('table', { name: '关系匹配明细：document-1.txt' })).toContainText('南京大学［组织］ → 任职 → 张三［人物］');
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
+  await page.getByRole('button', { name: '收起详细计算过程', exact: true }).click();
+  await expect(page.locator('.calculation-content')).toBeHidden();
+});

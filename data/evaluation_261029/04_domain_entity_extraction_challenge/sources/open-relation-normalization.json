@@ -1,0 +1,260 @@
+{
+  "source_text_job_id": "1ed7cb137ca24027ac154f1acadf881a",
+  "source_report": "reports/comparison-1ed7cb137ca24027ac154f1acadf881a.json",
+  "source_report_sha256": "286f78836dd6a21716ad17dd27688f6e3820e2af385822307b534d564449676a",
+  "mode": "production_postprocessing_of_recorded_real_model_output",
+  "new_model_calls": 0,
+  "gold_used_for_prediction_postprocessing": false,
+  "entity_predictions_unchanged": true,
+  "changes": {
+    "doc-1": [
+      {
+        "relation_index": 0,
+        "original": "在...任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      }
+    ],
+    "doc-10": [],
+    "doc-11": [],
+    "doc-12": [],
+    "doc-2": [],
+    "doc-3": [
+      {
+        "relation_index": 0,
+        "original": "在任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "机构"
+      }
+    ],
+    "doc-4": [
+      {
+        "relation_index": 0,
+        "original": "在...任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      }
+    ],
+    "doc-5": [
+      {
+        "relation_index": 0,
+        "original": "在...任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      }
+    ],
+    "doc-6": [
+      {
+        "relation_index": 0,
+        "original": "在任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      }
+    ],
+    "doc-7": [
+      {
+        "relation_index": 0,
+        "original": "在任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      },
+      {
+        "relation_index": 1,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 2,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 3,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 4,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 5,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 6,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 7,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 8,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      }
+    ],
+    "doc-8": [
+      {
+        "relation_index": 0,
+        "original": "在任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "组织"
+      },
+      {
+        "relation_index": 1,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 2,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 3,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 4,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 5,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 6,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      },
+      {
+        "relation_index": 7,
+        "original": "研发装备",
+        "normalized": "研发",
+        "model_inferred_target_type": "装备"
+      },
+      {
+        "relation_index": 8,
+        "original": "采用技术",
+        "normalized": "采用",
+        "model_inferred_target_type": "技术"
+      }
+    ],
+    "doc-9": [
+      {
+        "relation_index": 0,
+        "original": "在...任职",
+        "normalized": "任职",
+        "model_inferred_target_type": "机构"
+      }
+    ]
+  },
+  "normalizer_sha256": "8794e24f29bfa2744ff5283bd90a4012cf4a6d8ab1c1dc5ad9b40b9661798b78",
+  "metrics": {
+    "overall": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 118,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9833333333333333,
+      "f1": 0.9915966386554622,
+      "support": 120
+    },
+    "domain_only": {
+      "tp": 94,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9791666666666666,
+      "f1": 0.9894736842105263,
+      "support": 96
+    },
+    "domain_entity_types": [
+      "技术",
+      "装备"
+    ],
+    "baseline": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 111,
+      "fp": 7,
+      "fn": 9,
+      "precision": 0.940677966101695,
+      "recall": 0.925,
+      "f1": 0.9327731092436975,
+      "support": 120
+    },
+    "f1_delta": 0.05882352941176472,
+    "relations": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 104,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 104
+    },
+    "baseline_relations": {
+      "averaging": "micro",
+      "matching": "exact_set",
+      "tp": 81,
+      "fp": 23,
+      "fn": 23,
+      "precision": 0.7788461538461539,
+      "recall": 0.7788461538461539,
+      "f1": 0.7788461538461539,
+      "support": 104
+    },
+    "relation_f1_delta": 0.22115384615384615,
+    "acceptance": {
+      "passed": true,
+      "checks": {
+        "baseline_entity": {
+          "f1": 0.9327731092436975,
+          "lower_exclusive": 0.88,
+          "upper_exclusive": null,
+          "status": "passed"
+        },
+        "baseline_relation": {
+          "f1": 0.7788461538461539,
+          "lower_exclusive": 0.75,
+          "upper_exclusive": null,
+          "status": "passed"
+        },
+        "configured_entity": {
+          "f1": 0.9915966386554622,
+          "lower_exclusive": 0.95,
+          "upper_exclusive": 1.0,
+          "status": "passed"
+        }
+      }
+    }
+  }
+}

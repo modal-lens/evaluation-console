@@ -1,0 +1,15 @@
+City registry: "Xian", "Nanjing", "Suzhou", "Hangzhou". Each entry is an individually named city in the institutional address records below.
+
+Two distinct objects share the exact official name Sora: one is a person, the other is an institution.
+The person named Sora works at the institution named Sora. The official job title of Sora is 工程师. The institution Sora is located in the city Xian; its founding year is 2017. Address registry confirms Sora is located in Xian.
+The person named Arlo North works at the institution named Clearstone Calibration Station. The official job title of Arlo North is 工程师. The institution Clearstone Calibration Station is located in the city Nanjing; its founding year is 2018. Address registry confirms Clearstone Calibration Station is located in Nanjing.
+The person named June Wu works at the institution named Forest Equipment Lab. The official job title of June Wu is 工程师. The institution Forest Equipment Lab is located in the city Suzhou; its founding year is 2019. Address registry confirms Forest Equipment Lab is located in Suzhou.
+The person named Tessa Moon works at the institution named Rainriver Observation Center. The official job title of Tessa Moon is 工程师. The institution Rainriver Observation Center is located in the city Hangzhou; its founding year is 2020. Address registry confirms Rainriver Observation Center is located in Hangzhou.
+
+Review section 1. The review preserves confirmed observations and separates them from possible interpretations. A change in wording does not establish a new named person or institution. Each registry entry is retained with its supporting record, and unexplained differences remain open for review. The narrative describes preparation, handover and evidence boundaries without adding other named objects. 
+
+Review section 2. The review preserves confirmed observations and separates them from possible interpretations. A change in wording does not establish a new named person or institution. Each registry entry is retained with its supporting record, and unexplained differences remain open for review. The narrative describes preparation, handover and evidence boundaries without adding other named objects. 
+
+Review section 3. The review preserves confirmed observations and separates them from possible interpretations. A change in wording does not establish a new named person or institution. Each registry entry is retained with its supporting record, and unexplained differences remain open for review. The narrative describes preparation, handover and evidence boundaries without adding other named objects. 
+
+Review section 4. The review preserves confirmed observations and separates them from possible interpretations. A change in wording does not establish a new named person or institution. Each registry entry is retained with its supporting record, and unexplained differences remain open for review. The narrative describes preparation, handover and evidence boundaries without adding other named objects. 
