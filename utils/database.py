@@ -10,7 +10,9 @@ from contextlib import contextmanager
 import json
 import sys
 import traceback
+import logging
 from pathlib import Path
+from threading import RLock
 from typing import Any, Iterator
 
 # 直接执行 ``python utils/database.py`` 时，Python 默认只把 utils 目录加入
@@ -37,6 +39,7 @@ class PostgresClient:
 
     def __init__(self) -> None:
         self._pool: SimpleConnectionPool | None = None
+        self._lock = RLock()
 
     def _create_pool(self) -> SimpleConnectionPool:
         """根据 `conf/config.yml` 创建 psycopg2 连接池。"""
@@ -60,9 +63,10 @@ class PostgresClient:
     def pool(self) -> SimpleConnectionPool:
         """返回可用连接池；如果尚未创建，则先创建再返回。"""
 
-        if self._pool is None:
-            self._pool = self._create_pool()
-        return self._pool
+        with self._lock:
+            if self._pool is None:
+                self._pool = self._create_pool()
+            return self._pool
 
     @contextmanager
     def cursor(self) -> Iterator[RealDictCursor]:
@@ -72,24 +76,29 @@ class PostgresClient:
         连接归还给连接池，避免连接泄漏。
         """
 
-        connection = self.pool.getconn()
-        try:
-            with connection.cursor() as cursor:
-                yield cursor
-            connection.commit()
-        except Exception:
-            print(traceback.format_exc())
-            connection.rollback()
-            raise
-        finally:
-            self.pool.putconn(connection)
+        # SimpleConnectionPool is not thread safe. Only short database work holds
+        # this lock; callers release it before making independent model requests.
+        with self._lock:
+            pool = self.pool
+            connection = pool.getconn()
+            try:
+                with connection.cursor() as cursor:
+                    yield cursor
+                connection.commit()
+            except Exception:
+                logging.getLogger(__name__).exception('数据库事务执行失败，正在回滚')
+                connection.rollback()
+                raise
+            finally:
+                pool.putconn(connection)
 
     def close(self) -> None:
         """关闭连接池中所有连接，通常用于进程退出或测试清理。"""
 
-        if self._pool is not None:
-            self._pool.closeall()
-            self._pool = None
+        with self._lock:
+            if self._pool is not None:
+                self._pool.closeall()
+                self._pool = None
 
 
 

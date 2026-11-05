@@ -4,6 +4,7 @@ import hashlib
 import httpx
 import secrets
 import traceback
+import logging
 from openai import OpenAI
 # from phoenix.otel import register
 # from openinference.instrumentation.openai import OpenAIInstrumentor
@@ -817,7 +818,7 @@ def extract_text(
             try:
                 ordered_results[index] = future.result()
             except Exception as exc:
-                print(f"第 {index + 1} 个文本分段抽取失败，已跳过：{exc}\n{traceback.format_exc()}")
+                logging.getLogger(__name__).exception('文本分段抽取失败，沿用原逻辑跳过该段：分块序号=%d，异常类型=%s', index + 1, type(exc).__name__)
                 ordered_results[index] = {"entities": [], "relationships": [], "resolutions": []}
 
     return add_entity_ids(merge_results(ordered_results))

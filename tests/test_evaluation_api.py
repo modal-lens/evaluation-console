@@ -196,7 +196,7 @@ def test_application_only_registers_metric_routes():
     for path in ("/health", "/ready"):
         assert path in paths
     assert all(path in ("/health", "/ready") or path.startswith(
-        ("/api/v1/evaluation/", "/api/v1/evaluation-runs/")) for path in paths)
+        ("/api/v1/evaluation/", "/api/v1/evaluation-runs/", "/api/v1/sql-evaluation/", "/api/v1/mcp-console/")) for path in paths)
     for path in ("/api/v1/prompt/build", "/api/v1/entity-llm/extract", "/api/v1/community/discover", "/api/v1/graph/ablation", "/api/v1/melt-tasks"):
         assert path not in paths
     assert production_client.get("/health").json() == {"status": "ok"}

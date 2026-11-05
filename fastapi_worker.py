@@ -3,15 +3,21 @@
 from __future__ import annotations
 
 import traceback
+import logging
+from time import perf_counter
+from uuid import uuid4
 
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
 from apis.evaluation_api import router as evaluation_router
 from apis.evaluation_runs_api import router as evaluation_runs_router
+from apis.sql_evaluation_api import router as sql_evaluation_router
+from apis.mcp_console_api import router as mcp_console_router
 from conf.load_config import get_section
 from utils.exceptions import AppError
 from utils.logger import get_logger
+from utils.log_context import log_context
 
 
 logger = get_logger(__name__)
@@ -23,6 +29,28 @@ def create_app() -> FastAPI:
     app = FastAPI(title="指标评测 API", version="1.0.0")
     app.include_router(evaluation_router)
     app.include_router(evaluation_runs_router)
+    app.include_router(sql_evaluation_router)
+    app.include_router(mcp_console_router)
+    logger.info('评测服务初始化完成：直接评分、自动预测评测、SQL评测及健康检查接口已注册')
+
+    @app.middleware('http')
+    async def request_logging(request: Request, call_next):
+        identifier = uuid4().hex
+        request.state.request_id = identifier
+        started = perf_counter()
+        quiet = request.url.path in ('/health', '/ready') or (request.method == 'GET' and '/jobs' in request.url.path)
+        level = logging.DEBUG if quiet else logging.INFO
+        with log_context(request=identifier):
+            logger.log(level, '接口请求开始：方法=%s，路径=%s', request.method, request.url.path)
+            try:
+                response = await call_next(request)
+            except Exception as exc:
+                logger.error('接口请求异常：方法=%s，路径=%s，异常类型=%s，耗时=%.1f毫秒', request.method, request.url.path, type(exc).__name__, (perf_counter() - started) * 1000)
+                raise
+            response.headers['X-Request-ID'] = identifier
+            logger.log(logging.WARNING if response.status_code >= 400 else level,
+                       '接口请求结束：方法=%s，路径=%s，状态码=%d，耗时=%.1f毫秒', request.method, request.url.path, response.status_code, (perf_counter() - started) * 1000)
+            return response
 
     @app.get("/health")
     def health() -> dict[str, str]:
@@ -70,9 +98,10 @@ def create_app() -> FastAPI:
     async def unhandled_error_handler(request: Request, exc: Exception) -> JSONResponse:
         """处理未预期异常，并在 error 中返回简化信息和堆栈信息。"""
 
-        logger.exception("未预期系统异常，路径=%s", request.url.path, exc_info=exc)
+        logger.exception("未预期系统异常，路径=%s", request.url.path, exc_info=exc, extra={'request_id': getattr(request.state, 'request_id', '-')})
         return JSONResponse(
             status_code=500,
+            headers={'X-Request-ID': getattr(request.state, 'request_id', '-')},
             content={
                 "success": False,
                 "data": None,
@@ -99,4 +128,5 @@ if __name__ == "__main__":
         host=server_config.get("host", "0.0.0.0"),
         port=int(server_config.get("port", 8000)),
         reload=bool(server_config.get("reload", False)),
+        access_log=False,
     )

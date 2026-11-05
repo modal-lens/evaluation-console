@@ -2,9 +2,13 @@ import type { Contract } from './api/client.js';
 import { element, message } from './components/dom.js';
 import { groups, pagePath, pages, legacyPages, modulePage, type PageDefinition } from './pages/catalog.js';
 import { mountWorkspace as mountEvaluation, type WorkspaceState as PageState } from './pages/workspace.js';
+import { mountSQL, sqlRoute, type SQLState } from './pages/sql-evaluation.js';
+import { mountMCP, mcpRoute, type MCPState } from './pages/mcp-console.js';
 
 const root = document.querySelector<HTMLElement>('#app')!;
 const states = new Map<string, PageState>();
+const sqlState: SQLState = {};
+const mcpState: MCPState = {};
 let cleanup = () => {};
 let currentPath = '';
 let selectedGroup = '全部评测';
@@ -18,7 +22,7 @@ const moduleCompleted = (page: PageDefinition): boolean => hasResult(states.get(
 function home(main: HTMLElement): void {
   main.innerHTML = `
     <section class="home-hero"><div class="hero-copy"><div class="eyebrow">QUALITY STARTS WITH MEASUREMENT</div><h1>让算法表现，<br><span>有据可依。</span></h1><p>从抽取到理解，从单篇到跨语种。<br>以统一的评测口径，掌握每一次算法迭代的质量。</p><a class="button primary-button" data-route href="/evaluation/entity-relation-extraction">开始第一次评测 <span aria-hidden="true">↗</span></a></div><div class="hero-chart" aria-hidden="true"><div class="chart-label"><span>评测维度</span><span>MEASURE · COMPARE · IMPROVE</span></div><div class="chart-bars"><div style="--height:42%"><span>实体</span></div><div style="--height:64%"><span>关系</span></div><div style="--height:54%"><span>消融</span></div><div style="--height:83%"><span>分类</span></div><div style="--height:70%"><span>发现</span></div></div><p>示意图 · 非实际评测结果</p></div></section>
-    <div class="overview-stats"><div><span class="stat-number">7<span>个</span></span><p>评测模块 · 保留 12 项指标</p></div><div><span class="stat-number">04<span>组</span></span><p>覆盖算法关键环节</p></div><div><span class="stat-number completed-count">0<span>/ 7</span></span><p>本次会话已评测</p></div><div class="stat-note"><span class="mini-dot"></span><p>基于真实预测与人工标注<br><strong>结果由后端接口计算</strong></p></div></div>
+    <div class="overview-stats"><div><span class="stat-number">8<span>个</span></span><p>7 项算法模块 · 保留 12 项指标 + SQL 评测</p></div><div><span class="stat-number">05<span>组</span></span><p>覆盖算法关键环节</p></div><div><span class="stat-number completed-count">0<span>/ 8</span></span><p>本次会话已评测</p></div><div class="stat-note"><span class="mini-dot"></span><p>基于真实预测与人工标注<br><strong>结果由后端接口计算</strong></p></div></div>
     <section class="catalog"><div class="section-heading"><div><div class="eyebrow">EVALUATION SUITE</div><h2>选择一项评测</h2></div><p>每一项指标，都对应一个可执行的评测。</p></div><div class="filter-tabs" role="group" aria-label="按评测类别筛选"></div><div class="catalog-grid"></div></section>
     <div class="home-footnote"><span>i</span><p>上传原文与人工标注，由现有算法自动生成预测并评测；也可切换到直接评分，使用已有预测结果。</p><a href="/docs" target="_blank" rel="noopener">接口文档 ↗</a></div>`;
   const tabs = main.querySelector<HTMLElement>('.filter-tabs')!;
@@ -26,7 +30,7 @@ function home(main: HTMLElement): void {
   const renderCatalog = () => {
     grid.replaceChildren();
     tabs.replaceChildren();
-    for (const group of ['全部评测', ...groups]) {
+    for (const group of ['全部评测', ...groups, '工作流评测']) {
       const button = element('button', `filter-tab${selectedGroup === group ? ' active' : ''}`, group);
       button.type = 'button';
       button.setAttribute('aria-pressed', String(selectedGroup === group));
@@ -46,10 +50,14 @@ function home(main: HTMLElement): void {
       if (moduleCompleted(page)) link.append(element('span', 'card-completed', '已评测 ✓'));
       grid.append(link);
     }
+    if (selectedGroup === '全部评测' || selectedGroup === '工作流评测') {
+      const link = element('a', 'catalog-card'); link.href = sqlRoute; link.dataset.route = '';
+      link.append(element('span', 'card-group', '工作流评测'), element('h3', '', '自然语言转 SQL'), element('p', '', '本地 Python 请求工作流，评测数据库目录查询和人员统计 SQL。'), element('span', 'card-footer', '100 条测试数据 · 四种数据库 ↗')); grid.append(link);
+    }
   };
   renderCatalog();
-  const completed = pages.filter(moduleCompleted).length;
-  main.querySelector('.completed-count')!.innerHTML = `${completed}<span>/ 7</span>`;
+  const completed = pages.filter(moduleCompleted).length + (sqlState.job?.status === 'succeeded' ? 1 : 0);
+  main.querySelector('.completed-count')!.innerHTML = `${completed}<span>/ 8</span>`;
 }
 
 async function boot(): Promise<void> {
@@ -74,22 +82,30 @@ async function boot(): Promise<void> {
     }
     nav.append(section);
   }
+  const sqlSection = element('div', 'nav-group'); sqlSection.append(element('div', 'nav-group-label', '工作流评测'));
+  const sqlLink = element('a', 'nav-link', 'SQL  自然语言转 SQL'); sqlLink.href = sqlRoute; sqlLink.dataset.route = ''; sqlSection.append(sqlLink); nav.append(sqlSection);
+  const servicesSection = element('div', 'nav-group'); servicesSection.append(element('div', 'nav-group-label', '服务管理'));
+  const mcpLink = element('a', 'nav-link', '◎  MCP 控制台'); mcpLink.href = mcpRoute; mcpLink.dataset.route = ''; servicesSection.append(mcpLink); nav.append(servicesSection);
 
   const render = () => {
     cleanup();
     cleanup = () => {};
     currentPath = location.pathname.replace(/\/$/, '') || '/';
     const page = [...pages, ...legacyPages].find(page => pagePath(page) === currentPath);
+    const sqlView = currentPath === sqlRoute;
+    const mcpView = currentPath === mcpRoute;
     for (const link of root.querySelectorAll<HTMLAnchorElement>('.sidebar a[data-route]')) {
       const active = link.pathname === currentPath || (!!page && link.pathname === pagePath(modulePage(page.slug)!));
       link.classList.toggle('active', active);
       if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
     }
-    root.querySelector('.breadcrumb strong')!.textContent = page ? pageName(page) : currentPath === '/' ? '评测概览' : '页面不存在';
-    document.title = `${page ? pageName(page) : '评测概览'} · 智析`;
+    root.querySelector('.breadcrumb strong')!.textContent = mcpView ? 'MCP 控制台' : sqlView ? '自然语言转 SQL' : page ? pageName(page) : currentPath === '/' ? '评测概览' : '页面不存在';
+    document.title = `${mcpView ? 'MCP 控制台' : sqlView ? '自然语言转 SQL' : page ? pageName(page) : '评测概览'} · 智析`;
     root.classList.remove('nav-open');
     root.querySelector('.menu-toggle')!.setAttribute('aria-expanded', 'false');
     if (currentPath === '/') home(main);
+    else if (sqlView) cleanup = mountSQL(main, sqlState);
+    else if (mcpView) cleanup = mountMCP(main, mcpState);
     else if (page) {
       let state = states.get(page.slug);
       if (!state) { state = { text: JSON.stringify(contract.operations[page.metrics?.[0] ?? page.slug]!.example, null, 2) }; states.set(page.slug, state); }

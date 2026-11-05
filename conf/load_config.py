@@ -8,7 +8,7 @@
 from __future__ import annotations
 
 import os
-import traceback
+import logging
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -41,8 +41,8 @@ def _parse_env_value(value: str) -> Any:
 
     try:
         parsed = yaml.safe_load(value)
-    except yaml.YAMLError:
-        print(traceback.format_exc())
+    except yaml.YAMLError as exc:
+        logging.getLogger(__name__).warning('环境变量配置解析失败，保留为字符串：异常类型=%s', type(exc).__name__)
         return value
     return value if parsed is None and value.strip() else parsed
 
@@ -123,3 +123,11 @@ def clear_config_cache() -> None:
     """清除配置缓存，供测试或显式热加载使用。"""
 
     load_config.cache_clear()
+
+
+def get_max_workers() -> int:
+    """所有评测共用的默认预测并发数；沿用配置缓存和环境变量覆盖。"""
+    value = load_config().get('max_workers', 4)
+    if type(value) is not int or not 1 <= value <= 8:
+        raise ConfigError('conf/config.yml 中 max_workers 必须是 1～8 的整数')
+    return value

@@ -5,6 +5,7 @@ import httpx
 from openai import OpenAI
 from conf.load_config import get_section
 from utils.database import postgres_client
+from utils.log_context import register_secret
 
 def _as_int(value: Any, default: int = 0) -> int:
     """把模型参数中的数字字段安全转成 int。"""
@@ -41,6 +42,7 @@ def _resolve_model_config(model_params: dict[str, Any]) -> tuple[str | None, str
     base_url = model_config.get("base_url") or config.get("text_llm_url")
     model = model_config.get("model_code") or model_params.get("modelName") or config.get("text_llm_name")
     api_key = model_config.get("api_key") or config.get("key") or "EMPTY"
+    register_secret(api_key)
     return base_url, model, api_key
 
 def extract_entities_with_model(*, input_text: str, model_params: dict[str, Any],

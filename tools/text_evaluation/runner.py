@@ -2,6 +2,9 @@
 
 from itertools import combinations
 import json
+import logging
+from time import perf_counter
+from utils.log_context import metrics_summary
 
 from tools import evaluation
 from tools.evaluation_schemas import (
@@ -14,6 +17,8 @@ from .predictors import ProductionPredictor
 from .precomputed import graphs_from_documents, saved_fusion, export_predictions
 from .calculation import explain_extraction, explain_classification, explain_domain_entities
 from .domain_comparison import baseline_options
+from .concurrency import ordered_parallel_map
+logger = logging.getLogger(__name__)
 
 
 def _identity(entity):
@@ -125,12 +130,14 @@ def _fusion_score(request, predictions, fusion):
 
 
 def run_evaluation(request: RunInput, *, predictor=None, progress=None, checkpoint=None) -> dict:
+    started = perf_counter()
     saved = request.predictions
     if saved is None:
         predictor = predictor or ProductionPredictor()
     checkpoint = checkpoint or (lambda: None)
     progress = progress or (lambda stage, done, total: None)
     metric = request.metric
+    logger.info('评测编排开始：指标=%s，文档数=%d，输入模式=%s，预测并发=%d', metric, len(request.documents), '已有预测JSON' if saved is not None else '原文预测', request.options.max_workers)
     total = len(request.documents) + 1
     if saved is None and metric == 'domain-entity-extraction' and request.options.compare_baseline:
         total += len(request.documents)
@@ -143,23 +150,37 @@ def run_evaluation(request: RunInput, *, predictor=None, progress=None, checkpoi
     uploaded = graphs_from_documents(saved.documents) if saved is not None else {}
     if saved is not None and saved.baseline_documents and request.options.compare_baseline:
         baseline = graphs_from_documents(saved.baseline_documents)
-    for document in request.documents:
+    tasks = [(document, is_baseline) for document in request.documents for is_baseline in
+             ((False, True) if saved is None and metric == 'domain-entity-extraction' and request.options.compare_baseline else (False,))]
+
+    def predict_document(task):
+        document, is_baseline = task
+        logger.info('文档处理开始：文档ID=%s，字符数=%d，预测类型=%s', document.document_id, len(document.text), '基线' if is_baseline else '当前')
         checkpoint()
         if saved is not None:
-            graph = uploaded[document.document_id]
+            return uploaded[document.document_id]
+        if is_baseline:
+            return predictor.extract(document, baseline_options(request.options), domain=False, checkpoint=checkpoint)
         elif metric == 'multilabel-classification':
-            graph = predictor.classify(document, request.options, checkpoint=checkpoint)
+            return predictor.classify(document, request.options, checkpoint=checkpoint)
         else:
-            graph = predictor.extract(document, request.options, domain=metric == 'domain-entity-extraction', checkpoint=checkpoint)
-        predictions[document.document_id] = graph
+            return predictor.extract(document, request.options, domain=metric == 'domain-entity-extraction', checkpoint=checkpoint)
+
+    def document_completed(task, graph):
+        nonlocal done
+        document, is_baseline = task
+        logger.info('文档处理完成：文档ID=%s，预测类型=%s，实体数=%d，关系数=%d，标签数=%d', document.document_id, '基线' if is_baseline else '当前', len(graph.get('entities', [])), len(graph.get('relations', [])), len(graph.get('tags', [])))
         done += 1
-        progress(f'已读取 {document.filename} 的预测结果' if saved is not None else f'已完成 {document.filename} 的预测', done, total)
-        if saved is None and metric == 'domain-entity-extraction' and request.options.compare_baseline:
-            baseline[document.document_id] = predictor.extract(document, baseline_options(request.options), domain=False, checkpoint=checkpoint)
-            done += 1
-            progress(f'已完成 {document.filename} 的基线预测', done, total)
+        stage = f'已完成 {document.filename} 的基线预测' if is_baseline else f'已读取 {document.filename} 的预测结果' if saved is not None else f'已完成 {document.filename} 的预测'
+        progress(stage, done, total)
+
+    graphs = ordered_parallel_map(predict_document, tasks, workers=1 if saved is not None else request.options.max_workers,
+                                 checkpoint=checkpoint, on_complete=document_completed)
+    for (document, is_baseline), graph in zip(tasks, graphs):
+        (baseline if is_baseline else predictions)[document.document_id] = graph
 
     details = {}
+    logger.info('预测阶段完成，开始指标计算：指标=%s，当前预测文档数=%d，基线文档数=%d', metric, len(predictions), len(baseline))
     # 以上预测调用的输入仅包含 document 与 options；从此处才读取人工标注。
     checkpoint()
     if metric in ('entity-relation-extraction', 'entity-extraction', 'relation-extraction'):
@@ -220,13 +241,18 @@ def run_evaluation(request: RunInput, *, predictor=None, progress=None, checkpoi
             for doc in request.annotations.documents
         ]
     elif metric == 'spatiotemporal-resolution':
-        normalized = {}
-        for doc in request.documents:
+        def resolve_document(doc):
             checkpoint()
-            normalized[doc.document_id] = predictions[doc.document_id]['resolutions'] if saved is not None else predictor.resolve(doc, predictions[doc.document_id], request.options, checkpoint=checkpoint)
+            return predictions[doc.document_id]['resolutions'] if saved is not None else predictor.resolve(doc, predictions[doc.document_id], request.options, checkpoint=checkpoint)
+
+        def resolution_completed(doc, result):
+            nonlocal done
             if saved is None:
                 done += 1
                 progress(f'已标准化 {doc.filename} 的时空信息', done, total)
+        resolved = ordered_parallel_map(resolve_document, request.documents, workers=1 if saved is not None else request.options.max_workers,
+                                        checkpoint=checkpoint, on_complete=resolution_completed)
+        normalized = {doc.document_id: result for doc, result in zip(request.documents, resolved)}
         items = []
         for doc in request.annotations.documents:
             by_key = {(x['mention'], x['dimension'], x['granularity']): x['value'] for x in normalized[doc.document_id]}
@@ -291,6 +317,7 @@ def run_evaluation(request: RunInput, *, predictor=None, progress=None, checkpoi
             details['module_calculation'] = {'kind': 'fusion', 'groups': {metric: calculation}}
     checkpoint()
     progress('评测完成', total, total)
+    logger.info('指标计算完成：指标=%s，耗时=%.3f秒，指标汇总=%s', metric, perf_counter() - started, json.dumps(metrics_summary(metrics), ensure_ascii=False))
     prediction_input = export_predictions([doc.model_dump() for doc in request.documents], predictions, details, baseline)
     return {
         'metric': metric, 'metrics': metrics,

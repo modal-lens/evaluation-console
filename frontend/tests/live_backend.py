@@ -14,6 +14,10 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from apis.evaluation_api import router
 from apis.evaluation_runs_api import router as runs_router, get_manager
+from apis.sql_evaluation_api import router as sql_router, get_sql_manager
+from apis.mcp_console_api import router as mcp_router, get_mcp_console
+from tools.mcp_console import MCPConsole
+from tools.sql_evaluation.jobs import SQLJobManager
 from tools.text_evaluation.jobs import JobManager
 from tools.text_evaluation.fallback import run_evaluation_with_fallback, PACKAGES
 from tools.text_evaluation.templates import template
@@ -38,17 +42,25 @@ for filename, value in (
 for document in fallback_template['texts']:
     (fallback_directory / 'texts' / document['filename']).write_text(document['text'], encoding='utf-8')
 manager = JobManager(Path(temporary.name) / 'jobs.sqlite', runner=lambda request, **kwargs: run_evaluation_with_fallback(request, predictor=FixturePredictor(), cache_root=prediction_root, **kwargs))
+sql_manager = SQLJobManager(Path(temporary.name) / 'sql-jobs', python=sys.executable)
+mcp_manager = MCPConsole(Path(temporary.name) / 'mcp-services.sqlite')
 
 @asynccontextmanager
 async def lifespan(app):
     yield
     manager.close()
+    sql_manager.close()
+    mcp_manager.close()
     temporary.cleanup()
 
 app = FastAPI(title="Evaluation integration test backend", lifespan=lifespan)
 app.include_router(router)
 app.include_router(runs_router)
+app.include_router(sql_router)
+app.include_router(mcp_router)
 app.dependency_overrides[get_manager] = lambda: manager
+app.dependency_overrides[get_sql_manager] = lambda: sql_manager
+app.dependency_overrides[get_mcp_console] = lambda: mcp_manager
 
 
 @app.get("/health")

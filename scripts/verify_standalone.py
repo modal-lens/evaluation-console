@@ -51,7 +51,7 @@ def main():
                     assert response.status_code == 200, (route, response.text)
                 paths = client.get('/openapi.json').json()['paths']
                 assert all(path in ('/health', '/ready') or path.startswith(
-                    ('/api/v1/evaluation/', '/api/v1/evaluation-runs/')) for path in paths)
+                    ('/api/v1/evaluation/', '/api/v1/evaluation-runs/', '/api/v1/sql-evaluation/', '/api/v1/mcp-console/')) for path in paths)
                 for metric, directory in PACKAGES.items():
                     folder = ROOT / 'data/evaluation_261029' / directory
                     response = client.get('/api/v1/evaluation-runs/templates/' + metric)

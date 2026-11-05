@@ -1,6 +1,7 @@
 import type { Result } from '../api/client.js';
 import { element, table } from './dom.js';
 import { extractionFact } from './extraction-calculation.js';
+import { granularityLabel } from './resolution-details.js';
 
 const obj = (value: unknown): Result => value && typeof value === 'object' ? value as Result : {};
 const rows = (value: unknown): Result[] => Array.isArray(value) ? value.map(obj) : [];
@@ -125,8 +126,8 @@ function resolution(container: HTMLElement, calculation: Result): void {
   const metrics = obj(calculation.metrics);
   note(container, '按文档、原文提及、时空维度和粒度对齐，再精确比较预测标准值与人工标准值；无预测按错误计数。准确率的分母为人工标注项数。');
   accuracy(container, metrics, '总体时空准确率');
-  container.append(table(['维度', '粒度', '正确数', '总数', '公式', '准确率'], rows(metrics.by_granularity).map(row => [row.dimension === 'time' ? '时间' : '空间', text(row.granularity), num(row.correct), num(row.total), `${num(row.correct)} / ${num(row.total)}`, pct(row.accuracy)]), '各粒度准确率计算'));
-  container.append(table(['文档', '原文提及', '维度', '粒度', '预测标准值', '真实标准值', '判定'], rows(calculation.items).map(row => [text(row.filename), text(row.mention), row.dimension === 'time' ? '时间' : '空间', text(row.granularity), text(row.predicted), text(row.gold), row.correct ? '正确' : row.predicted == null ? '漏预测' : '标准值不一致']), '时空标准值逐项对照'));
+  container.append(table(['维度', '粒度', '正确数', '总数', '公式', '准确率'], rows(metrics.by_granularity).map(row => [row.dimension === 'time' ? '时间' : '空间', granularityLabel(row.granularity), num(row.correct), num(row.total), `${num(row.correct)} / ${num(row.total)}`, pct(row.accuracy)]), '各粒度准确率计算'));
+  container.append(table(['文档', '原文提及', '维度', '粒度', '预测标准值', '真实标准值', '判定'], rows(calculation.items).map(row => [text(row.filename), text(row.mention), row.dimension === 'time' ? '时间' : '空间', granularityLabel(row.granularity), text(row.predicted), text(row.gold), row.correct ? '正确' : row.predicted == null ? '漏预测' : '标准值不一致']), '时空标准值逐项对照'));
   note(container, `另有 ${num(calculation.unscored_predictions)} 个预测提及未匹配到标注项。沿用当前评分方式：这些额外预测不进入准确率分母，也不另加扣分。`);
 }
 

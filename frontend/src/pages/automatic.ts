@@ -5,6 +5,7 @@ import { renderModuleResults } from '../components/results.js';
 import { renderExtractionCalculation } from '../components/extraction-calculation.js';
 import { renderModuleCalculation } from '../components/module-calculation.js';
 import { renderDomainEntities } from '../components/domain-entities.js';
+import { renderResolutionDetails } from '../components/resolution-details.js';
 import type { PageDefinition } from './catalog.js';
 
 export interface AutomaticState {
@@ -36,7 +37,7 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
     <div class="workspace-grid"><section class="panel input-panel"><div class="panel-heading"><div><span class="step">01</span><h2>预测数据与真实标注</h2></div><span class="small-badge">TXT / JSON</span></div>
       <p class="panel-description">人工标注只用于评分，不会作为答案传给模型。多篇文本按文件名与标注一一对应。</p>
       <div class="evaluation-modes" role="group" aria-label="预测数据来源"><button type="button" class="filter-tab" data-mode="text">上传文本，实时抽取</button><button type="button" class="filter-tab" data-mode="precomputed">上传抽取结果 JSON</button></div>
-      <div class="upload-block" data-input="text"><h3>原文文本 <span>必填 · 最多 20 篇</span></h3><button type="button" class="button secondary" data-action="texts">选择 TXT 文本</button><input type="file" data-file="texts" accept=".txt,text/plain" multiple hidden aria-label="上传原文 TXT"><div class="selected-files"></div><p class="panel-description">支持 UTF-8 / GB18030，每篇不超过 512 KB；每个任务最多 10 万字符。语言在标注中设置。</p><label class="fallback-choice"><input type="checkbox" data-input="allow-fallback"> 自动使用已有预测结果</label></div>
+      <div class="upload-block" data-input="text"><h3>原文文本 <span>必填 · 最多 20 篇</span></h3><button type="button" class="button secondary" data-action="texts">选择 TXT 文本</button><input type="file" data-file="texts" accept=".txt,text/plain" multiple hidden aria-label="上传原文 TXT"><div class="selected-files"></div><p class="panel-description">支持 UTF-8 / GB18030，每篇不超过 512 KB；每个任务最多 10 万字符。语言在标注中设置。</p><label class="concurrency-choice">模型请求并发数 <input type="number" data-input="max-workers" min="1" max="8" step="1" aria-label="模型请求并发数"></label><p class="panel-description">默认并发数读取 conf/config.yml 的 max_workers，可设 1～8；1 为串行。实际速度取决于模型服务的并发能力。</p><label class="fallback-choice"><input type="checkbox" data-input="allow-fallback"> 自动使用已有预测结果</label></div>
       <div class="upload-block" data-input="precomputed" hidden><h3>已有抽取结果 <span>JSON · 最大 10 MB</span></h3><button type="button" class="button secondary" data-action="predictions">上传抽取结果 JSON</button><button type="button" class="button text-button" data-action="prediction-template">下载结果格式示例</button><input type="file" data-file="predictions" accept=".json,application/json" hidden aria-label="上传抽取结果 JSON"><p class="prediction-file panel-description"></p><p class="panel-description">上传下载过的抽取结果 JSON、完整报告或 documents 格式的预测文件。此模式只评分，无需原文；融合、社区和时空模块应提供预测分组或标准值。格式示例中的值仅用于说明，请替换为真实算法输出。</p></div>
       <div class="editor-tools"><button type="button" class="button secondary" data-action="example">加载示例原文与标注</button><button type="button" class="button text-button" data-action="template">下载标注模板</button></div>
       <div class="annotation-heading"><label for="gold-json">真实结果标注 JSON</label><button type="button" class="button text-button" data-action="gold">上传标注 JSON</button><input type="file" data-file="gold" accept=".json,application/json" hidden aria-label="上传真实结果 JSON"></div>
@@ -68,6 +69,7 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
   const predictionInput = get<HTMLInputElement>('[data-file=predictions]');
   const optionsInput = get<HTMLInputElement>('[data-file=options]');
   const fallbackChoice = get<HTMLInputElement>('[data-input=allow-fallback]');
+  const maxWorkers = get<HTMLInputElement>('[data-input=max-workers]');
   fallbackChoice.checked = state.allowCachedFallback ?? true;
   const stage = get<HTMLElement>('.job-stage');
   annotation.value = state.annotationText ?? '';
@@ -92,7 +94,10 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
         const attributes = values.entity_attributes;
         const count = attributes && typeof attributes === 'object' && !Array.isArray(attributes)
           ? Object.values(attributes).reduce<number>((sum, value) => sum + (Array.isArray(value) ? value.length : 0), 0) : 0;
-        configText = ` · ${typeof values.block_size === 'number' ? `分块 ${values.block_size} 字符` : '分块使用后端默认值'} · 属性配置 ${count} 项`;
+        const defaults = template?.options as Record<string, unknown> | undefined;
+        const workers = values.max_workers ?? defaults?.max_workers;
+        maxWorkers.value = workers === undefined ? '' : String(workers);
+        configText = ` · ${typeof values.block_size === 'number' ? `分块 ${values.block_size} 字符` : '分块使用后端默认值'} · 并发 ${workers ?? '正在读取配置'} · 属性配置 ${count} 项`;
       }
     } catch { configText = ' · JSON 格式待检查'; }
     get('.config-summary').textContent = !template ? '运行配置正在加载…'
@@ -111,6 +116,7 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
     annotation.readOnly = busy;
     options.readOnly = busy;
     fallbackChoice.disabled = busy;
+    maxWorkers.disabled = busy || !template;
     get<HTMLElement>('[data-action=cancel]').hidden = !state.job || !busy || uploading || deleting;
     get<HTMLElement>('[data-action=delete]').hidden = !state.job || !!busy;
     const list = get('.selected-files'); list.replaceChildren();
@@ -134,6 +140,7 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
       ? { ...state.report.metrics, label_names: labelNames, classification_samples: state.report.details.classification_samples }
       : state.report.metrics);
     if (page.kind === 'domain') renderDomainEntities(get('.result-content'), state.report);
+    if (page.kind === 'resolution') renderResolutionDetails(get('.result-content'), state.report);
     if (['entity-relation-extraction', 'entity-extraction', 'relation-extraction'].includes(page.slug)) {
       renderExtractionCalculation(get('.result-content'), state.report.details.extraction_calculation);
     } else renderModuleCalculation(get('.result-content'), state.report.details.module_calculation);
@@ -267,11 +274,25 @@ export function mountAutomatic(container: HTMLElement, page: PageDefinition, sta
     optionsEdited = true; optionsVersion++; state.optionsSource = 'edited'; state.optionsFilename = undefined;
   } else goldVersion++; formVersion++; errorBox.hidden = true; update(); });
   fallbackChoice.addEventListener('change', () => { state.allowCachedFallback = fallbackChoice.checked; formVersion++; update(); });
+  maxWorkers.addEventListener('change', () => {
+    if (active() || !template) return;
+    try {
+      const workers = Number(maxWorkers.value);
+      if (!Number.isInteger(workers) || workers < 1 || workers > 8) throw new Error('模型请求并发数必须是 1～8 的整数。');
+      const config: unknown = JSON.parse(options.value);
+      if (!config || typeof config !== 'object' || Array.isArray(config)) throw new Error('请先修正运行配置 JSON，再设置并发数。');
+      options.value = JSON.stringify({ ...config, max_workers: workers }, null, 2);
+      optionsEdited = true; optionsVersion++; formVersion++;
+      state.optionsSource = 'edited'; state.optionsFilename = undefined;
+      errorBox.hidden = true; update();
+    } catch (error) { fail(error); }
+  });
   submit.addEventListener('click', async () => {
     if (!template || active() || pendingImports > 0) return;
     errorBox.hidden = true;
     try {
       const precomputed = state.inputMode === 'precomputed';
+      if (!precomputed && !maxWorkers.checkValidity()) throw new Error('模型请求并发数必须是 1～8 的整数。');
       if (precomputed && !state.predictionText) throw new Error('请先上传已有抽取结果 JSON。');
       if (!precomputed && !state.files?.length) throw new Error('请先选择原文 TXT 文件，或加载示例原文。');
       try { assertEvaluationData(JSON.parse(annotation.value) as unknown); }

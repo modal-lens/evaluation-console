@@ -29,3 +29,22 @@ td{white-space:nowrap}.field-reference td{white-space:normal}
 .domain-type-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .domain-type-tag { padding: 5px 12px; border: 1px solid #b7cda4; border-radius: 20px; background: #edf5e4; color: #3b632e; font-size: 12px; font-weight: 600; }
 .domain-entity-summary { color: #466736; font-size: 12px; line-height: 1.9; }
+.sql-logic { margin-top: 24px; }
+.sql-calculation-steps { padding-left: 22px; font-size: 12px; line-height: 1.9; color: #52694e; }
+.sql-calculation-steps li + li { margin-top: 10px; }
+.sql-calculation h3 { font-size: 14px; color: #52694e; margin-top: 20px; }
+.sql-calculation-code { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 460px; overflow: auto; padding: 12px; background: #f7f9f3; color: #415e34; font: 12px/1.8 Consolas, monospace; }
+.sql-correctness { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.sql-correctness.is-correct { color: #326532; background: #eaf4e5; }
+.sql-correctness.is-incorrect { color: #9d3434; background: #fbeaea; }
+.sql-prediction-list { margin-top: 22px; min-width: 0; }
+.sql-prediction-list h3 { font-size: 14px; color: #52694e; }
+.concurrency-choice { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: 12px; color: #52694e; }
+.concurrency-choice input { width: 80px; padding: 7px 10px; border: 1px solid var(--border); border-radius: 5px; background: #fafbf8; color: #354c32; }
+.resolution-details { margin-top: 22px; padding: 16px; border: 1px solid #d5e2c8; border-radius: 8px; background: #f9fbf5; min-width: 0; }
+.resolution-details h3 { margin: 0 0 12px; font-size: 14px; color: #405d36; }
+.resolution-details h3:not(:first-child) { margin-top: 22px; }
+.resolution-details h4 { font-size: 12px; color: #52694e; }
+.resolution-details table { width: 100%; min-width: 0; table-layout: fixed; }
+.resolution-details th, .resolution-details td { white-space: normal; overflow-wrap: anywhere; }
+.resolution-comparison td:nth-child(1), .resolution-comparison td:nth-child(2) { white-space: pre-line; }

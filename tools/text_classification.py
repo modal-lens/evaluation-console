@@ -90,7 +90,6 @@ def classify_text(
     database = db_client or postgres_client
     labels = database.tags_query()
     del labels["19"]
-    logger.info(f"数据库标签查询完成 tags:{labels}")
     logger.info("数据库标签查询完成 tag_count=%s", len(labels))
     if not labels:
         raise LLMResponseError(
@@ -109,7 +108,6 @@ def classify_text(
         system_prompt=CLASSIFICATION_SYSTEM_PROMPT,
     )
     logger.info("分类模型调用完成 response_keys=%s", list(result.keys()))
-    logger.info("分类模型调用完成 response_values=%s", list(result.values()))
 
     final_result = _build_result(result, labels)
     logger.info(

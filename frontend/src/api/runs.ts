@@ -30,7 +30,7 @@ export function assertEvaluationData(value: unknown): void {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return;
   const keys = Object.keys(value);
   if (!keys.some(key => ['documents', 'predictions', 'prediction_input', 'entities', 'tags'].includes(key)) &&
-      keys.some(key => ['name_mapping_policy', 'entity_types', 'entity_attributes', 'relation_types', 'domain_entity_types', 'compare_baseline', 'block_size', 'similarity_threshold', 'attribute_similarity_threshold', 'use_llm_resolution', 'time_granularities', 'space_granularities', 'reference_date'].includes(key))) {
+      keys.some(key => ['name_mapping_policy', 'entity_types', 'entity_attributes', 'relation_types', 'domain_entity_types', 'compare_baseline', 'block_size', 'max_workers', 'similarity_threshold', 'attribute_similarity_threshold', 'use_llm_resolution', 'time_granularities', 'space_granularities', 'reference_date'].includes(key))) {
     throw new Error('这是运行配置 options.json，请通过“公开运行配置”上传；真实结果请上传 gold.json，已有抽取结果请上传预测 JSON。');
   }
 }

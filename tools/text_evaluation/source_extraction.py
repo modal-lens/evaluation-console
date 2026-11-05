@@ -2,6 +2,7 @@
 
 import re
 from .sampling import SAMPLING
+from utils.log_context import register_secret
 
 NAMED_ENTITY_RULES = '''
 \n# 命名实体边界
@@ -27,6 +28,7 @@ def extract_entities_for_evaluation(*, input_text, model_params, name_mapping_po
     # 模型地址仍使用原配置；评测固定采样策略，不修改共享配置及普通业务调用。
     config = api.get_section('llm_config')
     base_url, model, api_key = api._resolve_model_config(model_params)
+    register_secret(api_key)
     client = api.OpenAI(api_key=api_key, base_url=base_url, http_client=api.httpx.Client(trust_env=False))
     def value(enabled, key, default):
         return api._enabled_value(model_params, enabled, key, config.get(default[0], default[1]))
@@ -50,7 +52,7 @@ def extract_entities_for_evaluation(*, input_text, model_params, name_mapping_po
             request_extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': SAMPLING['seed']},
             response_format={'type': 'json_object'},
             max_len=api._as_int(model_params.get('blockSize'), 1000),
-            max_workers=1,
+            max_workers=1,  # Document/chunk parallelism is bounded by the caller.
             system_prompt_override=model_params.get('generatedPrompt', '') + NAMED_ENTITY_RULES,
             entity_name_mapping=source_names,
         )

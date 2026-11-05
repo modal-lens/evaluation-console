@@ -16,10 +16,10 @@ const cases = [
   ['community-discovery', '社区网络发现', '75.00%'],
 ];
 
-test('概览列出 7 个模块，保留 12 项指标，分类筛选和菜单导航正常', async ({ page }) => {
+test('概览保留 7 个算法模块并新增 SQL 工作流，分类筛选和菜单导航正常', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { name: '选择一项评测' })).toBeVisible();
-  await expect(page.locator('.catalog-card')).toHaveCount(7);
+  await expect(page.locator('.catalog-card')).toHaveCount(8);
   await expect(page.locator('.overview-stats')).toContainText('保留 12 项指标');
   await page.screenshot({ path: 'artifacts/overview-desktop.png', fullPage: true });
   await page.getByRole('button', { name: '跨文档消融', exact: true }).click();

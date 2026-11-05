@@ -7,6 +7,37 @@ const metrics = [
   'spatiotemporal-resolution', 'multilabel-classification', 'community-discovery',
 ];
 
+test('自动评测页面从后端模板读取配置中的默认并发数', async ({ page }) => {
+  await page.route('**/api/v1/evaluation-runs/templates/entity-extraction', async route => {
+    const response = await route.fetch();
+    const body = await response.json();
+    body.data.options.max_workers = 6;
+    await route.fulfill({ json: body });
+  });
+  await page.goto('/evaluation/entity-extraction');
+  await expect(page.getByLabel('模型请求并发数', { exact: true })).toHaveValue('6');
+});
+
+test('模型并发数与运行配置同步并提交到后端', async ({ page }) => {
+  await page.goto('/evaluation/entity-extraction');
+  await page.getByRole('button', { name: '加载示例原文与标注', exact: true }).click();
+  const workers = page.getByLabel('模型请求并发数', { exact: true });
+  await expect(workers).toHaveValue('4');
+  await workers.fill('0');
+  await workers.press('Tab');
+  await expect(page.getByRole('alert')).toContainText('1～8');
+  await workers.fill('2');
+  await workers.press('Tab');
+  await expect(page.locator('#run-options')).toHaveValue(/"max_workers": 2/);
+  await expect(page.locator('.config-summary')).toContainText('并发 2');
+  await page.getByRole('button', { name: '开始自动预测与评测' }).click();
+  await expect(page.getByRole('button', { name: '下载完整报告' })).toBeEnabled();
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: '下载完整报告' }).click()]);
+  const stream = await download.createReadStream();
+  const chunks = []; for await (const chunk of stream) chunks.push(chunk);
+  expect(JSON.parse(Buffer.concat(chunks).toString('utf8')).options.max_workers).toBe(2);
+});
+
 for (const metric of metrics) test(`自动任务 ${metric}：上传原文与标注后展示预测和指标`, async ({ page }) => {
   await page.goto('/evaluation/' + metric);
   await page.getByRole('button', { name: '加载示例原文与标注', exact: true }).click();
@@ -77,6 +108,49 @@ test('手机自动上传页面无横向溢出，可完成评测', async ({ page 
   expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: 'artifacts/automatic-mobile.png', fullPage: true });
+});
+
+test('时空页面直接展示多粒度覆盖和消歧标准值对照', async ({ page }) => {
+  await page.goto('/evaluation/spatiotemporal-resolution');
+  await page.getByRole('button', { name: '加载示例原文与标注', exact: true }).click();
+  await expect(page.locator('.selected-files')).toContainText('document-1.txt');
+  await page.getByRole('button', { name: '开始自动预测与评测' }).click();
+  await expect(page.getByRole('heading', { name: '多粒度评测覆盖', exact: true })).toBeVisible();
+  const coverage = page.getByRole('table', { name: '时空多粒度覆盖与准确率', exact: true });
+  await expect(coverage.locator('tbody tr')).toHaveCount(7);
+  await expect(coverage.getByRole('row').filter({ hasText: '年（year）' })).toContainText('未标注，不计分');
+  await expect(coverage.getByRole('row').filter({ hasText: '日（day）' })).toContainText('已评测');
+  const comparison = page.getByRole('table', { name: '时空消歧与标准化逐项对照', exact: true });
+  await expect(comparison).toContainText('2026年10月21日');
+  await expect(comparison).toContainText('2026-10-21');
+  await expect(comparison).toContainText('城市（city）');
+  await expect(comparison).toContainText('正确');
+  await page.locator('.resolution-details').screenshot({ path: 'artifacts/resolution-details.png' });
+});
+
+test('时空逐项对照区分错误、漏预测、冲突未定和未标注的预测', async ({ page }) => {
+  const items = [
+    { sample_id: 'd', filename: 'd.txt', mention: '昨天', dimension: 'time', granularity: 'year', predicted: '2026', gold: '2026', correct: true },
+    { sample_id: 'd', filename: 'd.txt', mention: '昨天', dimension: 'time', granularity: 'month', predicted: '2026-09', gold: '2026-10', correct: false },
+    { sample_id: 'd', filename: 'd.txt', mention: '昨天', dimension: 'time', granularity: 'day', predicted: null, gold: '2026-10-20', correct: false },
+    { sample_id: 'd', filename: 'd.txt', mention: '某地', dimension: 'space', granularity: 'city', predicted: null, gold: '标注城市', correct: false },
+  ];
+  const metrics = { accuracy: .25, correct: 1, total: 4, by_granularity: items.map(row => ({ dimension: row.dimension, granularity: row.granularity, correct: row.correct ? 1 : 0, total: 1, accuracy: row.correct ? 1 : 0 })) };
+  const job = { job_id: 'b'.repeat(32), status: 'succeeded', metric: 'spatiotemporal-resolution', stage: '评测完成', progress: 100, result: {
+    metric: 'spatiotemporal-resolution', input_mode: 'text', metrics, annotations: {}, documents: [], options: { reference_date: '2026-10-21', time_granularities: ['year', 'month', 'day'], space_granularities: ['country', 'province', 'city', 'district'] },
+    predictions: [{ document_id: 'd', filename: 'd.txt', graph: { processing: { resolution_warnings: [{ mention: '昨天', dimension: 'time', granularity: 'day', reason: '模型标准值不一致且缺少确定的原文解析，未输出该提及，评分时按未预测处理' }] } } }],
+    details: { module_calculation: { kind: 'resolution', metrics, items }, normalized_predictions: { d: [{ mention: '额外地名', dimension: 'space', granularity: 'province', value: '预测省级值' }] } },
+  } };
+  await page.route(`**/api/v1/evaluation-runs/jobs/${job.job_id}`, route => route.fulfill({ json: { success: true, data: job } }));
+  await page.goto('/evaluation/spatiotemporal-resolution?job=' + job.job_id);
+  const table = page.getByRole('table', { name: '时空消歧与标准化逐项对照', exact: true });
+  await expect(table.getByRole('row').filter({ hasText: '年（year）' })).toContainText('正确');
+  await expect(table.getByRole('row').filter({ hasText: '月（month）' })).toContainText('标准值不一致（计错）');
+  await expect(table.getByRole('row').filter({ hasText: '日（day）' })).toContainText('冲突未定（计错）');
+  await expect(table.getByRole('row').filter({ hasText: '城市（city）' })).toContainText('漏预测（计错）');
+  await expect(table.getByRole('row').filter({ hasText: '省级（province）' })).toContainText('未标注（不计分）');
+  await expect(page.locator('.resolution-details')).toContainText('时间参考日期：2026-10-21');
+  await expect(page.getByRole('table', { name: '时空标准化冲突提示', exact: true })).toContainText('模型标准值不一致');
 });
 
 test('新任务取消后保留旧报告且下载任务 ID 不串用', async ({ page }) => {

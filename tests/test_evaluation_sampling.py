@@ -85,12 +85,12 @@ def test_legacy_evaluation_and_regular_extraction_have_separate_sampling(model_r
 
 @pytest.mark.parametrize('options', [PredictionOptions(use_llm_resolution=True),
                                     PredictionOptions(name_mapping_policy='legacy', use_llm_resolution=False)])
-def test_fusion_uses_stable_client_and_one_resolution_worker(model_requests, monkeypatch, options):
+def test_fusion_uses_stable_client_and_configured_resolution_workers(model_requests, monkeypatch, options):
     from tools.text_evaluation import predictors
     class Service:
         trace = {}
         def run(self, graphs, strategy):
-            assert strategy.llm_resolution_workers == 1
+            assert strategy.llm_resolution_workers == options.max_workers
             self.llm_resolver.llm_client.chat_json('resolve')
             return {'entities': [], 'relations': []}
     monkeypatch.setattr(predictors, 'make_tracing_service', lambda **kwargs: Service())

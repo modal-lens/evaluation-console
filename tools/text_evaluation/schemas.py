@@ -2,6 +2,7 @@
 
 from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator, field_validator
+from conf.load_config import get_max_workers
 
 METRICS = (
     'entity-extraction', 'relation-extraction', 'domain-entity-extraction',
@@ -126,6 +127,7 @@ class PredictionOptions(StrictModel):
     domain_entity_types: list[str] = Field(default_factory=lambda: ['装备'], min_length=1, max_length=100)
     compare_baseline: bool = True
     block_size: int = Field(default=1000, ge=100, le=4000)
+    max_workers: int = Field(default_factory=get_max_workers, ge=1, le=8, description='默认读取 conf/config.yml 的 max_workers；1 为串行，避免嵌套线程池叠加')
     similarity_threshold: float = Field(default=.88, ge=0, le=1)
     attribute_similarity_threshold: float = Field(default=.92, ge=0, le=1)
     relation_similarity_threshold: float = Field(default=.90, ge=0, le=1)

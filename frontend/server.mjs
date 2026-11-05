@@ -45,7 +45,7 @@ export function createFrontendServer({ root, backendUrl = 'http://127.0.0.1:5011
         }
         const body = Buffer.concat(chunks);
         upstream = transport(target, {
-          method: incoming.method, timeout: timeoutMs,
+          method: incoming.method, timeout: path.startsWith('/api/v1/mcp-console/') ? 330_000 : timeoutMs,
           headers: { 'Content-Type': incoming.headers['content-type'] || 'application/json', Accept: incoming.headers.accept || '*/*', ...(body.length ? { 'Content-Length': body.length } : {}) },
         }, response => {
           outgoing.statusCode = response.statusCode || 502;
@@ -85,8 +85,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const port = Number(process.env.PORT || '50112');
   const backendUrl = process.env.BACKEND_URL || 'http://127.0.0.1:50111';
   const server = createFrontendServer({ root, backendUrl });
-  server.on('error', error => { console.error(`Frontend failed to start: ${error.message}`); process.exitCode = 1; });
-  server.listen(port, host, () => console.log(`Frontend: http://${host}:${server.address().port}\nBackend proxy: ${backendUrl}`));
+  server.on('error', error => { console.error(`[${new Date().toISOString()}] 前端服务启动失败：${error.message}`); process.exitCode = 1; });
+  server.listen(port, host, () => console.log(`[${new Date().toISOString()}] 前端服务启动完成：进程ID=${process.pid}，页面=http://${host}:${server.address().port}，后端代理=${backendUrl}`));
   let compiler;
   let watcher;
   if (process.argv.includes('--dev')) {
@@ -97,5 +97,5 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
       }
     });
   }
-  for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => { compiler?.kill(); watcher?.close(); server.close(); });
+  for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => { console.log(`[${new Date().toISOString()}] 前端服务收到停止信号：${signal}`); compiler?.kill(); watcher?.close(); server.close(); });
 }

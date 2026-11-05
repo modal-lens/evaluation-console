@@ -1,6 +1,7 @@
 import type { Result } from '../api/client.js';
 import { metricPage, type PageDefinition, type ResultKind } from '../pages/catalog.js';
 import { element, table } from './dom.js';
+import { granularityLabel } from './resolution-details.js';
 
 const score = (value: unknown): string => typeof value === 'number' ? `${(value * 100).toFixed(2)}%` : '—';
 const count = (value: unknown): string => typeof value === 'number' ? value.toLocaleString('zh-CN') : '—';
@@ -110,7 +111,7 @@ export function renderResults(container: HTMLElement, kind: ResultKind, data: Re
     const grid = element('div', 'metrics-grid');
     grid.append(card('准确率', score(data.accuracy), kind === 'community' ? '社区标签最优匹配后的正确比例' : '相同维度与粒度下精确匹配', true), card('正确数量', count(data.correct), kind === 'community' ? '匹配正确的节点' : '消歧正确的标注'), card('标注总数', count(data.total), '包含漏预测项'));
     container.append(grid);
-    if (kind === 'resolution') container.append(table(['维度', '粒度', '准确率', '正确', '总数'], (Array.isArray(data.by_granularity) ? data.by_granularity : []).map(item => { const row = record(item); return [row.dimension === 'time' ? '时间' : '空间', String(row.granularity), score(row.accuracy), count(row.correct), count(row.total)]; }), '时空消歧粒度明细'));
+    if (kind === 'resolution') container.append(table(['维度', '粒度', '准确率', '正确', '总数'], (Array.isArray(data.by_granularity) ? data.by_granularity : []).map(item => { const row = record(item); return [row.dimension === 'time' ? '时间' : '空间', granularityLabel(row.granularity), score(row.accuracy), count(row.correct), count(row.total)]; }), '时空消歧粒度明细'));
     else container.append(element('p', 'result-note', '采用社区标签最优一一匹配。未分配节点计为错误，社区编号不同不影响正确分组的得分。'));
   }
 }

@@ -123,7 +123,9 @@ def run_evaluation_with_fallback(request, *, predictor=None, progress=None, chec
     scores = quality_scores(request.metric, original) if original is not None else {}
     low = {key: value for key, value in scores.items() if value <= request.fallback_threshold}
     if original is not None and not low:
+        logger.info('无需历史预测回退：指标=%s，参与检查指标数=%d，阈值=%.4f', request.metric, len(scores), request.fallback_threshold)
         return original
+    logger.warning('开始检查历史预测回退：指标=%s，触发原因=%s，未达阈值指标数=%d，阈值=%.4f', request.metric, '模型连接失败' if connection_error is not None else '指标未超过阈值', len(low), request.fallback_threshold)
     checkpoint()
     info = {'status': 'skipped', 'threshold': request.fallback_threshold, 'triggered_scores': low,
             'original_scores': scores, 'trigger': 'model_connection_error' if connection_error is not None else 'low_score'}
@@ -137,7 +139,7 @@ def run_evaluation_with_fallback(request, *, predictor=None, progress=None, chec
         checkpoint()
         cached = run_evaluation(cached_request, progress=lambda stage, done, total: progress('历史预测重新评分：' + stage, done, total), checkpoint=checkpoint)
     except (ValueError, OSError, ValidationAppError, KeyError, TypeError, AttributeError) as exc:
-        logger.info('Saved-prediction fallback skipped: %s', type(exc).__name__)
+        logger.info('历史预测回退未应用：指标=%s，原因类型=%s', request.metric, type(exc).__name__)
         if isinstance(exc, ValidationError):
             info['reason'] = '历史预测包字段校验失败，保留本次文本预测评分'
         elif isinstance(exc, (ValueError, ValidationAppError)):
@@ -158,5 +160,6 @@ def run_evaluation_with_fallback(request, *, predictor=None, progress=None, chec
                           'cached_scores': quality_scores(request.metric, cached)}
     if original is not None:
         cached['fallback']['original_report'] = original
+    logger.info('历史预测回退已应用：指标=%s，历史预测重新评分完成，是否保留原报告=%s', request.metric, original is not None)
     progress('历史预测二次评分完成，已记录模型连接故障' if connection_error is not None else '历史预测二次评分完成，已保留本次文本预测原始结果', 1, 1)
     return cached

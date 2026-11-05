@@ -3,6 +3,7 @@
 from functools import lru_cache
 import json
 import os
+import logging
 from pathlib import Path
 
 from fastapi import APIRouter, Depends, File, Form, UploadFile
@@ -17,6 +18,7 @@ from tools.text_evaluation.precomputed import parse_predictions
 from utils.exceptions import ValidationAppError
 
 router = APIRouter(prefix='/api/v1/evaluation-runs', tags=['evaluation-runs'])
+logger = logging.getLogger(__name__)
 
 
 @lru_cache(maxsize=1)
@@ -49,6 +51,7 @@ def get_template(metric: str):
 
 async def load_run(metric, texts, annotations, options, predictions=None, allow_cached_fallback=True, fallback_threshold=.90):
     texts = texts or []
+    logger.info('接收评测数据：指标=%s，输入模式=%s，文本文件数=%d，允许历史回退=%s', metric, '已有预测JSON' if predictions is not None else '原文预测', len(texts), allow_cached_fallback)
     try:
         if predictions is None and not 1 <= len(texts) <= 20:
             raise ValueError('请上传 1～20 个 TXT 文件')
@@ -56,6 +59,7 @@ async def load_run(metric, texts, annotations, options, predictions=None, allow_
             raise ValueError('运行配置不能超过 64 KB')
         option_data = json.loads(options)
         settings = PredictionOptions.model_validate(option_data)
+        logger.info('运行配置校验完成：指标=%s，并发数=%d，分块字符数=%d，是否比较基线=%s', metric, settings.max_workers, settings.block_size, settings.compare_baseline)
         if metric.startswith('cross-language/') and 'use_llm_resolution' not in option_data:
             # 跨语种融合必须先做实体消歧，否则不同语言的别名不会连成同一图谱。
             settings = settings.model_copy(update={'use_llm_resolution': True})
@@ -105,6 +109,7 @@ async def load_run(metric, texts, annotations, options, predictions=None, allow_
         return RunInput(metric=metric, documents=documents, annotations=gold, options=settings,
                         allow_cached_fallback=allow_cached_fallback, fallback_threshold=fallback_threshold)
     except (ValueError, ValidationError, KeyError, TypeError, AttributeError) as exc:
+        logger.warning('评测上传校验失败：指标=%s，异常类型=%s', metric, type(exc).__name__)
         # 不返回 Pydantic 的 input 字段，以免整个标注被重复回显到错误响应。
         if isinstance(exc, ValidationError):
             errors = ['.'.join(map(str, e['loc'])) + '：' + e['msg'] for e in exc.errors()[:10]]

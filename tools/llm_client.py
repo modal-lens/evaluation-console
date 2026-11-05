@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 import sys
 import traceback
+import logging
+from time import perf_counter
 from pathlib import Path
 from typing import Any
 
@@ -19,6 +21,9 @@ if __package__ in {None, ""}:
 from conf.load_config import get_section
 from utils.exceptions import LLMResponseError, LLMServiceError
 from utils.json_utils import loads_json_object
+from utils.log_context import register_secret
+
+logger = logging.getLogger(__name__)
 
 
 DEFAULT_SYSTEM_PROMPT = "你是一个严谨的文本处理助手，只返回合法 JSON 对象。"
@@ -45,6 +50,7 @@ class LLMClient:
 
         self.model = str(self.config.get("text_llm_name") or "")
         self.api_key = str(self.config.get("key") or "EMPTY")
+        register_secret(self.api_key)
         self.base_url = str(self.config.get("text_llm_url") or "")
         self.timeout = float(self.config.get("timeout_seconds", 120))
         self.max_retries = int(self.config.get("max_retries", 0))
@@ -100,10 +106,13 @@ class LLMClient:
         """调用模型并解析 JSON 对象结果。"""
 
         request = self.build_request(prompt, system_prompt)
+        started = perf_counter()
+        logger.info('大模型请求开始：模型=%s，输入字符数=%d，最大输出token=%s，超时秒数=%s，重试上限=%d', self.model, len(prompt), self.request_params.get('max_tokens'), self.timeout, self.max_retries)
         try:
             response = self.client.chat.completions.create(**request)
             content = response.choices[0].message.content or ""
         except Exception as exc:
+            logger.error('大模型请求失败：模型=%s，异常类型=%s，耗时=%.3f秒', self.model, type(exc).__name__, perf_counter() - started)
             raise LLMServiceError(
                 "大模型调用失败 "
                 f"base_url={self.base_url} model={self.model}\n"
@@ -111,8 +120,11 @@ class LLMClient:
             ) from exc
 
         try:
-            return loads_json_object(content)
+            result = loads_json_object(content)
+            logger.info('大模型请求完成：模型=%s，返回字符数=%d，JSON字段数=%d，耗时=%.3f秒', self.model, len(content), len(result), perf_counter() - started)
+            return result
         except ValueError as exc:
+            logger.warning('大模型输出解析失败：模型=%s，返回字符数=%d，耗时=%.3f秒', self.model, len(content), perf_counter() - started)
             raise LLMResponseError(
                 f"大模型返回内容不是合法 JSON 对象\n{traceback.format_exc()}"
             ) from exc

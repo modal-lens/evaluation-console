@@ -1,6 +1,6 @@
 """统一日志配置模块。
 
-API 服务和 MQ worker 都通过这里创建 logger，保证日志格式、日志级别和输出
+API 服务、启动器和 SQL 命令行通过这里创建 logger，保证日志格式、日志级别和输出
 位置一致。日志级别来自配置文件，生产环境可以改成 INFO，排查问题时改成 DEBUG。
 """
 
@@ -11,8 +11,10 @@ import logging
 import os
 import sys
 from logging.handlers import RotatingFileHandler
+from pathlib import Path
 
 from conf.load_config import load_config
+from utils.log_context import ContextFormatter, register_config_secrets
 
 
 _LOGGING_CONFIGURED = False
@@ -28,7 +30,7 @@ def _append_log_separator(log_path: str) -> None:
         file_obj.write(f"\n{separator}\n")
 
 
-def setup_logging() -> None:
+def setup_logging(service: str = '') -> None:
     """初始化全局日志配置。
 
     `force=True` 用于确保在测试、重复导入或 uvicorn 预先配置日志后，本项目
@@ -40,14 +42,15 @@ def setup_logging() -> None:
         return
 
     config = load_config()
+    register_config_secrets(config)
     level_name = str(config.get("log_level") or config.get("log_util_config") or "INFO")
     log_level = getattr(logging, level_name.upper(), logging.INFO)
-    formatter = logging.Formatter(
-        "%(asctime)s %(levelname)s [%(pathname)s:%(lineno)d] %(message)s"
+    formatter = ContextFormatter(
+        "%(asctime)s %(levelname)s [进程=%(process)d 线程=%(threadName)s] "
+        "[请求=%(request_id)s 任务=%(job_id)s] [%(name)s:%(lineno)d] %(message)s"
     )
 
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    log_dir = BASE_DIR.replace("utils", "logs")
+    log_dir = str(Path(__file__).resolve().parents[1] / 'logs')
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
@@ -57,8 +60,9 @@ def setup_logging() -> None:
     console_handler.setLevel(log_level)
     console_handler.setFormatter(formatter)
 
-    log_path = os.path.join(log_dir, f"{today}.log")
-    error_log_path = os.path.join(log_dir, f"{today}_error.log")
+    suffix = f'_{service}' if service else ''
+    log_path = os.path.join(log_dir, f"{today}{suffix}.log")
+    error_log_path = os.path.join(log_dir, f"{today}{suffix}_error.log")
     _append_log_separator(log_path)
     _append_log_separator(error_log_path)
 
@@ -88,13 +92,20 @@ def setup_logging() -> None:
         force=True,
     )
     _LOGGING_CONFIGURED = True
+    # Avoid third-party HTTP debug bodies; our own request summaries are sufficient.
+    for name in ('httpx', 'httpcore', 'openai'):
+        logging.getLogger(name).setLevel(logging.WARNING)
+    # HTTP lifecycle logs above the application already include correlation IDs;
+    # avoid duplicate access lines with unsanitized query strings.
+    logging.getLogger('uvicorn.access').setLevel(logging.WARNING)
+    logging.getLogger(__name__).info('日志初始化完成：级别=%s，运行日志=%s，错误日志=%s，单文件上限=5MB，备份数=20', level_name.upper(), log_path, error_log_path)
 
 
 def get_logger(name: str) -> logging.Logger:
     """获取指定名称的 logger。
 
     参数通常传入 `__name__`，这样日志中可以看到具体来源模块，便于定位 API、
-    MQ、数据库或 LLM 调用链路中的问题。
+    任务、数据库或 LLM 调用链路中的问题。
     """
 
     setup_logging()

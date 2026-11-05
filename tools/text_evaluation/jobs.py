@@ -9,8 +9,11 @@ from pathlib import Path
 import sqlite3
 from threading import BoundedSemaphore, Event, Lock
 from uuid import uuid4
+from contextvars import copy_context
+from time import perf_counter
 
 from utils.exceptions import NotFoundAppError, ValidationAppError
+from utils.log_context import log_context
 from .schemas import RunInput
 from .fallback import run_evaluation_with_fallback, ModelConnectionError
 
@@ -41,6 +44,7 @@ class JobManager:
             db.execute('CREATE TABLE IF NOT EXISTS evaluation_jobs (id TEXT PRIMARY KEY, status TEXT NOT NULL, stage TEXT NOT NULL, done INTEGER NOT NULL, total INTEGER NOT NULL, created TEXT NOT NULL, updated TEXT NOT NULL, input TEXT NOT NULL, result TEXT, error TEXT)')
             # 此独立本地任务执行器要求单进程启动。重启时将中断任务明确标为失败，不伪造恢复。
             db.execute("UPDATE evaluation_jobs SET status='failed', stage='服务重启，任务已中断', error=?, updated=? WHERE status IN ('queued','running')", (json.dumps({'message': '服务重启导致任务中断，请重新提交'}, ensure_ascii=False), now()))
+        logger.info('自动评测执行器初始化完成：任务线程数=%d，运行与排队总容量=%d', workers, capacity)
 
     @contextmanager
     def _db(self):
@@ -55,6 +59,7 @@ class JobManager:
 
     def submit(self, request: RunInput):
         if not self.slots.acquire(blocking=False):
+            logger.warning('自动评测任务入队失败：队列容量已满，指标=%s', request.metric)
             raise ValidationAppError('评测任务已满（最多 2 个运行、4 个排队），请等待后重试')
         job_id, event = uuid4().hex, Event()
         try:
@@ -67,7 +72,8 @@ class JobManager:
                 db.execute('INSERT INTO evaluation_jobs VALUES (?,?,?,?,?,?,?,?,?,?)', (job_id, 'queued', '等待执行', 0, 1, stamp, stamp, request.model_dump_json(), None, None))
             with self.lock:
                 self.events[job_id] = event
-            self.pool.submit(self._execute, job_id, request.model_copy(deep=True), event)
+            logger.info('自动评测任务已入队：指标=%s，输入模式=%s，文档数=%d，原文字符数=%d，预测并发=%d', request.metric, '已有预测JSON' if request.predictions is not None else '原文预测', len(request.documents), sum(len(d.text) for d in request.documents), request.options.max_workers, extra={'job_id': job_id})
+            self.pool.submit(copy_context().run, self._execute, job_id, request.model_copy(deep=True), event)
         except BaseException:
             with self.lock:
                 self.events.pop(job_id, None)
@@ -83,6 +89,7 @@ class JobManager:
         return {'job_id': row['id'], 'metric': json.loads(row['input'])['metric'], 'status': row['status'], 'stage': row['stage'], 'completed': row['done'], 'total': row['total'], 'progress': round(100 * row['done'] / max(row['total'], 1), 1), 'created_at': row['created'], 'updated_at': row['updated'], 'result': json.loads(row['result']) if row['result'] else None, 'error': json.loads(row['error']) if row['error'] else None}
 
     def cancel(self, job_id):
+        logger.info('收到自动评测取消请求：已发送的模型请求将等待返回后停止', extra={'job_id': job_id})
         self.get(job_id)
         with self.lock:
             event = self.events.get(job_id)
@@ -98,28 +105,37 @@ class JobManager:
             raise ValidationAppError('请先取消任务，再清理任务记录')
         with self._db() as db:
             db.execute('DELETE FROM evaluation_jobs WHERE id=?', (job_id,))
+        logger.info('自动评测任务数据已清理', extra={'job_id': job_id})
         return {'job_id': job_id, 'deleted': True}
 
     def _execute(self, job_id, request, event):
+        with log_context(job=job_id):
+            return self._execute_job(job_id, request, event)
+
+    def _execute_job(self, job_id, request, event):
+        started = perf_counter()
         def checkpoint():
             if event.is_set():
                 raise Cancelled()
         def progress(stage, done, total):
             checkpoint()
+            logger.info('自动评测阶段进度：指标=%s，阶段=%s，已完成=%d，总步骤=%d', request.metric, stage, done, total)
             with self._db() as db:
                 db.execute("UPDATE evaluation_jobs SET stage=?, done=?, total=?, updated=? WHERE id=? AND status='running'", (stage, done, total, now(), job_id))
         try:
             checkpoint()
+            logger.info('自动评测任务开始：指标=%s，预测并发=%d', request.metric, request.options.max_workers)
             with self._db() as db:
                 db.execute("UPDATE evaluation_jobs SET status='running', stage='开始预测', updated=? WHERE id=? AND status='queued'", (now(), job_id))
             result = self.runner(request, checkpoint=checkpoint, progress=progress)
             checkpoint()
             with self._db() as db:
                 db.execute("UPDATE evaluation_jobs SET status='succeeded', stage='评测完成', done=total, result=?, updated=? WHERE id=? AND status='running'", (json.dumps(result, ensure_ascii=False), now(), job_id))
+            logger.info('自动评测任务完成：指标=%s，总耗时=%.3f秒', request.metric, perf_counter() - started)
         except Cancelled:
-            pass
+            logger.info('自动评测任务已停止：指标=%s，总耗时=%.3f秒', request.metric, perf_counter() - started)
         except Exception as exc:
-            logger.exception('Automatic evaluation failed: %s', job_id)
+            logger.exception('自动评测任务失败：指标=%s，异常类型=%s，总耗时=%.3f秒', request.metric, type(exc).__name__, perf_counter() - started)
             # 不将旧模型客户端包含地址/堆栈的异常直接公开给前端。
             text = str(exc) if isinstance(exc, (ValidationAppError, ModelConnectionError)) else f'预测或评测失败（{type(exc).__name__}），请检查算法依赖及后端日志。'
             error = {'message': text}
@@ -133,4 +149,6 @@ class JobManager:
             self.slots.release()
 
     def close(self):
+        logger.info('正在关闭自动评测执行器，等待运行中的任务退出')
         self.pool.shutdown(wait=True)
+        logger.info('自动评测执行器已关闭')

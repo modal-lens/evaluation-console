@@ -3,11 +3,15 @@
 from copy import deepcopy
 from hashlib import sha256
 import json
+import logging
+from time import perf_counter
 
 from pydantic import TypeAdapter, ValidationError
 
 from .schemas import InputDocument, PredictionOptions, GoldResolution
 from .sampling import SAMPLING, evaluation_call_llm, evaluation_llm_config
+from .concurrency import ordered_parallel_map
+logger = logging.getLogger(__name__)
 
 
 class ProductionPredictor:
@@ -23,10 +27,13 @@ class ProductionPredictor:
         else:
             from .domain_comparison import OPEN_EXTRACTION_PROMPT
             prompt = OPEN_EXTRACTION_PROMPT
-        parts, open_retries = [], []
-        # 旧 extract_text 只处理前四段。编排层逐段调用并复用原合并函数，避免无声丢弃后续原文。
-        for text in split_text_by_length(document.text, options.block_size):
+        # Map chunks in parallel, then merge in source order to retain stable IDs.
+        def extract_chunk(item):
+            index, text = item
+            retry = None
             checkpoint()
+            started = perf_counter()
+            logger.info('抽取分块开始：文档ID=%s，分块序号=%d，字符数=%d，抽取模式=%s', document.document_id, index + 1, len(text), '配置类型' if types else '开放类型')
             model_params = {
                 'generatedPrompt': prompt, 'blockSize': options.block_size,
                 'entityTypes': types,
@@ -38,21 +45,28 @@ class ProductionPredictor:
                 from .domain_comparison import invalid_open_relation_names, OPEN_RELATION_REPAIR
                 invalid = invalid_open_relation_names(graph, text)
                 if invalid:
+                    logger.warning('抽取分块触发关系名称修复重试：文档ID=%s，分块序号=%d，待修复数量=%d', document.document_id, index + 1, len(invalid))
                     checkpoint()
-                    open_retries.append({'chunk_index': len(parts), 'invalid_relation_names': invalid, 'previous_graph': deepcopy(graph)})
+                    retry = {'chunk_index': index, 'invalid_relation_names': invalid, 'previous_graph': deepcopy(graph)}
                     graph = extract_entities_for_evaluation(input_text=text,
                         model_params={**model_params, 'generatedPrompt': prompt + OPEN_RELATION_REPAIR},
                         name_mapping_policy=options.name_mapping_policy)
                     # Keep the actual second output, including remaining errors.
                     # Never replace a name with a gold label or silently remove it.
                     remaining = invalid_open_relation_names(graph, text)
-                    open_retries[-1]['remaining_invalid_relation_names'] = remaining
+                    retry['remaining_invalid_relation_names'] = remaining
             by_id = {str(item['entity_id']): item['name'] for item in graph.get('entities', [])}
-            parts.append({
+            logger.info('抽取分块完成：文档ID=%s，分块序号=%d，实体数=%d，关系数=%d，耗时=%.3f秒', document.document_id, index + 1, len(graph.get('entities', [])), len(graph.get('relations', [])), perf_counter() - started)
+            return {
                 'entities': graph.get('entities', []),
                 'relationships': [{'source': by_id.get(str(r.get('head_entity_id'))), 'relation': r.get('relationCode'), 'target': by_id.get(str(r.get('tail_entity_id'))), 'evidence': r.get('evidence', '')} for r in graph.get('relations', [])],
                 'resolutions': graph.get('resolutions', []),
-            })
+            }, retry
+        extracted = ordered_parallel_map(extract_chunk, enumerate(split_text_by_length(document.text, options.block_size)),
+                                         workers=options.max_workers, checkpoint=checkpoint)
+        parts = [part for part, _ in extracted]
+        logger.info('文档抽取分块已收齐，按原文顺序合并：文档ID=%s，分块数=%d', document.document_id, len(parts))
+        open_retries = [retry for _, retry in extracted if retry is not None]
         checkpoint()
         result = add_entity_ids(merge_results(parts))
         if not types:
@@ -65,10 +79,15 @@ class ProductionPredictor:
         from tools.text_splitter import split_text_by_length
         selected = {}
         label_names = {}
-        # 旧分类函数仅阅读前 2048 字。逐段运行后按标签 ID 并集汇总，全文均进入预测。
-        for text in split_text_by_length(document.text, min(2048, options.block_size)):
+        def classify_chunk(text):
             checkpoint()
+            started = perf_counter()
+            logger.info('分类分块开始：文档ID=%s，字符数=%d', document.document_id, len(text))
             result = classify_text(text, parameters={}, llm=evaluation_call_llm)
+            logger.info('分类分块完成：文档ID=%s，标签数=%d，耗时=%.3f秒', document.document_id, len(result.get('tags', {})), perf_counter() - started)
+            return result
+        chunks = split_text_by_length(document.text, min(2048, options.block_size))
+        for result in ordered_parallel_map(classify_chunk, chunks, workers=options.max_workers, checkpoint=checkpoint):
             selected.update(result['tags'])
             label_names.update(result.get('labels', {}))
         return {'tags': sorted(selected), 'tag_names': selected, 'label_names': label_names, 'sampling': dict(SAMPLING)}
@@ -86,11 +105,18 @@ class ProductionPredictor:
         result = dict(direct)
         ambiguous = set()
         resolution_adapter = TypeAdapter(GoldResolution)
-        for text in split_text_by_length(document.text, options.block_size):
+        def resolve_chunk(text):
             checkpoint()
+            started = perf_counter()
+            logger.info('时空标准化分块开始：文档ID=%s，字符数=%d', document.document_id, len(text))
             response = call_llm(json.dumps({'text': text, 'existing_resolutions': [r for r in graph.get('resolutions', []) if r.get('mention') in text], 'reference_date': options.reference_date, 'time_granularities': options.time_granularities, 'space_granularities': options.space_granularities}, ensure_ascii=False), system_prompt=prompt, config=evaluation_llm_config())
             if not isinstance(response, dict) or not isinstance(response.get('resolutions'), list):
                 raise ValueError('时空标准化模型缺少 resolutions 数组')
+            logger.info('时空标准化分块完成：文档ID=%s，标准化项数=%d，耗时=%.3f秒', document.document_id, len(response['resolutions']), perf_counter() - started)
+            return text, response
+        chunks = split_text_by_length(document.text, options.block_size)
+        for text, response in ordered_parallel_map(resolve_chunk, chunks, workers=options.max_workers, checkpoint=checkpoint):
+            checkpoint()
             for raw in response['resolutions']:
                 if isinstance(raw, dict):
                     key = (raw.get('mention'), raw.get('dimension'), raw.get('granularity'))
@@ -125,22 +151,33 @@ class ProductionPredictor:
     def fuse(self, graphs: list[dict], options: PredictionOptions, *, checkpoint=lambda: None) -> dict:
         from tools.graph_ablation import AblationStrategy, load_mapping_table
         checkpoint()
+        started = perf_counter()
+        logger.info('融合处理开始：图谱数=%d，启用模型消歧=%s，消歧并发=%d，名称映射策略=%s', len(graphs), options.use_llm_resolution, options.max_workers, options.name_mapping_policy)
         service = make_tracing_service(semantic_attributes=options.name_mapping_policy == 'source')
         client = None
         if options.use_llm_resolution or options.name_mapping_policy == 'legacy':
             from tools.graph_ablation import LLMEntityResolutionService
             from tools.llm_client import LLMClient
+            class CancellableResolver(LLMEntityResolutionService):
+                def resolve_many(self, pairs):
+                    checkpoint()
+                    return super().resolve_many(pairs)
+
+                def resolve(self, left, right):
+                    checkpoint()
+                    return super().resolve(left, right)
             client = LLMClient(config=evaluation_llm_config())
-            service.llm_resolver = LLMEntityResolutionService(client)
+            service.llm_resolver = CancellableResolver(client)
         strategy = AblationStrategy(similarity_threshold=options.similarity_threshold, attribute_similarity_threshold=options.attribute_similarity_threshold, relation_similarity_threshold=options.relation_similarity_threshold, use_llm_resolution=options.use_llm_resolution,
             entity_equivalence={name: name for name in load_mapping_table()} if options.name_mapping_policy == 'source' else {},
-            translate_output_to_chinese=options.name_mapping_policy == 'legacy', llm_resolution_workers=1)
+            translate_output_to_chinese=options.name_mapping_policy == 'legacy', llm_resolution_workers=options.max_workers)
         try:
             graph = service.run(deepcopy(graphs), strategy)
         finally:
             if client is not None:
                 client.client.close()
         checkpoint()
+        logger.info('融合处理完成：实体数=%d，关系数=%d，耗时=%.3f秒', len(graph.get('entities', [])), len(graph.get('relations', [])), perf_counter() - started)
         return {'graph': graph, 'trace': service.trace}
 
     def communities(self, graph: dict, *, checkpoint=lambda: None) -> dict:

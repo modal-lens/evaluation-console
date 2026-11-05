@@ -10,6 +10,7 @@ import socket
 import subprocess
 import sys
 import time
+import logging
 from urllib.request import ProxyHandler, build_opener
 
 ROOT = Path(__file__).resolve().parent
@@ -70,6 +71,11 @@ def main():
         'checks': 'passed'}, ensure_ascii=False), flush=True)
     if args.check:
         return 0
+    from utils.logger import setup_logging
+    from conf.load_config import get_max_workers
+    setup_logging(service='startup')
+    logger = logging.getLogger(__name__)
+    logger.info('启动检查通过：后端端口=%d，前端端口=%d，模型默认并发=%d', args.backend_port, args.frontend_port, get_max_workers())
     environment = os.environ.copy()
     environment.update({
         'PYTHONPATH': str(ROOT), 'APP_CONFIG_PATH': str(ROOT / 'conf/config.yml'),
@@ -84,29 +90,31 @@ def main():
     hidden = {'creationflags': subprocess.CREATE_NO_WINDOW} if os.name == 'nt' else {}
     try:
         children.append(subprocess.Popen([sys.executable, '-m', 'uvicorn', 'fastapi_worker:app',
-            '--app-dir', str(ROOT), '--host', args.host, '--port', str(args.backend_port)],
+            '--app-dir', str(ROOT), '--host', args.host, '--port', str(args.backend_port), '--no-access-log'],
             cwd=ROOT, env=environment, **hidden))
+        logger.info('后端进程已启动：进程ID=%d，正在等待健康检查', children[0].pid)
         wait_ready(children[0], f'http://{local_address}:{args.backend_port}/health')
         frontend_environment = {**environment, 'HOST': args.host, 'PORT': str(args.frontend_port),
                                 'BACKEND_URL': f'http://{local_address}:{args.backend_port}'}
         children.append(subprocess.Popen([node, 'server.mjs'], cwd=ROOT / 'frontend',
                                           env=frontend_environment, **hidden))
+        logger.info('前端进程已启动：进程ID=%d，正在等待页面服务就绪', children[1].pid)
         wait_ready(children[1], f'http://{local_address}:{args.frontend_port}/')
-        print(f'Frontend: http://{local_address}:{args.frontend_port}/', flush=True)
-        print(f'API docs: http://{local_address}:{args.frontend_port}/docs', flush=True)
+        logger.info('前后端启动完成：页面=http://%s:%d/，接口文档=http://%s:%d/docs', local_address, args.frontend_port, local_address, args.frontend_port)
         if args.smoke_test:
             from scripts.verify_http import verify_http
             verify_http(f'http://{local_address}:{args.frontend_port}')
             return 0
-        print('Press Ctrl+C to stop both services.', flush=True)
+        logger.info('服务运行中，按 Ctrl+C 可同时停止前后端')
         while all(child.poll() is None for child in children):
             time.sleep(.5)
         raise RuntimeError('A service exited; stopping the remaining service.')
     except KeyboardInterrupt:
-        print('Stopping this copy...', flush=True)
+        logger.info('收到停止指令，正在关闭本项目的前后端进程')
         return 0
     finally:
         for child in reversed(children):
+            logger.info('正在检查并关闭子进程：进程ID=%d', child.pid)
             if child.poll() is None:
                 child.terminate()
         for child in reversed(children):
@@ -121,5 +129,6 @@ if __name__ == '__main__':
     try:
         raise SystemExit(main())
     except Exception as exc:
-        print('Startup failed: ' + str(exc), file=sys.stderr)
+        logging.getLogger(__name__).exception('程序启动失败：异常类型=%s', type(exc).__name__)
+        print('程序启动失败：' + str(exc), file=sys.stderr)
         raise SystemExit(1)
